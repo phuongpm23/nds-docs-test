@@ -6,8 +6,6 @@
 ## Acceptance criteria
 - Hệ thống hiển thị lịch sử cập nhật dưới dạng danh sách
 - Các trường thông tin trong danh sách bao gồm: 
-    - STT
-    - ID bản ghi
     - Thời gian
     - Người thực hiện
     - Thao tác
@@ -29,9 +27,7 @@
 1. Người dùng truy cập thành công màn hình danh sách thông tin đăng ký chữ ký số (**SCR_Sign_List**)
 2. Người dùng truy cập trang lịch sử cập nhật thông tin đăng ký chữ ký số băng cách click vào biểu tượng xem lịch sử cập nhật 1 thông tin đăng ký chữ ký số trong danh sách
 3. Hệ thống truy vấn lịch sử cập nhật thông tin đăng ký chữ ký số theo ID (**ENT_LichSuCapNhatChuKySo**).
-4. Hệ thống hiển thị popup lịch sử cập nhật thông tin đăng ký chữ ký số (**SCR_CKS_History**) bao gồm các thông tin
-    - STT
-    - ID bản ghi
+4. Hệ thống hiển thị popup lịch sử cập nhật thông tin đăng ký chữ ký số (**SCR_Sign_History**) bao gồm các thông tin
     - Thời gian
     - Người thực hiện
     - Thao tác
@@ -39,7 +35,7 @@
     - Giá trị cũ
     - Giá trị mới
 5. Hệ thống hiển thị các nút chức năng.
-- Biểu tượng quay lại và nút đóng => Bấm vào đóng popup, chuyển về màn hình danh sách thông tin đăng ký chữ ký số (**SCR_CKS_List**)
+- Biểu tượng quay lại và nút đóng => Bấm vào đóng popup, chuyển về màn hình danh sách thông tin đăng ký chữ ký số (**SCR_Sign_List**)
 6. Kết thúc Use case
 
 ## Luồng phụ / ngoại lệ
@@ -51,6 +47,6 @@
 - Nếu thất bại: Không hiển thị dữ liệu, hoặc hiển thị thông báo lỗi.
 
 ## Liên kết
-- Activity Diagram: [AD_CKS_History.puml]
-- Form/Screen: [SCR_CKS_History.md]
+- Activity Diagram: [AD_Sign_History.puml]
+- Form/Screen: [SCR_Sign_History.md]
 - Entity liên quan: ENT_LichSuCapNhatChuKySo

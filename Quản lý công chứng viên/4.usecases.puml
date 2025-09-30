@@ -64,8 +64,6 @@ CVSTP -- UC_ChungChi_Detail
 CVSTP -- UC_Sign_List
 CVSTP -- UC_Sign_Detail
 CVSTP -- UC_Sign_Search
-CVSTP -- UC_Sign_Approve
-CVSTP -- UC_Sign_Reject
 CVSTP -- UC_Sign_History
 
 CVSTP -- UC_CCV_Lookup
@@ -84,7 +82,6 @@ LeaderSTP -- UC_ChungChi_Detail
 LeaderSTP -- UC_Sign_List
 LeaderSTP -- UC_Sign_Detail
 LeaderSTP -- UC_Sign_Search
-LeaderSTP -- UC_Sign_Approve
 LeaderSTP -- UC_Sign_History
 
 LeaderSTP -- UC_CCV_Lookup
@@ -125,5 +122,8 @@ UC_Sign_Submit -- Staff
 UC_CCV_Lookup -- Staff
 UC_ChungChi_Lookup -- Staff
 
-
+'==================== Use Case Extend ====================
+UC_Sign_Detail <|-- UC_Sign_Approve : <<extend>>
+UC_Sign_Detail <|-- UC_Sign_Reject  : <<extend>>
+UC_Sign_Detail <|-- UC_Sign_Submit  : <<extend>>
 @enduml

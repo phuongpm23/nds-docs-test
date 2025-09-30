@@ -6,11 +6,11 @@
 ## Acceptance criteria
 - Hệ thống hiển thị form tìm kiếm với các tiêu chí
     - Ô điền thông tin tìm kiếm theo "Họ và tên", "Số thẻ CCV"
-    - Bộ lọc:
-        - Trạng thái: Đang hành nghề, 
-        - Tỉnh/Thành phố của tổ chức hành nghề công chứng
-        - Tên tổ chức hành nghề công chứng
-- Hiển thị bảng danh sách công chứng viên với các cột tông tin cơ bản (STT, Họ và tên, số thẻ, tổ chức công chứng đang hành nghề, trạng thái hoạt động, địa chỉ tổ chức công chứng) theo tiêu chí đã tìm kiếm.
+    - Ô điền tên công chứng viên
+    - Ô điền tên tổ chức công chứng
+    - Ô điền số thẻ CCV
+    - Chọn trạng thái từ danh sách 
+- Hiển thị bảng danh sách công chứng viên với các cột tông tin cơ bản (Họ và tên, số thẻ, tổ chức công chứng đang hành nghề, trạng thái hoạt động) theo tiêu chí đã tìm kiếm.
 - Nếu số lượng bản ghi vượt quá giới hạn hiển thị, hệ thống phải cung cấp phân trang (10 bản ghi 1 trang).
 - Nếu có lỗi tải dữ liệu, hiển thị thông báo lỗi.
 - Nếu không tìm thấy dữ liệu theo tiêu chí tìm kiếm, thông báo "Không tìm thấy dữ liệu công chứng viên"
@@ -26,19 +26,17 @@
 ## Luồng chính
 1. Người dùng truy cập màn hình danh sách công chứng viên (**UC_CCV_List**).
 2. Người dùng điền thông tin tìm kiếm (theo họ và tên hoặc số thẻ CCV)
-3. Người dùng lọc tiêu chí tìm kiếm
+3. Người dùng điền và chọn tiêu chí tìm kiếm
 4. Người dùng bấm nút "Tìm kiếm"
 5. Hệ thống truy vấn thông tin công chứng viên
-    - Truy vấn họ và tên công chứng viên gần giống với kết quả đã điền/Trong tên có thông tin đã điền
+    - Truy vấn họ và tên công chứng viên gần giống với kết quả đã điền
     - Truy vấn chính xác số thẻ công chứng viên
     - Truy vấn chính xác theo trạng thái đã chọn
-    - Truy vấn chính xác theo tỉnh thành của tổ chức công chứng đã chọn
-    - Truy vấn chính xác theo tên tổ chức công chứng đã chọn
+    - Truy vấn gần đúng theo tên tổ chức công chứng đã chọn
 6. Hệ thống hiển thị danh sách công chứng theo kết quả đã truy vấn được
 7. Hệ thống hiển thị danh sách công chứng viên theo thứ tự thời gian cập nhật từ mới tới cũ nhất
 8. Nếu số lượng bản ghi lớn hơn 10, hệ thống thực hiện phân trang, 10 bản ghi mỗi trang
-9. Nếu người dùng bấm nút "Xóa điều kiện", hệ thống xóa các tiêu chí vừa chọn, các thông tin tìm kiếm đã điền
-10. Kết thúc.
+9. Kết thúc.
 
 ## Luồng phụ / ngoại lệ
 - Nếu có lỗi tìm kiếm: hiển thị thông báo "Không tải được danh sách, vui lòng thử lại".

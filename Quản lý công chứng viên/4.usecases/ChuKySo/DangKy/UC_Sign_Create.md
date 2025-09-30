@@ -6,16 +6,16 @@
 ## Acceptance Criteria
 - Hệ thống hiển thị form đăng ký chữ ký số.
 - Người dùng nhập thông tin: 
-   - Công chứng viên (Nếu loại chữ ký số là cá nhân)
-   - Loại chữ ký số (Cá nhân/Tổ chức)
+   - Chọn công chứng viên (Nếu loại chữ ký số là cá nhân)
+   - Chọn loại chữ ký số (Cá nhân/Tổ chức)
    - Nhà cung cấp
-   - Mã chứng thư
+   - Số serial
    - Ngày hiệu lực
    - Ngày hết hạn 
    - File đính kèm
    - Ghi chú
 - Hệ thống kiểm tra dữ liệu hợp lệ (thời gian hiệu lực/hết hạn, file đúng định dạng).
-- Nếu hợp lệ: lưu hồ sơ đăng ký ở trạng thái **"Mới tạo"** hoặc **"Chờ duyệt"**.
+- Nếu hợp lệ: lưu hồ sơ đăng ký ở trạng thái **"Mới tạo"** hoặc **"Chờ duyệt"** (tùy lưu nháp hay trình duyệt).
 - Hiển thị thông báo "Đăng ký thành công".
 - Người dùng có thể hủy thao tác đăng ký.
 
@@ -54,4 +54,4 @@
 ## Liên kết
 - Activity Diagram: [AD_Sign_Create.puml]
 - Form liên quan: [SCR_Sign_Create.md]
-- Entity liên quan: ChuKySo, CongChungVien
+- Entity liên quan: ChuKySo, CongChungVien, LichSuCapNhatChuKySo

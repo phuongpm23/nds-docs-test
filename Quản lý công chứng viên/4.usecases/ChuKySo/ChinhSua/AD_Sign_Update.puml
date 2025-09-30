@@ -1,10 +1,10 @@
-@startuml AD_CKSManager_Create
+@startuml AD_Sign_Update
 !pragma layout smetana
-title Activity Diagram: Đăng ký thông tin chữ ký số của công chứng viên
+title Activity Diagram: Chỉnh sửa thông tin chữ ký số
 start
-:Truy cập chức năng "Đăng ký thông tin chữ ký số";
-:Hiển thị form nhập thông tin;
-:Nhập thông tin thông tin đăng ký chữ ký số;
+:Truy cập chức năng "Chỉnh sửa thông tin chữ ký số";
+:Hiển thị form chỉnh sửa thông tin chữ ký số;
+:Chỉnh sửa thông tin chữ ký số;
   :Chọn thao tác;
   switch (Thao tác?)
     case (Lưu nháp)
@@ -20,12 +20,12 @@ start
         stop
       endif
     case (Trình duyệt)
-      :Kiểm tra tính hợp lệ dữ liệu \n(**UC_CKS_CheckData**);
+      :Kiểm tra tính hợp lệ dữ liệu;
       if (Hợp lệ?) then (Đúng)
         :Ghi nhận dữ liệu thông tin đăng ký chữ ký số;
         :Cập nhật trạng thái thành "Chờ duyệt";
           if (Ghi thành công?) then (Có)
-            :Thông báo "Đăng ký thông tin đăng ký chữ ký số thành công";
+            :Thông báo "Trình duyệt thông tin đăng ký chữ ký số thành công";
             :Chuyển hướng về danh sách\n(**SCR_CKS_List**);
             stop
           else (Không)
@@ -34,7 +34,7 @@ start
             stop
           endif
       else (Sai)
-        :Thông báo lỗi => Mô tả trong \n(**UC_CKS_CheckData**);
+        :Thông báo lỗi;
         :Ở lại màn hình\n(**SCR_CKS_create**);
         stop
       endif

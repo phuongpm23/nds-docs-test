@@ -17,12 +17,12 @@ Form cho phép người dùng nhập tiêu chí tra cứu và hiển thị danh 
 
 | Trường thông tin             | Control  | Field              | Max length | Bắt buộc (Y/N) | Mô tả                                                       |
 |:-----------------------------|:---------|:-------------------|:-----------|:---------------|:------------------------------------------------------------|
-| Họ và tên                    | text     | hoVaTen            | 255        | N              | Tra cứu gần đúng theo họ và tên công chứng viên             |
-| Số thẻ CCV                   | text     | soThe              | 50         | N              | Tra cứu chính xác số thẻ công chứng viên                    |
-| Số chứng chỉ hành nghề       | text     | soChungChi         | 50         | N              | Tra cứu chính xác số chứng chỉ hành nghề                    |
-| Trạng thái                   | dropdown | trangThai          | -          | N              | Lọc theo trạng thái hành nghề (Đang hành nghề, Tạm dừng, …) |
-| Tỉnh/Thành phố TCHNCC        | dropdown | tinhThanhPho       | -          | N              | Lọc theo tỉnh/thành phố của tổ chức hành nghề công chứng    |
-| Tổ chức hành nghề công chứng | dropdown | tenToChucCongChung | -          | N              | Lọc theo tên tổ chức hành nghề công chứng                   |
+| Họ và tên                    | text     | hoVaTen            | -          | -              | Tra cứu gần đúng theo họ và tên công chứng viên             |
+| Số thẻ CCV                   | text     | soThe              | -          | -              | Tra cứu chính xác số thẻ công chứng viên                    |
+| Số chứng chỉ hành nghề       | text     | soChungChi         | -          | -              | Tra cứu chính xác số chứng chỉ hành nghề                    |
+| Trạng thái                   | dropdown | trangThai          | -          | -              | Lọc theo trạng thái hành nghề (Đang hành nghề, Tạm dừng, …) |
+| Tỉnh/Thành phố TCHNCC        | dropdown | tinhThanhPho       | -          | -              | Lọc theo tỉnh/thành phố của tổ chức hành nghề công chứng    |
+| Tổ chức hành nghề công chứng | dropdown | tenToChucCongChung | -          | -              | Lọc theo tên tổ chức hành nghề công chứng                   |
 
 </div>
 
@@ -32,11 +32,11 @@ Form cho phép người dùng nhập tiêu chí tra cứu và hiển thị danh 
 
 | Trường thông tin             | Control | Field             | Max length | Bắt buộc (Y/N) | Cho phép sửa (Y/N) | Mô tả                                 |
 |:-----------------------------|:--------|:------------------|:-----------|:---------------|:-------------------|:--------------------------------------|
-| Họ và tên                    | text    | hoVaTen           | 255        | Y              | N                  | Họ và tên công chứng viên             |
-| Số thẻ CCV                   | text    | soThe             | 50         | Y              | N                  | Số hiệu thẻ hành nghề công chứng viên |
-| Số chứng chỉ hành nghề       | text    | soChungChi        | 50         | N              | N                  | Số chứng chỉ hành nghề                |
-| Tổ chức công chứng hành nghề | text    | tenToChuCongChung | 255        | Y              | N                  | Tổ chức công chứng đang hành nghề     |
-| Trạng thái hoạt động         | text    | trangThai         | 50         | Y              | N                  | Trạng thái công chứng viên            |
+| Họ và tên                    | text    | hoVaTen           | -          | -              | -                  | Họ và tên công chứng viên             |
+| Số thẻ CCV                   | text    | soThe             | -          | -              | -                  | Số hiệu thẻ hành nghề công chứng viên |
+| Số chứng chỉ hành nghề       | text    | soChungChi        | -          | -              | -                  | Số chứng chỉ hành nghề                |
+| Tổ chức công chứng hành nghề | text    | tenToChuCongChung | -          | -              | -                  | Tổ chức công chứng đang hành nghề     |
+| Trạng thái hoạt động         | text    | trangThai         | -          | -              | -                  | Trạng thái công chứng viên            |
 
 </div>
 
@@ -46,13 +46,13 @@ Form cho phép người dùng nhập tiêu chí tra cứu và hiển thị danh 
 
 | Trường thông tin | Control  | Field       | Max length | Bắt buộc (Y/N) | Mô tả                       |
 |:-----------------|:---------|:------------|:-----------|:---------------|:----------------------------|
-| Số chứng chỉ     | text     | soChungChi  | 50         | Y              | Mã số chứng chỉ hành nghề   |
-| Ngày cấp         | datetime | ngayCap     | -          | Y              | Ngày cấp chứng chỉ          |
-| Nơi cấp          | text     | noiCap      | 255        | N              | Nơi cấp chứng chỉ           |
-| Ngày hiệu lực    | datetime | ngayHieuLuc | -          | Y              | Ngày bắt đầu có hiệu lực    |
-| Ngày hết hạn     | datetime | ngayHetHan  | -          | N              | Ngày chứng chỉ hết hiệu lực |
-| Đơn vị cấp       | text     | donVi       | 255        | N              | Cơ quan cấp chứng chỉ       |
-| Trạng thái       | text     | trangThai   | 50         | Y              | Trạng thái chứng chỉ        |
+| Số chứng chỉ     | text     | soChungChi  | -          | -              | Mã số chứng chỉ hành nghề   |
+| Ngày cấp         | datetime | ngayCap     | -          | -              | Ngày cấp chứng chỉ          |
+| Nơi cấp          | text     | noiCap      | -          | -              | Nơi cấp chứng chỉ           |
+| Ngày hiệu lực    | datetime | ngayHieuLuc | -          | -              | Ngày bắt đầu có hiệu lực    |
+| Ngày hết hạn     | datetime | ngayHetHan  | -          | -              | Ngày chứng chỉ hết hiệu lực |
+| Đơn vị cấp       | text     | donVi       | -          | -              | Cơ quan cấp chứng chỉ       |
+| Trạng thái       | text     | trangThai   | -          | -              | Trạng thái chứng chỉ        |
 
 </div>
 

@@ -1,6 +1,6 @@
-@startuml AD_CKSManager_Create
+@startuml AD_Sign_Create
 !pragma layout smetana
-title Activity Diagram: Đăng ký thông tin chữ ký số của công chứng viên
+title Activity Diagram: Đăng ký thông tin chữ ký số
 start
 :Truy cập chức năng "Đăng ký thông tin chữ ký số";
 :Hiển thị form nhập thông tin;
@@ -12,40 +12,40 @@ start
       :Cập nhật trạng thái thành "Mới tạo";
       if (Ghi thành công?) then (Có)
         :Thông báo "Lưu nháp thông tin đăng ký chữ ký số thành công";
-        :Chuyển hướng về danh sách\n(**SCR_CKS_List**);
+        :Chuyển hướng về danh sách\n(**SCR_Sign_List**);
         stop
       else (Không)
         :Thông báo lỗi hệ thống;
-        :Ở lại màn hình màn hình\n(**SCR_CKS_Create**);
+        :Ở lại màn hình màn hình\n(**SCR_Sign_Create**);
         stop
       endif
     case (Trình duyệt)
-      :Kiểm tra tính hợp lệ dữ liệu \n(**UC_CKS_CheckData**);
+      :Kiểm tra tính hợp lệ dữ liệu;
       if (Hợp lệ?) then (Đúng)
         :Ghi nhận dữ liệu thông tin đăng ký chữ ký số;
         :Cập nhật trạng thái thành "Chờ duyệt";
           if (Ghi thành công?) then (Có)
             :Thông báo "Đăng ký thông tin đăng ký chữ ký số thành công";
-            :Chuyển hướng về danh sách\n(**SCR_CKS_List**);
+            :Chuyển hướng về danh sách\n(**SCR_Sign_List**);
             stop
           else (Không)
             :Thông báo lỗi hệ thống;
-            :Ở lại màn hình màn hình\n(**SCR_CKS_Create**);
+            :Ở lại màn hình màn hình\n(**SCR_Sign_Create**);
             stop
           endif
       else (Sai)
-        :Thông báo lỗi => Mô tả trong \n(**UC_CKS_CheckData**);
-        :Ở lại màn hình\n(**SCR_CKS_create**);
+        :Thông báo lỗi;
+        :Ở lại màn hình\n(**SCR_Sign_create**);
         stop
       endif
     case (Đóng)
       :Xác nhận hủy thao tác?;
       if (Đồng ý?) then (Có)
         :Hủy thao tác;
-        :Chuyển hướng về danh sách\n(**SCR_CKS_List**);
+        :Chuyển hướng về danh sách\n(**SCR_Sign_List**);
         stop
       else (Không)
-        :Ở lại màn hình\n(**SCR_CKS_Create**);
+        :Ở lại màn hình\n(**SCR_Sign_Create**);
         stop
       endif
   endswitch

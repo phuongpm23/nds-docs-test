@@ -1,8 +1,8 @@
 # Màn hình: Xác nhận xóa Thông tin đăng ký chữ ký số
-Popup xác nhận khi người dùng thực hiện thao tác xóa Thông tin đăng ký chữ ký số từ danh sách.
+Popup xác nhận khi người dùng thực hiện thao tác xóa Thông tin chữ ký số từ danh sách.
 
 ## Điều kiện tiên quyết
-- Người dùng đã đăng nhập và có quyền xóa Thông tin đăng ký chữ ký số.
+- Người dùng đã đăng nhập và có quyền xóa Thông tin chữ ký số.
 - Người dùng chỉ có thể xóa Thông tin đăng ký chữ ký số thuộc tổ chức của mình.
 
 ## Nguyên mẫu
@@ -16,7 +16,7 @@ Popup xác nhận khi người dùng thực hiện thao tác xóa Thông tin đ�
 
 | Thành phần      | Control | Field | Bắt buộc (Y/N) | Mô tả                                                                                     |
 |:----------------|:--------|:------|:---------------|:------------------------------------------------------------------------------------------|
-| Thông báo chính | label   | -     | -              | Hiển thị nội dung: **“Bạn có chắc chắn muốn xóa Thông tin đăng ký chữ ký số này không?”** |
+| Thông báo chính | label   | -     | -              | Hiển thị nội dung: **“Bạn có chắc chắn muốn xóa Thông tin chữ ký số này không?”** |
 | Nút Xác nhận    | button  | -     | -              | Khi bấm, hệ thống kiểm tra ràng buộc trước khi xóa                                        |
 | Nút Hủy         | button  | -     | -              | Khi bấm, đóng popup, không thực hiện xóa                                                  |
 

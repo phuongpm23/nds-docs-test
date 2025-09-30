@@ -1,26 +1,33 @@
 @startuml AD_CCV_List
 !pragma layout smetana
-title Activity Diagram: Xem danh sách đăng ký chữ ký số
+title Activity Diagram: Xem danh sách chữ ký số
 
 start
-:Người dùng truy cập màn hình danh sách đăng ký chữ ký số;
+:Người dùng truy cập màn hình danh sách chữ ký số;
 :Kiểm tra quyền truy cập;
 if (Có quyền?) then (Yes)
-  :Kiểm tra thông tin người dùng;
-  if (là nhân viên || công chứng viên của tổ chức công chứng?) then (yes)
-  :Tải danh sách đăng ký chữ ký số;
-  :Lọc danh sách đăng ký chữ ký số theo tổ chức công chứng của người dùng;
+  :Kiểm tra thông tin phân quyền người dùng;
+  if (Người dùng thuộc Bộ?) then (Yes)
+    :Tải toàn bộ danh sách chữ ký số;
+    :Lọc các chữ ký số khác trạng thái "Tạo mới"
   else (No)
-  :Tải toàn bộ danh sách đăng ký chữ ký số;
+    if (Người dùng thuộc Sở?) then (Yes)
+      :Tải danh sách chữ ký số;
+      :Lọc theo Sở tư pháp của người dùng;
+      :Lọc các chữ ký số khác trạng thái "Tạo mới"
+    else (Người dùng thuộc Tổ chức công chứng?)
+      :Tải danh sách đăng ký chữ ký số;
+      :Lọc theo Tổ chức công chứng của người dùng;
+    endif
   endif
   if (Có dữ liệu?) then (Yes)
-    :Sắp xếp thứ tự danh sách theo thời gian cập nhật từ mới tới cũ nhất;
-    :Hiển thị danh sách đăng ký chữ ký số theo thứ tự đã sắp xếp \n(**SCR_CCV_List**);
+    :Sắp xếp danh sách theo thời gian cập nhật từ mới đến cũ;
+    :Hiển thị danh sách đăng ký chữ ký số \n(**SCR_Sign_List**);
     stop
   else (No)
     :Hiển thị "Không có dữ liệu đăng ký chữ ký số";
     stop
-endif
+  endif
 else (No)
   :Thông báo lỗi "Không có quyền truy cập";
   stop

@@ -1,20 +1,21 @@
 # Use Case: UC_Sign_Create (Chỉnh sửa thông tin đăng ký)
 
 ## User Story
-- Với vai trò là **Công chứng viên / Nhân viên TCHNCC**, tôi muốn có thể Chỉnh sửa thông tin đăng ký chữ ký số.
+- Với vai trò là **Công chứng viên / Nhân viên TCHNCC**, tôi muốn có thể Chỉnh sửa thông tin chữ ký số của tổ chức công chứng.
 
 ## Acceptance Criteria
 - Hệ thống hiển thị form Chỉnh sửa thông tin đăng ký chữ ký số.
 - Người dùng cập nhật thông tin: 
-   - Công chứng viên
-   - Gói đăng ký
+   - Công chứng viên (nếu là loại chữ ký số cá nhân)
+   - Loại chữ ký số
    - Nhà cung cấp
-   - Mã chứng thư
+   - Số serial
    - Ngày hiệu lực
    - Ngày hết hạn 
    - File đính kèm
+   - Ghi chú
 - Hệ thống kiểm tra dữ liệu hợp lệ (thời gian hiệu lực/hết hạn, file đúng định dạng).
-- Nếu hợp lệ: lưu hồ sơ đăng ký ở trạng thái **"Mới tạo"** hoặc **"Chờ duyệt"**.
+- Nếu hợp lệ: lưu hồ sơ đăng ký ở trạng thái **"Mới tạo"** hoặc **"Chờ duyệt"** (tùy vào Lưu nháp hay trình duyệt).
 - Người dùng có thể hủy thao tác chỉnh sửa.
 
 ## Tác nhân chính
@@ -45,10 +46,10 @@
 - Người dùng chọn **Lưu nháp**: Hệ thống không thực hiện kiểm tra tính đầy đủ của dữ liệu mà chỉ kiểm tra logic, hệ thống lưu thông tin Chỉnh sửa thông tin đăng ký với trạng thái là "Mới tạo"
 
 ## Hậu điều kiện
-- Nếu thành công: Hồ sơ Chỉnh sửa thông tin đăng ký được lưu trong hệ thống.
-- Nếu thất bại: Không có dữ liệu nào được thêm.
+- Nếu thành công: Hệ thống cập nhật thông tin
+- Nếu thất bại: Không có dữ liệu nào được cập nhật.
 
 ## Liên kết
 - Activity Diagram: [AD_Sign_Update.puml]
 - Form liên quan: [SCR_Sign_Update.md]
-- Entity liên quan: ChuKySo, LichSuChuKySo
+- Entity liên quan: ChuKySo, LichSuCapNhatChuKySo

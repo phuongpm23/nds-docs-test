@@ -1,7 +1,8 @@
 # Use Case: Xem chi tiết thông tin công chứng viên (UC_ViewList_CCV)
 
 ## User Story
-- Là Chuyên viên STP, Lãnh đạo STP, Lãnh đạo phòng HCBTTP tại STP, Lãnh đạo Bộ Tư pháp, Lãnh đạo Cục BTTP, Chuyên viên Cục BTTP, tôi muốn xem được chi tiết thông tin của công chứng viên để nắm rõ hồ sơ cá nhân, chứng chỉ hành nghề và tình trạng hoạt động của họ
+- Là **Chuyên viên STP, Lãnh đạo STP, Lãnh đạo phòng HCBTTP tại STP**, tôi muốn xem được chi tiết thông tin của công chứng viên của tổ chức công chứng thuộc Sở Tư pháp để nắm rõ hồ sơ cá nhân, chứng chỉ hành nghề và tình trạng hoạt động của họ
+- Là **Lãnh đạo Bộ Tư pháp, Lãnh đạo Cục BTTP, Chuyên viên Cục BTTP**, tôi muốn xem được chi tiết thông tin của công chứng viên của toàn bộ hệ thống để nắm rõ hồ sơ cá nhân, chứng chỉ hành nghề và tình trạng hoạt động của họ
 
 ## Acceptance criteria
 - Hệ thống hiển thị đầy đủ thông tin chi tiết của công chứng viên được chọn từ danh sách.

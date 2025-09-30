@@ -15,11 +15,11 @@ Màn hình tra cứu tổ chức công chứng
 
 | Trường thông tin       | Control | Field              | Max length | Bắt buộc (Y/N) | Giá trị mặc định | Cho phép sửa (Y/N) | Mô tả                                                                             |
 |:-----------------------|:--------|:-------------------|:-----------|:---------------|:-----------------|:-------------------|:----------------------------------------------------------------------------------|
-| Tên tổ chức công chứng | text    | tenToChucCongChung | 255        | Y              |                  | N                  | Tên của tổ chức hành nghề công chứng                                              |
-| Sở Tư pháp quản lý     | text    | soTuPhap           | 255        | Y              |                  | N                  | Tên Sở Tư pháp quản lý (Chỉ hiển thị cột này cho người dùng cấp bộ)               |
-| Trưởng văn phòng       | number  | truongVanPhongId   | -          | N              |                  | N                  | ID tổ chức công chứng là trưởng văn phòng công chứng                              |
-| Địa chỉ trụ sở         | text    | diaChi             | 500        | Y              |                  | N                  | Địa chỉ trụ sở chính                                                              |
-| Trạng thái hoạt động   | text    | trangThai          | -          | Y              |                  | N                  | Trạng thái: Đang hoạt động, Chờ thành lập, Giải thể, … (theo enum)                |
+| Tên tổ chức công chứng | text    | tenToChucCongChung | -        | -              |                  | -                  | Tên của tổ chức hành nghề công chứng                                              |
+| Sở Tư pháp quản lý     | text    | soTuPhap           | -        | -              |                  | -                  | Tên Sở Tư pháp quản lý (Chỉ hiển thị cột này cho người dùng cấp bộ)               |
+| Trưởng văn phòng       | number  | truongVanPhongId   | -          | -              |                  | -                  | ID tổ chức công chứng là trưởng văn phòng công chứng                              |
+| Địa chỉ trụ sở         | text    | diaChi             | -        | -              |                  | -                  | Địa chỉ trụ sở chính                                                              |
+| Trạng thái hoạt động   | text    | trangThai          | -          | -              |                  | -                  | Trạng thái: Đang hoạt động, Chờ thành lập, Giải thể, … (theo enum)                |
 | Chức năng              | icon    | -                  | -          | -              |                  | -                  | Hiển thị danh sách nút: Xem chi tiết, sửa, xóa, xem lịch sử (tùy theo phân quyền) |
 
 </div>

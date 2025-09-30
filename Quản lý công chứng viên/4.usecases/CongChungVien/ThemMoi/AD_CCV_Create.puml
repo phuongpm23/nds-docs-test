@@ -8,7 +8,7 @@ start
   :Chọn thao tác;
   switch (Thao tác?)
     case (Lưu)
-      :Kiểm tra tính hợp lệ dữ liệu \n(**UC_CCV_CheckData**);
+      :Kiểm tra tính hợp lệ dữ liệu;
       if (Hợp lệ?) then (Đúng)
         :Ghi nhận dữ liệu công chứng viên;
           if (Ghi thành công?) then (Có)
@@ -19,8 +19,8 @@ start
             :Ở lại màn hình màn hình\n(**SCR_CCV_Create**);
           endif
       else (Sai)
-        :Thông báo lỗi => Mô tả trong \n(**UC_CCV_CheckData**);
-        :Ở lại màn hình\n(**SCR_CCV_create**);
+        :Thông báo lỗi;
+        :Ở lại màn hình\n(**SCR_CCV_Create**);
       endif
     case (Đóng)
       :Xác nhận hủy thao tác?;

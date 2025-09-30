@@ -31,7 +31,11 @@
 ## Luồng phụ / Ngoại lệ
 - Người dùng chọn **Hủy**: Form đóng, không lưu dữ liệu.
 - Lỗi hệ thống: Hiển thị thông báo lỗi, không lưu dữ liệu.
-- Lỗi dữ liệu: Hiển thị thông báo lỗi (**UC_CCV_CheckData**)
+- Nếu Ngày Sinh/Ngày cấp giấy tờ > Ngày hôm nay: thông báo lỗi "Thông tin không hợp lệ"
+- Nếu chưa điền thông tin bắt buộc, hiển thị thông báo yêu cầu điền thông tin bắt buộc
+- Nếu sai định dạng thông tin, hiển thị thông báo lỗi "Thông tin không hợp lệ"
+- Nếu số thẻ bị trùng với công chứng viên khác trong hệ thống, hệ thống thông báo lỗi "Số thẻ đã tồn tại". 
+- Nếu số giấy tờ cá nhân bị trùng với công chứng viên khác trong hệ thống, hệ thống thông báo lỗi "Số CCCD/CMND/Hộ chiếu đã tồn tại". 
 
 ## Hậu điều kiện
 - Nếu thành công: Công chứng viên được cập nhật thông tin.

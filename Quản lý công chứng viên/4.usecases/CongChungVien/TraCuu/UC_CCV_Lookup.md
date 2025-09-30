@@ -7,10 +7,10 @@
 - Hệ thống hiển thị form tra cứu với các tiêu chí
     - Ô điền thông tin tra cứu theo "Họ và tên", "Số thẻ CCV", "Số chứng chỉ hành nghề"
     - Bộ lọc:
-        - Trạng thái: Đang hành nghề, 
+        - Trạng thái
         - Tỉnh/Thành phố của tổ chức hành nghề công chứng
         - Tên tổ chức hành nghề công chứng
-- Hiển thị bảng danh sách công chứng viên với các cột thông tin cơ bản (STT, Họ và tên, số thẻ, số chứng chỉ hành nghề, tổ chức công chứng đang hành nghề, trạng thái hoạt động, địa chỉ tổ chức công chứng) theo tiêu chí đã tra cứu.
+- Hiển thị bảng danh sách công chứng viên với các cột thông tin cơ bản (Họ và tên, số thẻ, số chứng chỉ hành nghề, tổ chức công chứng đang hành nghề, trạng thái hoạt động) theo tiêu chí đã tra cứu.
 - Nếu số lượng bản ghi vượt quá giới hạn hiển thị, hệ thống phải cung cấp phân trang (10 bản ghi 1 trang).
 - Nếu có lỗi tải dữ liệu, hiển thị thông báo lỗi.
 - Nếu không tìm thấy dữ liệu theo tiêu chí tra cứu, thông báo "Không tìm thấy dữ liệu"
@@ -46,8 +46,7 @@
     - Đơn vị cấp
     - Trạng thái
 8. Nếu số lượng bản ghi lớn hơn 10, hệ thống thực hiện phân trang, 10 bản ghi mỗi trang
-9. Nếu người dùng bấm nút "Xóa điều kiện", hệ thống xóa các tiêu chí vừa chọn, các thông tin tra cứu đã điền
-10. Kết thúc.
+9. Kết thúc.
 
 ## Luồng phụ / ngoại lệ
 - Nếu có lỗi tra cứu: hiển thị thông báo "Không tải được danh sách, vui lòng thử lại".

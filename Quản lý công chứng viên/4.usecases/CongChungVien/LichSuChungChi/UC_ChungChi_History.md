@@ -6,8 +6,6 @@
 ## Acceptance criteria
 - Hệ thống hiển thị lịch sử cập nhật dưới dạng danh sách
 - Các trường thông tin trong danh sách bao gồm: 
-    - STT
-    - ID bản ghi
     - Thời gian
     - Người thực hiện
     - Thao tác
@@ -30,8 +28,6 @@
 2. Người dùng truy cập trang lịch sử cập nhật thông tin chứng chỉ hành nghề băng cách click vào biểu tượng xem lịch sử cập nhật chứng chỉ hành nghề
 3. Hệ thống truy vấn thông tin lịch sử cập nhật chứng chỉ hành nghề theo ID chứng chỉ (**ENT_LichSuChungChi**).
 4. Hệ thống hiển thị popup lịch sử cập nhật chứng chỉ hành nghề (**SCR_ChungChi_History**) bao gồm các thông tin
-    - STT
-    - ID bản ghi
     - Thời gian
     - Người thực hiện
     - Thao tác

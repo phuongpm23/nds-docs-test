@@ -7,7 +7,7 @@
 - Hệ thống hiển thị form thêm mới công chứng viên.
 - Hệ thống kiểm tra dữ liệu hợp lệ trước khi lưu thông tin công chứng viên.
 - Nếu dữ liệu hợp lệ, hệ thống lưu công chứng viên mới vào danh sách và hiển thị thông báo thành công.
-- Nếu dữ liệu không hợp lệ, hiển thị thông báo lỗi cụ thể (VD: "Số thẻ đã tồn tại").
+- Nếu dữ liệu không hợp lệ, hiển thị thông báo lỗi.
 - Người dùng có thể hủy thao tác thêm mới.
 
 ## Tác nhân chính
@@ -23,7 +23,7 @@
 3. Người dùng nhập các thông tin cần thiết.
 4. Người dùng bấm nút **Lưu**.
 5. Hệ thống kiểm tra tính hợp lệ của dữ liệu:
-   - Nếu hợp lệ: Lưu dữ liệu vào bảng **CongChungVien**.
+   - Nếu hợp lệ: Lưu dữ liệu vào ENT **CongChungVien**.
    - Thông báo "Thêm mới công chứng viên thành công".
    - Quay lại danh sách công chứng viên (**UC_CCV_List**).
 6. Kết thúc use case.
@@ -31,7 +31,11 @@
 ## Luồng phụ / Ngoại lệ
 - Người dùng chọn **Hủy**: Form đóng, không lưu dữ liệu.
 - Lỗi hệ thống: Hiển thị thông báo lỗi, không lưu dữ liệu.
-- Lỗi dữ liệu: Hiển thị thông báo lỗi (**UC_CCV_CheckData**)
+- Nếu Ngày Sinh/Ngày cấp giấy tờ > Ngày hôm nay: thông báo lỗi "Thông tin không hợp lệ"
+- Nếu chưa điền thông tin bắt buộc, hiển thị thông báo yêu cầu điền thông tin bắt buộc
+- Nếu sai định dạng thông tin, hiển thị thông báo lỗi "Thông tin không hợp lệ"
+- Nếu số thẻ bị trùng với công chứng viên khác trong hệ thống, hệ thống thông báo lỗi "Số thẻ đã tồn tại". 
+- Nếu số giấy tờ cá nhân bị trùng với công chứng viên khác trong hệ thống, hệ thống thông báo lỗi "Số CCCD/CMND/Hộ chiếu đã tồn tại". 
 
 ## Hậu điều kiện
 - Nếu thành công: Công chứng viên mới được thêm vào hệ thống.

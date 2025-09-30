@@ -16,9 +16,9 @@ if (Có quyền?) then (Yes)
   endif
   :Kiểm tra quyền xem chứng chỉ;
   if (Có quyền xem chứng chỉ ?) then (yes)
-  :Truy vấn dữ liệu danh sách chứng chỉ hành nghề của công chứng viên theo congChungVienId \n(**ENT_ChungChiHanhNghe**);
+  :Truy vấn dữ liệu chứng chỉ hành nghề của công chứng viên theo congChungVienId \n(**ENT_ChungChiHanhNghe**);
     if (Có dữ liệu?) then (Yes)
-      :Hiển thị danh sách chứng chỉ hành nghề công chứng viên \n(**SCR_CCV_Detail**);
+      :Hiển thị chứng chỉ hành nghề công chứng viên \n(**SCR_CCV_Detail**);
       stop
     else (No)
       :Hiển thị "Không có dữ liệu chứng chỉ hành nghề";

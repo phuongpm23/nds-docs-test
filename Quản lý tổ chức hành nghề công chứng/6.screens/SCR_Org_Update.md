@@ -15,14 +15,14 @@ Popup form cho phép chỉnh sửa thông tin một tổ chức hành nghề cô
 
 | Trường thông tin       | Control  | Field              | Max length | Bắt buộc (Y/N) | Giá trị mặc định | Cho phép sửa (Y/N) | Mô tả                                                          |
 |:-----------------------|:---------|:-------------------|:-----------|:---------------|:-----------------|:-------------------|:---------------------------------------------------------------|
-| Tên tổ chức công chứng | text     | tenToChucCongChung | 255        | Y              | -                | Y                  | Đổ ra dữ liệu đã lưu                                           |
-| Sở Tư pháp quản lý     | text     | soTuPhap           | 255        | Y              | -                | N                  | Đổ ra tên Sở Tư pháp quản lý. Disable, không cho phép thay đổi |
+| Tên tổ chức công chứng | text     | tenToChucCongChung | 250        | Y              | -                | Y                  | Đổ ra dữ liệu đã lưu                                           |
+| Sở Tư pháp quản lý     | text     | soTuPhap           | 250        | Y              | -                | N                  | Đổ ra tên Sở Tư pháp quản lý. Disable, không cho phép thay đổi |
 | Địa chỉ                | text     | diaChi             | 500        | Y              | -                | Y                  | Đổ ra dữ liệu đã lưu chính                                     |
-| Tỉnh/Thành phố         | dropdown | tinhThanhPho       | 255        | Y              | -                | Y                  | Chọn tỉnh/thành phố đã lưu                                     |
-| Phường/Xã              | dropdown | phuongXa           | 255        | N              | -                | Y                  | Chọn phường/xã đã lưu                                          |
-| Số điện thoại          | text     | soDienThoai        | 20         | N              | -                | Y                  | Đổ ra dữ liệu đã lưu hệ                                        |
-| Email                  | text     | email              | 255        | N              | -                | Y                  | Đổ ra dữ liệu đã lưu                                           |
-| Trạng thái hoạt động   | dropdown | trangThai          | -          | Y              | -                | Y                  | Chọn trạng thái đã lưu…                                        |
+| Tỉnh/Thành phố         | dropdown | tinhThanhPho       | 250        | Y              | -                | Y                  | Chọn tỉnh/thành phố đã lưu                                     |
+| Phường/Xã              | dropdown | phuongXa           | 250        | Y              | -                | Y                  | Chọn phường/xã đã lưu                                          |
+| Số điện thoại          | text     | soDienThoai        | 50         | N              | -                | Y                  | Đổ ra dữ liệu đã lưu hệ                                        |
+| Email                  | text     | email              | 50         | N              | -                | Y                  | Đổ ra dữ liệu đã lưu                                           |
+| Trạng thái hoạt động   | dropdown | trangThai          | 50          | Y              | -                | Y                  | Chọn trạng thái đã lưu…                                        |
 
 </div>
 

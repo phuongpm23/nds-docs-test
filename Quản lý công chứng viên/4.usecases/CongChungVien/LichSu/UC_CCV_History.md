@@ -6,8 +6,6 @@
 ## Acceptance criteria
 - Hệ thống hiển thị lịch sử cập nhật dưới dạng danh sách
 - Các trường thông tin trong danh sách bao gồm: 
-    - STT
-    - ID bản ghi
     - Thời gian
     - Người thực hiện
     - Thao tác
@@ -30,8 +28,6 @@
 2. Người dùng truy cập trang lịch sử cập nhật công chứng viên băng cách click vào biểu tượng xem lịch sử cập nhật 1 công chứng viên trong danh sách
 3. Hệ thống truy vấn lịch sử cập nhật công chứng viên theo ID (**ENT_LichSuCapNhatCCV**).
 4. Hệ thống hiển thị popup lịch sử cập nhật công chứng viên (**SCR_CCV_History**) bao gồm các thông tin
-    - STT
-    - ID bản ghi
     - Thời gian
     - Người thực hiện
     - Thao tác
