@@ -39,7 +39,7 @@
     - Tỉnh/Thành phố
     - Phường/Xã 
     - Số điện thoại
-    - Trưởng văn phòng
+    - Trưởng văn phòng: Họ và tên, số giấy tờ, giới tính, ngày sinh, số thẻ, trạng thái hoạt động
     - Trạng thái hoạt động 
     - Ngày tạo
     - Ngày cập nhật
