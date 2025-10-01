@@ -1,4 +1,4 @@
-# Use Case: Xem chi tiết thông tin công chứng viên (UC_ViewList_CCV)
+# Use Case: Xem chi tiết thông tin công chứng viên (UC_CCV_Detail)
 
 ## User Story
 - Là **Chuyên viên STP, Lãnh đạo STP, Lãnh đạo phòng HCBTTP tại STP**, tôi muốn xem được chi tiết thông tin của công chứng viên của tổ chức công chứng thuộc Sở Tư pháp để nắm rõ hồ sơ cá nhân, chứng chỉ hành nghề và tình trạng hoạt động của họ
