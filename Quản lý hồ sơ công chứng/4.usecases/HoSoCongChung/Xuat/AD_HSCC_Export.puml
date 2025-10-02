@@ -1,0 +1,55 @@
+@startuml AD_HSCC_Export
+!pragma layout smetana
+title Activity Diagram: Xuất danh sách hồ sơ công chứng
+start
+:Chọn chức năng "Xuất danh sách hồ sơ";
+:Hiển thị form xuất danh sách;
+note right: - Lựa chọn phạm vi dữ liệu
+- Lựa chọn cột thông tin
+- Lựa chọn định dạng
+:Chọn phạm vi dữ liệu;
+switch (Phạm vi dữ liệu?)
+  case (Xuất tất cả)
+    :Xác định phạm vi theo quyền hạn;
+  case (Xuất theo bộ lọc)
+    :Lấy bộ lọc đang áp dụng;
+  case (Xuất các hồ sơ được chọn)
+    :Lấy danh sách hồ sơ được chọn;
+endswitch
+:Chọn các cột thông tin cần xuất;
+note right: - Mã hồ sơ
+- Tên giao dịch
+- Ngày công chứng
+- Số công chứng
+- Nội dung giao dịch
+- Giá trị hợp đồng
+- Tên tổ chức
+- Tên công chứng viên
+- Tên bên tham gia
+- Loại tài sản
+- Địa chỉ tài sản
+- Trạng thái hồ sơ
+:Chọn định dạng file (Excel .xlsx);
+:Bấm nút "Xuất";
+:Xác định phạm vi dữ liệu theo quyền;
+note right: STP: Xuất hồ sơ trên địa bàn tỉnh/thành phố
+BTP: Xuất hồ sơ toàn quốc hoặc theo địa phương
+TCHNCC: Xuất hồ sơ tại tổ chức của mình
+:Đếm số lượng bản ghi cần xuất;
+if (Số lượng <= 50.000?) then (Có)
+  :Lấy dữ liệu theo các tiêu chí đã chọn;
+  if (Có dữ liệu?) then (Có)
+    :Tạo file Excel với các cột được chọn;
+    :Đặt tên file theo định dạng;
+    note right: "DanhSachHoSoCongChung-ngày giờ xuất.xlsx"
+    :Tự động tải file về máy người dùng;
+    :Hiển thị thông báo "Xuất danh sách hồ sơ công chứng thành công";
+  else (Không)
+    :Hiển thị thông báo "Không có dữ liệu để xuất";
+  endif
+else (Không)
+  :Hiển thị thông báo "Số lượng hồ sơ vượt quá giới hạn cho phép (50.000 bản ghi)";
+  :Hiển thị yêu cầu giới hạn phạm vi xuất;
+endif
+stop
+@enduml

@@ -84,8 +84,6 @@ entity LichSuCapNhatCCV {
   updatedAt: datetime      - Ngày cập nhật
   createdBy: string - Người tạo
   updatedBy: string - Người cập nhật
-  createdAt: datetime - Ngày tạo
-  updatedAt: datetime - Ngày cập nhật
 }
 entity LichSuCapNhatChuKySo {
   *lichSuCapNhatId: int <<PK>> - Id bản ghi lịch sử cập nhật, tự động tăng

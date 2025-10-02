@@ -1,0 +1,95 @@
+@startuml ldm
+!pragma layout smetana
+left to right direction
+
+entity HoSoCongChung
+entity NguoiThamGiaGiaoDichToChuc
+entity NguoiThamGiaGiaoDichCaNhan
+entity LichSuCapNhatHoSo
+entity TaiSan
+entity CongChungVien
+entity ToChucCongChung
+
+entity HoSoCongChung {
+  *hoSoId: int <<PK>> - Mã giao dịch, tự động tăng
+  tenGiaoDich: string - Tên giao dịch công chứng
+  ngayCongChung: date - Ngày công chứng
+  soCongChung: string - Số công chứng
+  noiDung: string - Nội dung giao dịch
+  giaTriHopDong: number - Thông tin giá trị giao dịch, hợp đồng
+  congChungVienId: int <<FK>> - ID Công chứng viên xử lý giao dịch
+  toChucCongChungId: int <<FK>> - ID Tổ chức công chứng xử lý giao dịch
+  vanBanCongChung: string - Link văn bản công chứng giấy
+  hoSoLuuTruDienTu: string - Link hồ sơ lưu trữ điện tử
+  cacTaiLieuKhac: string - Link các tài liệu khác
+  trangThai: string - Trạng thái hồ sơ
+  createdBy: string - Người tạo
+  updatedBy: string - Người cập nhật
+  createdAt: datetime - Ngày tạo
+  updatedAt: datetime - Ngày cập nhật
+}
+
+entity NguoiThamGiaGiaoDichCaNhan {
+  *nguoiThamGiaCaNhanId: int <<PK>> - ID bản ghi, tự động tăng
+  hoSoId: int <<FK>> - ID hồ sơ công chứng
+  hoVaTen: string - Họ và tên
+  soGiayTo: string - Số CMND/CCCD/Hộ chiếu
+  ngayCap: date - Ngày cấp
+  noiCap: string - Nơi cấp
+  diaChi: string - Địa chỉ
+  soDienThoai: string - Số điện thoại
+  email: string - Email
+  loaiBenThamGia: string - Loại bên tham gia (Bên A, Bên B, Bên liên quan)
+  createdBy: string - Người tạo
+  updatedBy: string - Người cập nhật
+  createdAt: datetime - Ngày tạo
+  updatedAt: datetime - Ngày cập nhật
+}
+
+entity NguoiThamGiaGiaoDichToChuc {
+  *nguoiThamGiaToChucId: int <<PK>> - ID bản ghi, tự động tăng
+  hoSoId: int <<FK>> - ID hồ sơ công chứng
+  tenToChuc: string - Tên tổ chức
+  maSoThue: string - Mã số thuế
+  diaChi: string - Địa chỉ
+  soDienThoai: string - Số điện thoại
+  email: string - Email
+  nguoiDaiDien: string - Người đại diện theo pháp luật
+  chucVuNguoiDaiDien: string - Chức vụ người đại diện
+  loaiBenThamGia: string - Loại bên tham gia (Bên A, Bên B, Bên liên quan)
+  createdBy: string - Người tạo
+  updatedBy: string - Người cập nhật
+  createdAt: datetime - Ngày tạo
+  updatedAt: datetime - Ngày cập nhật
+}
+
+entity TaiSan {
+  *taiSanId: int <<PK>> - ID bản ghi, tự động tăng
+  hoSoId: int <<FK>> - ID hồ sơ công chứng
+  loaiTaiSan: string - Loại tài sản (Đất ở, Đất nông nghiệp, Nhà ở, Xe ô tô, Xe máy, etc.)
+  diaChiTaiSan: string - Địa chỉ tài sản
+  soGiayTo: string - Số giấy tờ pháp lý (Sổ đỏ, Sổ hồng, etc.)
+  ngayCap: date - Ngày cấp giấy tờ
+  noiCap: string - Nơi cấp giấy tờ
+  dienTich: number - Diện tích (m²)
+  giaTriTaiSan: number - Giá trị tài sản
+  thongTinKhac: string - Thông tin khác về tài sản
+  createdBy: string - Người tạo
+  updatedBy: string - Người cập nhật
+  createdAt: datetime - Ngày tạo
+  updatedAt: datetime - Ngày cập nhật
+}
+
+entity LichSuCapNhatHoSo {
+  *lichSuCapNhatId: int <<PK>> - Id bản ghi lịch sử cập nhật, tự động tăng
+  hoSoId: int <<FK>> - ID hồ sơ công chứng
+  truongThongtinCapNhat: string - Trường thông tin cập nhật
+  truongThongTinId: string - Mã trường thông tin cập nhật
+  thayDoi: string - Thông tin thay đổi
+  createdAt: datetime - Ngày tạo
+  updatedAt: datetime - Ngày cập nhật
+  createdBy: string - Người tạo
+  updatedBy: string - Người cập nhật
+}
+
+@enduml
