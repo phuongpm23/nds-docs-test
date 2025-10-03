@@ -14,14 +14,14 @@ Popup hiển thị danh sách lịch sử cập nhật của một hồ sơ đă
 
 <div style="overflow-x:auto">
 
-| Trường thông tin   | Control | Field                 | Bắt buộc (Y/N) | Mô tả                            |
-|:-------------------|:--------|:----------------------|:---------------|:---------------------------------|
-| Thời gian          | text    | updatedAt             | Y              | Thời điểm thực hiện cập nhật     |
-| Người thực hiện    | text    | updatedBy             | Y              | Người thực hiện thay đổi         |
-| Thao tác           | -       | -                     | -              | Cập nhật                         |
-| Thông tin thay đổi | text    | truongThongtinCapNhat | Y              | Tên trường dữ liệu được thay đổi |
-| Giá trị cũ         | text    | giaTriCu              | N              | Giá trị trước khi thay đổi       |
-| Giá trị mới        | text    | giaTriMoi             | N              | Giá trị sau khi thay đổi         |
+| Trường thông tin   | Control  | Field                 | Bắt buộc (Y/N) | Mô tả                            |
+|:-------------------|:---------|:----------------------|:---------------|:---------------------------------|
+| Thời gian          | datetime | updatedAt             | -              | Thời điểm thực hiện cập nhật     |
+| Người thực hiện    | text     | updatedBy             | -              | Người thực hiện thay đổi         |
+| Thao tác           | text     | thaoTac               | -              | Cập nhật                         |
+| Thông tin thay đổi | text     | truongThongtinCapNhat | -              | Tên trường dữ liệu được thay đổi |
+| Giá trị cũ         | text     | giaTriCu              | -              | Giá trị trước khi thay đổi       |
+| Giá trị mới        | text     | giaTriMoi             | -              | Giá trị sau khi thay đổi         |
 
 </div>
 
@@ -40,11 +40,4 @@ Popup hiển thị danh sách lịch sử cập nhật của một hồ sơ đă
 
 </div>
 
-## Ngoại lệ
-- Không có dữ liệu → Hiển thị thông báo “Không tìm thấy lịch sử cập nhật thông tin đăng ký chữ ký số”.  
-- Lỗi hệ thống → Hiển thị thông báo lỗi, không tải dữ liệu.  
 
-## Liên kết
-- Activity Diagram: [AD_Sign_History.puml]  
-- Form/Screen: [SCR_Sign_List.md], [SCR_Sign_History.md]  
-- Entity liên quan: ENT_LichSuCapNhat  

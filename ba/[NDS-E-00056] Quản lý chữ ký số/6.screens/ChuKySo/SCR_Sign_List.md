@@ -56,8 +56,3 @@ Nơi tập trung để xem và quản lý các chữ ký số.
 | Xem lịch sử                | Button | Hiển thị nếu có quyền, click mở popup lịch sử thay đổi (**UC_Sign_History**)                                 |
 
 </div>
-
-### Menu
-| Tên                     | Loại   | Mô tả                                                                                                                                    |
-|:------------------------|:-------|:-----------------------------------------------------------------------------------------------------------------------------------------|
-| Quản lý chữ ký số | button | Chỉ hiển thị khi người dùng có quyền quản lý chữ ký số, click vào chuyển sang màn hình danh sách chữ ký số (**UC_Sign_List**) |

@@ -10,19 +10,20 @@ Form cho phép chỉnh sửa thông tin một tổ chức hành nghề công ch�
 ## Thành phần
 
 ### Form chỉnh sửa thông tin
-
+- Đổ ra dữ liệu đã lưu
 <div style="overflow-x:auto">
 
-| Trường thông tin       | Control  | Field              | Max length | Bắt buộc (Y/N) | Giá trị mặc định | Cho phép sửa (Y/N) | Mô tả                                                          |
-|:-----------------------|:---------|:-------------------|:-----------|:---------------|:-----------------|:-------------------|:---------------------------------------------------------------|
-| Tên tổ chức công chứng | text     | tenToChucCongChung | 250        | Y              | -                | Y                  | Đổ ra dữ liệu đã lưu                                           |
-| Sở Tư pháp quản lý     | text     | soTuPhap           | 250        | Y              | -                | N                  | Đổ ra tên Sở Tư pháp quản lý. Disable, không cho phép thay đổi |
-| Địa chỉ                | text     | diaChi             | 500        | Y              | -                | Y                  | Đổ ra dữ liệu đã lưu chính                                     |
-| Tỉnh/Thành phố         | dropdown | tinhThanhPho       | 250        | Y              | -                | Y                  | Chọn tỉnh/thành phố đã lưu                                     |
-| Phường/Xã              | dropdown | phuongXa           | 250        | Y              | -                | Y                  | Chọn phường/xã đã lưu                                          |
-| Số điện thoại          | text     | soDienThoai        | 50         | N              | -                | Y                  | Đổ ra dữ liệu đã lưu hệ                                        |
-| Email                  | text     | email              | 50         | N              | -                | Y                  | Đổ ra dữ liệu đã lưu                                           |
-| Trạng thái hoạt động   | dropdown | trangThai          | 50          | Y              | -                | Y                  | Chọn trạng thái đã lưu…                                        |
+| Trường thông tin       | Control  | Field              | Max length | Bắt buộc (Y/N) | Giá trị mặc định | Cho phép sửa (Y/N) | Mô tả                                                                                                                                                                                                           |
+|:-----------------------|:---------|:-------------------|:-----------|:---------------|:-----------------|:-------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Tên tổ chức công chứng | text     | tenToChucCongChung | 250        | Y              |                  | Y                  | Điền tên của tổ chức hành nghề công chứng                                                                                                                                                                       |
+| Sở Tư pháp quản lý     | text     | soTuPhap           | 250        | Y              |                  | N                  | Tự động chọn Sở Tư pháp giống với người dùng. Disable, không cho phép thay đổi                                                                                                                                  |
+| Địa chỉ                | text     | diaChi             | 500        | Y              |                  | Y                  | Điền địa chỉ trụ sở chính                                                                                                                                                                                       |
+| Tỉnh/Thành phố         | dropdown | tinhThanhPho       | 250        | Y              |                  | Y                  | Chọn từ danh mục tỉnh/thành phố mới, **BR9.7**                                                                                                                                                                  |
+| Phường/Xã              | dropdown | phuongXa           | 250        | Y              |                  | Y                  | Chọn từ danh mục phường xã mới **BR9.8**,                                                                                                                                                                       |
+| Số điện thoại          | text     | soDienThoai        | 10         | N              |                  | Y                  | **BR9.1**,**BR9.4**                                                                                                                                                                                             |
+| Email                  | text     | email              | 255        | N              |                  | Y                  | **BR9.9**                                                                                                                                                                                                       |
+| Trưởng văn phòng       | dropdown | truongVanPhongId   | 50         | Y              |                  | Y                  | Click vào cho phép chọn công chứng viên từ danh sách (entity CongChungVien), cho phép điền và tìm kiếm theo số giấy tờ/tên công chứng viên, danh sách hiển thị theo cấu trúc "Số giấy tờ - Tên công chứng viên" |
+| Trạng thái hoạt động   | dropdown | trangThai          | 50         | Y              | Đang hoạt động   | Y                  | Chọn trạng thái hoạt động theo danh sách đã liệt kê trong entity                                                                                                                                                |
 
 </div>
 

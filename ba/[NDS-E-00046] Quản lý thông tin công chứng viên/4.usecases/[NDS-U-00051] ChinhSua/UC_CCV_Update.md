@@ -25,7 +25,7 @@
 5. Hệ thống kiểm tra tính hợp lệ của dữ liệu:
    - Nếu hợp lệ: Cập nhật dữ liệu vào bảng **CongChungVien**
    - Thông báo "Chỉnh sửa công chứng viên thành công".
-   - Quay lại danh sách công chứng viên (**UC_CCV_List**).
+   - Mở màn hình chi tiết công chứng viên vừa cập nhật (**UC_CCV_Detail**).
 6. Kết thúc use case.
 
 ## Luồng phụ / Ngoại lệ

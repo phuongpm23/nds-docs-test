@@ -36,7 +36,7 @@
    - Nếu hợp lệ: lưu dữ liệu vào **ENT_ChuKySo** với trạng thái = "Chờ duyệt".
    - Hiển thị thông báo "Đăng ký thông tin chữ ký số thành công".
    - Lịch sử đăng ký thông tin chữ ký số được cập nhật
-   - Quay về danh sách (**UC_Sign_List**).
+   - Mở màn hình chi tiết chữ ký số vừa đăng ký (**UC_Sign_Detail**).
 6. Kết thúc use case.
 
 ## Luồng phụ / Ngoại lệ
@@ -45,7 +45,11 @@
 - Ngày hết hạn < ngày hiệu lực: Hiển thị lỗi "Ngày hết hạn không hợp lệ".
 - File đính kèm sai định dạng: Hiển thị lỗi "File không hợp lệ".
 - Lỗi hệ thống: Hiển thị thông báo lỗi, không lưu dữ liệu.
-- Người dùng chọn **Lưu nháp**: Hệ thống không thực hiện kiểm tra tính đầy đủ của dữ liệu mà chỉ kiểm tra logic, hệ thống lưu thông tin đăng ký chữ ký số với trạng thái là "Mới tạo"
+- Người dùng chọn **Lưu nháp**: 
+   - Hệ thống không thực hiện kiểm tra tính đầy đủ của dữ liệu mà chỉ kiểm tra logic, hệ thống lưu thông tin đăng ký chữ ký số với trạng thái là "Mới tạo".
+   - Hiển thị thông báo "Lưu nh thông tin chữ ký số thành công".
+   - Lịch sử đăng ký thông tin chữ ký số được cập nhật
+   - Mở màn hình chi tiết chữ ký số vừa lưu (**UC_Sign_Detail**) 
 
 ## Hậu điều kiện
 - Nếu thành công: Hồ sơ đăng ký chữ ký số được lưu trong hệ thống.

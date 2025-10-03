@@ -14,20 +14,16 @@ Popup hiển thị lịch sử cập nhật thông tin công chứng viên.
 
 <div style="overflow-x:auto">
 
-| Trường thông tin | Control  | Field                 | Max length | Bắt buộc (Y/N) | Cho phép sửa (Y/N) | Mô tả                      |
-|:-----------------|:---------|:----------------------|:-----------|:---------------|:-------------------|:---------------------------|
-| Thời gian        | datetime | updatedAt             | -          | -              | -                  | Thời điểm thay đổi         |
-| Người thực hiện  | text     | updatedBy             | -          | -              | -                  | Người thực hiện thao tác   |
-| Thao tác         | text     | -                     | -          | -              | -                  | Cập nhật                   |
-| Trường thay đổi  | text     | truongThongtinCapNhat | -          | -              | -                  | Tên trường bị thay đổi     |
-| Giá trị cũ       | text     | giaTriCu              | -          | -              | -                  | Giá trị trước khi thay đổi |
-| Giá trị mới      | text     | giaTriMoi             | -          | -              | -                  | Giá trị sau khi thay đổi   |
+| Trường thông tin   | Control  | Field                 | Bắt buộc (Y/N) | Mô tả                            |
+|:-------------------|:---------|:----------------------|:---------------|:---------------------------------|
+| Thời gian          | datetime | updatedAt             | -              | Thời điểm thực hiện cập nhật     |
+| Người thực hiện    | text     | updatedBy             | -              | Người thực hiện thay đổi         |
+| Thao tác           | text     | thaoTac               | -              | Cập nhật                         |
+| Thông tin thay đổi | text     | truongThongtinCapNhat | -              | Tên trường dữ liệu được thay đổi |
+| Giá trị cũ         | text     | giaTriCu              | -              | Giá trị trước khi thay đổi       |
+| Giá trị mới        | text     | giaTriMoi             | -              | Giá trị sau khi thay đổi         |
 
 </div>
-
-### Thông báo hệ thống
-- Nếu không có dữ liệu: Hiển thị **"Không tìm thấy lịch sử cập nhật công chứng viên"**.  
-- Nếu lỗi hệ thống: Hiển thị **"Không tải được thông tin, vui lòng thử lại"**.  
 
 ## Chức năng
 

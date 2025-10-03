@@ -24,17 +24,6 @@ Nơi tập trung để xem và quản lý công chứng viên trên hệ thống
 
 </div>
 
-### Khác
-- Phân trang 10 bản ghi/trang.  
-- Sắp xếp theo thứ tự thời gian cập nhật từ mới tới cũ nhất.  
-- Nếu không có dữ liệu, hiển thị: **"Không có dữ liệu công chứng viên"**.  
-- Nếu có lỗi tải dữ liệu, hiển thị: **"Không tải được danh sách, vui lòng thử lại"**.  
-
-### Menu
-| Tên                     | Loại   | Mô tả                                                                                                                                    |
-|:------------------------|:-------|:-----------------------------------------------------------------------------------------------------------------------------------------|
-| Quản lý công chứng viên | button | Chỉ hiển thị khi người dùng có quyền quản lý công chứng viên, click vào chuyển sang màn hình danh sách công chứng viên (**UC_CCV_List**) |
-
 ### Chức năng
 
 <div style="overflow-x:auto">

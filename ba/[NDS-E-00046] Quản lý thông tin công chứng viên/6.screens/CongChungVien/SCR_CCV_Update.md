@@ -13,25 +13,26 @@ Form cho phép chỉnh sửa thông tin công chứng viên, hiển thị dữ l
 - Thông tin được tự động điền từ dữ liệu đã lưu
 <div style="overflow-x:auto">
 
-| Trường thông tin                | Control  | Field          | Max length | Bắt buộc (Y/N) | Giá trị mặc định | Cho phép sửa (Y/N) | Mô tả                               |
-|:--------------------------------|:---------|:---------------|:-----------|:---------------|:-----------------|:-------------------|:------------------------------------|
-| Họ và tên                       | text     | hoVaTen        | 250        | Y              | -                | Y                  | Họ và tên công chứng viên           |
-| Ngày sinh                       | date     | ngaySinh       | -          | Y              | -                | Y                  | Ngày sinh chọn từ lịch              |
-| Giới tính                       | dropdown | gioiTinh       | -          | Y              | -                | Y                  | Nam/Nữ                              |
-| Quốc tịch                       | text     | quocTich       | 20         | Y              | Việt Nam         | N                  |                                     |
-| Dân tộc                         | dropdown | danToc         | 20         | N              | -                | Y                  | Chọn từ danh sách dân tộc                                    |
-| Số điện thoại                   | text     | soDienThoai    | 20         | N              | -                | Y                  |                                     |
-| Email                           | text     | email          | 250        | N              | -                | Y                  |                                     |
-| Số giấy tờ (CMND/CCCD/Hộ chiếu) | text     | soGiayTo       | 50         | Y              | -                | Y                  |                                     |
-| Ngày cấp                        | datetime | ngayCap        | -          | Y              | -                | Y                  |                                     |
-| Nơi cấp                         | text     | noiCap         | 500        | Y              | -                | Y                  |                                     |
-| Địa chỉ thường trú (cũ)         | text     | diaChiCu       | 500        | N              | -                | Y                  |                                     |
-| Tỉnh/Thành phố thường trú (cũ)  | dropdown | tinhThanhPhoCu | 250        | N              | -                | Y                  | Chọn từ danh mục tỉnh thành phố cũ  |
-| Phường/Xã thường trú (cũ)       | dropdown | phuongXaCu     | 250        | N              | -                | Y                  | Chọn từ danh mục phường xã cũ       |
-| Địa chỉ thường trú              | text     | diaChi         | 500        | Y              | -                | Y                  |                                     |
-| Tỉnh/Thành phố thường trú       | dropdown | tinhThanhPho   | 250        | Y              | -                | Y                  | Chọn từ danh mục tỉnh thành phố mới |
-| Phường/Xã thường trú            | dropdown | phuongXa       | 250        | Y              | -                | Y                  | Chọn từ danh mục phờng xã mới       |
-| Trạng thái                      | dropdown | trangThai      | 50         | Y              | Đang hành nghề           | Y                  | Đăng ký tập sự, Đang tập sự, Tạm ngừng tập sự, Chấm dứt tập sự, Hoàn thành tập sự, Chờ tiếp nhận bổ nhiệm, Chờ bổ nhiệm, Đã bổ nhiệm, Đang hành nghề, Tạm đình chỉ hành nghề, Đã bổ nhiệm lại, Đã miễn nhiệm, Chờ bổ sung, Đã bổ sung, Từ chối bổ nhiệm, Đã thay đổi nơi tập sự, Chờ tiếp nhận miễn nhiệm, Chờ tiếp nhận bổ nhiệm lại, Từ chối miễn nhiệm, Chờ bổ nhiệm lại, Từ chối bổ nhiệm lại, Chờ miễn nhiệm, Thu hồi thẻ, Chờ cấp thẻ, Từ chối cấp thẻ, Đạt kết quả tập sự|
+| Trường thông tin                | Control  | Field          | Max length | Bắt buộc (Y/N) | Giá trị mặc định | Cho phép sửa (Y/N) | Mô tả                                          |
+|:--------------------------------|:---------|:---------------|:-----------|:---------------|:-----------------|:-------------------|:-----------------------------------------------|
+| Họ và tên                       | text     | hoVaTen        | 250        | Y              | -                | Y                  | Điền họ và tên công chứng viên                 |
+| Ngày sinh                       | date     | ngaySinh       | -          | Y              | -                | Y                  | **BR9.3**                                      |
+| Giới tính                       | dropdown | gioiTinh       | -          | Y              | -                | Y                  | Nam/Nữ                                         |
+| Quốc tịch                       | text     | quocTich       | 20         | Y              | Việt Nam         | N                  |                                                |
+| Dân tộc                         | dropdown | danToc         | 20         | N              | -                | Y                  | Chọn từ danh mục dân tộc                       |
+| Số điện thoại                   | text     | soDienThoai    | 20         | N              | -                | Y                  | **BR9.4**                                      |
+| Email                           | text     | email          | 250        | N              | -                | Y                  |                                                |
+| Loại giấy tờ                    | dropdown | loaiGiayTo     | 50         | Y              | -                | Y                  | Chọn CMND/Căn cước/Căn cước công dân/Hộ chiếu  |
+| Số giấy tờ (CMND/CCCD/Hộ chiếu) | text     | soGiayTo       | 50         | Y              | -                | Y                  | **BR9.10**                                     |
+| Ngày cấp                        | datetime | ngayCap        | -          | Y              | -                | Y                  | **BR9.3**                                      |
+| Nơi cấp                         | text     | noiCap         | 500        | Y              | -                | Y                  |                                                |
+| Địa chỉ thường trú (cũ)         | text     | diaChiCu       | 500        | N              | -                | Y                  |                                                |
+| Tỉnh/Thành phố thường trú (cũ)  | dropdown | tinhThanhPhoCu | 250        | N              | -                | Y                  | Chọn từ danh mục tỉnh thành phố cũ. **BR9.7**  |
+| Phường/Xã thường trú (cũ)       | dropdown | phuongXaCu     | 250        | N              | -                | Y                  | Chọn từ danh mục phường xã cũ. **BR9.8**       |
+| Địa chỉ thường trú              | text     | diaChi         | 500        | Y              | -                | Y                  |                                                |
+| Tỉnh/Thành phố thường trú       | dropdown | tinhThanhPho   | 250        | Y              | -                | Y                  | Chọn từ danh mục tỉnh thành phố mới. **BR9.7** |
+| Phường/Xã thường trú            | dropdown | phuongXa       | 250        | Y              | -                | Y                  | Chọn từ danh mục phờng xã mới. **BR9.8**       |
+| Trạng thái                      | dropdown | trangThai      | 50         | Y              | Đang hành nghề   | Y                  | Lấy trong entity                               |
 
 </div>
 

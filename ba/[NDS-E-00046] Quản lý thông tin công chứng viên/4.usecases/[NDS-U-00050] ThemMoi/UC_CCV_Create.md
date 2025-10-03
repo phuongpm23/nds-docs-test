@@ -25,7 +25,7 @@
 5. Hệ thống kiểm tra tính hợp lệ của dữ liệu:
    - Nếu hợp lệ: Lưu dữ liệu vào ENT **CongChungVien**.
    - Thông báo "Thêm mới công chứng viên thành công".
-   - Quay lại danh sách công chứng viên (**UC_CCV_List**).
+   - Mở màn hình chi tiết công chứng viên vừa tạo (**UC_CCV_Detail**).
 6. Kết thúc use case.
 
 ## Luồng phụ / Ngoại lệ

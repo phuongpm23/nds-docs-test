@@ -37,8 +37,8 @@ Màn hình hiển thị chi tiết chữ ký số, trạng thái phê duyệt v�
 | Tên         | Loại   | Mô tả                                                                                                                          |
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------------------------|
 | Đóng        | Button | Đóng màn hình, quay lại màn hình danh sách (**SCR_Sign_List**)                                                                     |
-| Duyệt       | Button | Chỉ hiển thị nếu người dùng có quyền phê duyệt → Cập nhật trạng thái = "Đã duyệt" và lưu lịch sử                               |
-| Từ chối     | Button | Chỉ hiển thị nếu người dùng có quyền phê duyệt → Cập nhật trạng thái = "Từ chối" và lưu lịch sử                                |
+| Duyệt       | Button | Chỉ hiển thị nếu người dùng có quyền phê duyệt và trạng thái khác "Đã duyệt" và "Từ chối"                               |
+| Từ chối     | Button | Chỉ hiển thị nếu người dùng có quyền phê duyệt và trạng thái khác "Đã duyệt" và "Từ chối"                                |
 | Chỉnh sửa   | Button | Chỉ hiển thị nếu người dùng có quyền chỉnh sửa → mở màn hình chỉnh sửa, Chỉ hiển thị khi trạng thái là "Mới tạo" hoặc "Chờ duyệt" |
 | Trình duyệt | Button | Chỉ hiển thị nếu người dùng có quyền chỉnh sửa và trạng thái là "Mới tạo" → Cập nhật trạng thái = "Chờ duyệt" và lưu lịch sử   |
 
@@ -47,14 +47,3 @@ Màn hình hiển thị chi tiết chữ ký số, trạng thái phê duyệt v�
 ## Thông báo hệ thống
 - Không có dữ liệu: Hiển thị **"Không tìm thấy thông tin chữ ký số"**.  
 - Lỗi hệ thống: Hiển thị **"Không tải được thông tin, vui lòng thử lại"**.  
-- Duyệt thành công: **"Đăng ký chữ ký số đã được duyệt"**.  
-- Từ chối thành công: **"Đăng ký chữ ký số đã bị từ chối"**.  
-
-## Ngoại lệ
-- Người dùng không có quyền phê duyệt: Ẩn nút **Duyệt** và **Từ chối**.  
-- Lỗi hệ thống khi cập nhật trạng thái: Hiển thị thông báo lỗi chung.  
-
-## Liên kết
-- Activity Diagram: [AD_Sign_Detail.puml]  
-- Form/Screen: [SCR_Sign_Detail.md]  
-- Entity liên quan: ENT_ChuKySo  

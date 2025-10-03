@@ -20,8 +20,8 @@ Form cho phép chỉnh sửa thông tin chữ ký số đã có.
 | Loại chữ ký số   | dropdown | loaiChuKySo     | -          | Y              | Cá nhân          | Y                  | Cá nhân / Tổ chức                                                                               |
 | Nhà cung cấp     | dropdown | nhaCungCap      | 50        | Y              | -                | Y                  | Chọn nhà cung cấp dịch vụ từ danh sách: FPT CA, VNPT CA, CMC CA, Viettel CA                     |
 | Số serial        | text     | soSerial        | 100        | Y              | -                | Y                  | Điền số serial                                                                                  |
-| Ngày hiệu lực    | datetime | ngayHieuLuc     | -          | Y              | -                | Y                  | Ngày bắt đầu hiệu lực của chữ ký số                                                             |
-| Ngày hết hạn     | datetime | ngayHetHan      | -          | Y              | -                | Y                  | Ngày hết hạn, phải lớn hơn ngày hiệu lực                                                        |
+| Ngày hiệu lực    | datetime | ngayHieuLuc     | -          | Y              | -                | Y                  | Ngày bắt đầu hiệu lực của chữ ký số Chọn từ lịch                                                            |
+| Ngày hết hạn     | datetime | ngayHetHan      | -          | Y              | -                | Y                  | Ngày hết hạn, Chọn từ lịch phải lớn hơn ngày hiệu lực                                                        |
 | File đính kèm    | button   | -               | -          | Y              | -                | Y                  | button Upload file đính kèm (định dạng PDF)                                             |
 | Ghi chú          | textarea | ghiChu          | 500       | N              | -                | Y                  | Ghi chú dùng
 

@@ -25,7 +25,7 @@
 5. Hệ thống kiểm tra tính hợp lệ của dữ liệu:
    - Nếu hợp lệ: Cập nhật dữ liệu vào bảng **ENT_ToChucCongChung**.
    - Thông báo "Chỉnh sửa tổ chức công chứng thành công".
-   - Quay lại danh sách tổ chức công chứng (**UC_Org_List**).
+   - Mở màn hình tổ chức công chứng vừa chỉnh sửa (**UC_Org_Detail**).
 6. Kết thúc use case.
 
 ## Luồng phụ / Ngoại lệ 

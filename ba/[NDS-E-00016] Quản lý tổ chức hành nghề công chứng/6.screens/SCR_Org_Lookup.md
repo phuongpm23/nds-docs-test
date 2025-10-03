@@ -24,17 +24,6 @@ Màn hình tra cứu tổ chức công chứng
 
 </div>
 
-### Khác
-- Phân trang 10 bản ghi/trang.  
-- Sắp xếp theo thứ tự thời gian cập nhật từ mới tới cũ nhất.  
-- Nếu không có dữ liệu, hiển thị: **"Không tìm thấy thông tin tổ chức công chứng"**.  
-- Nếu có lỗi tải dữ liệu, hiển thị: **"Không tải được thông tin, vui lòng thử lại"**.  
-
-### Menu
-| Tên                        | Loại   | Mô tả                                                           |
-|:---------------------------|:-------|:----------------------------------------------------------------|
-| Tra cứu tổ chức công chứng | Button | Chỉ hiển thị khi người dùng có quyền tra cứu tổ chức công chứng |
-
 ### Chức năng
 
 <div style="overflow-x:auto">

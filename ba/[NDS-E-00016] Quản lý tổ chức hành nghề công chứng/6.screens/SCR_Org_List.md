@@ -22,18 +22,7 @@ Nơi tập trung để xem và quản lý tổ chức công chứng trên hệ t
 | Trạng thái hoạt động   | text    | trangThai          | -          | -              |                  | -                  | Hiển thị trạng thái đã lưu
 | Chức năng              | icon    | -                  | -          | -              |                  | -                  | Hiển thị danh sách nút: Xem chi tiết, sửa, xóa, xem lịch sử (tùy theo phân quyền) |
 
-</div>
-
-### Khác
-- Phân trang 10 bản ghi/trang.  
-- Sắp xếp theo thứ tự thời gian cập nhật từ mới tới cũ nhất.  
-- Nếu không có dữ liệu, hiển thị: **"Không có dữ liệu tổ chức công chứng"**.  
-- Nếu có lỗi tải dữ liệu, hiển thị: **"Không tải được danh sách, vui lòng thử lại"**.  
-
-### Menu
-| Tên                        | Loại   | Mô tả                                                                                                                 |
-|:---------------------------|:-------|:----------------------------------------------------------------------------------------------------------------------|
-| Quản lý tổ chức công chứng | Button | Chỉ hiển thị khi người dùng có quyền xem danh sách tổ chức công chứng, bấm vào mở màn hình quản lý tổ chức công chứng |
+</div> 
 
 ### Chức năng
 

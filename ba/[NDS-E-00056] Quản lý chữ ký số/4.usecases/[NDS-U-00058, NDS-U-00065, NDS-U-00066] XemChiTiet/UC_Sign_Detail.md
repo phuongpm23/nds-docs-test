@@ -34,7 +34,7 @@
 2. Người dùng truy cập trang chi tiết thông tin đăng ký chữ ký số băng cách click vào biểu tượng xem chi tiết 1 thông tin đăng ký chữ ký số trong danh sách
 3. Nếu người dùng có quyền xem thông tin đăng ký chữ ký số, Hệ thống truy vấn thông tin đăng ký chữ ký số theo ID (**ENT_ChuKySo**).
 4. Hệ thống hiển thị màn hình chi tiết thông tin đăng ký chữ ký số (**SCR_Sign_Detail**) bao gồm các thông tin
-    - Công chứng viên
+   - Công chứng viên
    - Gói đăng ký
    - Nhà cung cấp
    - Mã chứng thư
@@ -46,14 +46,18 @@
    - Thời gian duyệt
 5. Hệ thống hiển thị các nút chức năng.
 - Biểu tượng quay lại và nút đóng => Bấm vào chuyển về màn hình danh sách thông tin đăng ký chữ ký số (**SCR_Sign_List**)
-- Các nút chức năng: Duyệt, Từ chối => Mô tả trong (**SCR_Sign_Detail**)
-6. Người dùng có quyền phê duyệt thông tin đăng ký click vào nút Duyệt, hệ thống đổi trạng thái đăng ký chữ ký số thành "Đã duyệt". Hệ thống cập nhật vào lịch sử
+- Các nút chức năng: Duyệt, Từ chối => Mô tả hiển thị trong (**SCR_Sign_Detail**)
+6. Người dùng có quyền phê duyệt thông tin đăng ký click vào nút Duyệt, hệ thống đổi trạng thái đăng ký chữ ký số thành "Đã duyệt". 
+   - Hệ thống thông báo "Duyệt chữ ký số thành công"
+   - Hệ thống cập nhật vào lịch sử
 7. Kết thúc Use case
 
 ## Luồng phụ / ngoại lệ
 - Không có dữ liệu: Hiển thị "Không tìm thấy thông tin đăng ký chữ ký số".
 - Lỗi hệ thống: Hiển thị thông báo "Không tải được thông tin, vui lòng thử lại".
-- Người dùng có quyền phê duyệt thông tin đăng ký click vào nút Từ chối, hệ thống đổi trạng thái đăng ký chữ ký số thành "Từ chối". Hệ thống cập nhật vào lịch sử
+- Người dùng có quyền phê duyệt thông tin đăng ký click vào nút Từ chối, hệ thống đổi trạng thái đăng ký chữ ký số thành "Từ chối". 
+   - Hệ thống thông báo "Từ chối duyệt chữ ký số thành công"
+   - Hệ thống cập nhật vào lịch sử
 - Người dùng có quyền chỉnh sửa, click nút chỉnh sửa, hệ thống đóng màn hình chi tiết và mở màn hình chỉnh sửa (**UC_Sign_Update**)
 
 ## Hậu điều kiện

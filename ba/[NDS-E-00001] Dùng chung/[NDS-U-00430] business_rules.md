@@ -2,7 +2,7 @@
 
 Tài liệu này mô tả **các quy chuẩn nghiệp vụ chung** áp dụng cho toàn bộ các tính năng trong hệ thống.  
 
-## 1. Phân trang dữ liệu
+## BR1. Phân trang dữ liệu
 
 | Nội dung          | Quy chuẩn nghiệp vụ                                                                                                                                                          |
 |-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -12,15 +12,15 @@ Tài liệu này mô tả **các quy chuẩn nghiệp vụ chung** áp dụng ch
 | Thông tin bổ sung | Luôn hiển thị tổng số bản ghi và tổng số trang. Hiển thị theo định dạng ""STT bản ghi đầu tiên của trang" - "STT bản ghi cuối cuối cùng trang" trên "tổng số lượng bản ghi"" |
 
 
-## 2. Hiển thị danh sách
+## BR2. Hiển thị danh sách
 
 | Nội dung | Quy chuẩn nghiệp vụ |
 |----------|----------------------|
-| Thứ tự hiển thị | Mặc định thứ tự hiển thị là theo thời gian cập nhật từ mới tới cũ nhất. |
+| Thứ tự hiển thị | Mặc định thứ tự hiển thị là theo thời gian cập nhật từ mới tới cũ nhất. Nếu có thay đổi về thứ tự, sẽ mô tả trong Usecase |
 | Thông tin hiển thị | Thông tin nào bị trống hoặc không có dữ liệu, hiện dấu "-". Thông tin nào dài quá 2 dòng, chỉ hiển thị 1 phần thông tin, hiển thị biểu tượng "...", hover vào hiển thị chi tiết |
-| Hiển thị ngày | Hiển thị ngày theo định dạng dd/mm/yyyy hh:mm|
+| Hiển thị ngày | Hiển thị ngày theo định dạng dd/mm/yyyy hh:mm nếu là datetime hoặc dd/mm/yyyy nếu là date|
 
-## 3. Tìm kiếm và lọc
+## BR3. Tìm kiếm và lọc
 
 | Nội dung       | Quy chuẩn nghiệp vụ                                                                                                                                                                                                                                                                                                                                                                                         |
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -29,7 +29,7 @@ Tài liệu này mô tả **các quy chuẩn nghiệp vụ chung** áp dụng ch
 | Ghi nhớ bộ lọc | Hệ thống tự động giữ lại bộ lọc sau khi người dùng chuyển trang hoặc tải lại                                                                                                                                                                                                                                                                                                                                |
 
 
-## 4. Xuất Excel
+## BR4. Xuất Excel
 
 | Nội dung       | Quy chuẩn nghiệp vụ                                                                                |
 |----------------|----------------------------------------------------------------------------------------------------|
@@ -40,16 +40,16 @@ Tài liệu này mô tả **các quy chuẩn nghiệp vụ chung** áp dụng ch
 | Định dạng cột  | Ngày hiển thị `dd/MM/yyyy` hoặc `dd/MM/yyyy HH:mm`, số tiền có dấu phân cách hàng nghìn                                    |
 
 
-## 5. File đính kèm
+## BR5. File đính kèm
 
 | Nội dung           | Quy chuẩn nghiệp vụ                                                                                            |
 |--------------------|----------------------------------------------------------------------------------------------------------------|
 | Định dạng cho phép | Tùy từng trường hợp cụ thể sẽ mô tả trong chi tiết                                                             |
-| Dung lượng         | Tối đa 10MB/file                                                                                               |
+| Dung lượng         | Tối đa 10MB/file, nếu có thay đổi sẽ quy định rõ trong usecase hoặc screen                                                                                               |
 | Xem file           | Đối với file PDF, khi click vào tên file sẽ mở tab mới của trình duyệt để hiển thị file. Đối với file ảnh, hiển thị màn hình preview ảnh |
 
 
-## 6. Nhật ký cập nhật (Audit log)
+## BR6. Nhật ký cập nhật (Audit log)
 
 | Nội dung           | Quy chuẩn nghiệp vụ                                                           |
 |--------------------|-------------------------------------------------------------------------------|
@@ -57,33 +57,38 @@ Tài liệu này mô tả **các quy chuẩn nghiệp vụ chung** áp dụng ch
 | Thông tin bắt buộc | Người thực hiện, ngày giờ, trường thông tin thay đổi, giá trị cũ, giá trị mới |
 | Truy xuất          | Người quản trị có thể xem lại lịch sử thay đổi theo từng bản ghi              |
 
-## 7. Phần đầu trang 
+## BR7. Phần đầu trang 
 | Nội dung            | Quy chuẩn nghiệp vụ                                                                                                                                        |
 |---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Thông tin tài khoản | Luôn hiển thị Họ và tên của người dùng + chức vụ. Hiển thị ảnh nếu có, nếu không sẽ hiển thị ảnh mặc định, click vào sẽ mở trang quản lý tài khoản cá nhân |
 | Biểu tượng menu     | Mặc định hiển thị menu chi tiết, bấm vào biểu tượng này sẽ đóng menu, thực hiện lại sẽ mở menu                                                             |
 
 
-## 8. Menu/Danh mục chức năng hệ thống
+## BR8. Menu/Danh mục chức năng hệ thống
 | Nội dung                     | Quy chuẩn nghiệp vụ                                                               |
 |------------------------------|-----------------------------------------------------------------------------------|
-| Bảng điều khiển              | Hiển thị khi người dùng có quyền, click vào mở trang dashboard                    |
+| Trang chủ                    | Hiển thị khi người dùng có quyền, click vào mở trang trang chủ                    |
+| Quản lý hồ sơ công chứng     | Hiển thị khi người dùng có quyền, click vào mở trang danh sách hồ sơ công chứng   |
 | Quản lý công chứng viên      | Hiển thị khi người dùng có quyền, click vào mở trang danh sách công chứng viên    |
 | Quản lý tổ chức công chứng   | Hiển thị khi người dùng có quyền, click vào mở trang danh sách tổ chức công chứng |
 | Quản lý chữ ký số            | Hiển thị khi người dùng có quyền, click vào mở trang danh sách chữ ký số          |
-| Quản lý hồ sơ công chứng     | Hiển thị khi người dùng có quyền, click vào mở trang danh sách hồ sơ công chứng   |
 | Tra cứu                      | Hiển thị khi người dùng có quyền, click vào đổ xuống danh mục tra cứu             |
 | Tra cứu - Công chứng viên    | Hiển thị khi người dùng có quyền, click vào mở trang tra cứu công chứng viên      |
 | Tra cứu - Tổ chức công chứng | Hiển thị khi người dùng có quyền, click vào mở trang tra cứu tổ chức công chứng   |
 
-## 9. Nhập thông tin
-| Nội dung                | Quy chuẩn nghiệp vụ                                                                                                                                                                          |
-|-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Kiểm tra dữ liệu        | Nếu trường thông tin bắt buộc không được nhập, hoặc sai định dạng dữ liệu, hệ thống hiển thị cảnh báo ngay dưới ô nhập                                                                       |
-| Ngày sinh, ngày cấp     | Chọn từ lịch, thông báo lỗi thông tin không hợp lệ ngay dưới ô nhập nếu lớn hơn hoặc bằng ngày hiện tại                                                                                      |
-| Số điện thoại           | Định dạng số Việt Nam                                                                                                                                                                        |
-| Input lựa chọn/dropdown | Click vào, hệ thống hiển thị mặc định 5 giá trị, có thể scroll xuống để hiển thị thêm. Hiển thị ô điền thông tin tìm kiếm, khi người dùng điền, hệ thống lọc giá trị để chọn theo từ đã điền |
-| Quy tắc click nút tab   | Gõ tab, hệ thống tự động chuyển từ field này sang field kế tiếp, từ trái sang phải, từ trên xuống . Nếu tab ở input lựa chọn, chọn ngay giá trị đầu tiên                                     |
+## BR9. Nhập thông tin
+| STT | Nội dung                | Quy chuẩn nghiệp vụ                                                                                                                                                                                                                                     |
+|-----|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1   | Kiểm tra định dạng      | Nếu trường thông tin sai định dạng dữ liệu, hệ thống hiển thị cảnh báo ngay dưới ô là "Sai định dạng thông tin". Áp dụng cho toàn bộ form trên hệ thống                                                                                                    |
+| 2   | Kiểm tra bắt buộc       | Nếu trường thông tin bắt buộc không được nhập khi bấm lưu, hệ thống hiển thị cảnh báo ngay dưới ô là "Nhập thông tin bắt buộc". Áp dụng cho toàn bộ form trên toàn hệ thống                                                                                |
+| 3   | Ngày sinh, ngày cấp     | Chọn từ lịch, không cho phép chọn ngày lớn hơn ngày hiện tại                                                                                                                                                                                            |
+| 4   | Số điện thoại           | Hệ thống cho phép nhập theo cả dạng `0xxxxxxxxx` hoặc `+84xxxxxxxxx`.Nếu nhập `+84` thì tự động chuyển thành `0`.Định dạng: Đủ 10 chữ số với di động, , không cho phép ký tự đặc biệt (`-`, khoảng trắng,…), với cố định 10-11 chữ số                   |
+| 5   | Input lựa chọn/dropdown | Click vào, hệ thống hiển thị mặc định 5 giá trị nếu có nhiều hơn 5, có thể scroll xuống để hiển thị thêm. Hiển thị ô điền thông tin tìm kiếm, khi người dùng điền, hệ thống lọc giá trị để chọn theo từ đã điền. Áp dụng cho toàn bộ form trên hệ thống |
+| 6   | Quy tắc click nút tab   | Gõ tab, hệ thống tự động chuyển từ field này sang field kế tiếp, từ trái sang phải, từ trên xuống . Nếu tab ở input lựa chọn, chọn ngay giá trị đầu tiên. áp dụng cho toàn bộ form trên hệ thống                                                        |
+| 7   | Tỉnh/Thành phố          | Chọn phường/xã từ danh mục hành chính quốc gia cũ/mới chi tiết trong screen, danh sách hiển thị theo tỉnh thành đã chọn. Nếu chưa chọn tỉnh thành, mặc định không hiện lựa chọn, Max length 250                                                         |
+| 8   | Phường/Xã               | Chọn tỉnh/thành phố từ danh mục hành chính quốc gia cũ/mới chi tiết trong screen, sau khi chọn sẽ cập nhật danh sách phường xã tương ứng với tỉnh, Max length 250 
+| 9   | Email               |     Email luôn có cấu trúc TênNgườiDùng@TênMiền.Đuôi. Max length 255                                               |
+| 10   | Số giấy tờ cá nhân               | Chỉ cho phép chữ số **0-9**, không chưa khoảng trắng, dấu cách, ký tự đặc biệt. Loại CMND: Chỉ cho phép chữ số, bắt buộc có 9 số. Loại Căn cước/CCCD: Bắt buộc 12 số. Hộ Chiếu: Cho phép thêm ký tự từ **A-Z**, tối đa 8 ký tự                                                |
 
 ## 10. Popup
 | Nội dung       | Quy chuẩn nghiệp vụ                                                |
