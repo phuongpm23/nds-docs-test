@@ -35,8 +35,6 @@ entity ToChucCongChung {
     Chờ cấp Giấy ĐKHĐ, Từ chối cấp Giấy ĐKHĐ, Đã hợp nhất, Đã thành lập, 
     Từ chối thành lập, Tạm ngưng hoạt động, 
     Thu hồi Giấy ĐKHĐ, Thay đổi nội dung ĐKHĐ, Đã chuyển đổi, Đã sáp nhập
-  createdAt: datetime - ngày tạo
-  updatedAt: datetime - ngày cập nhật
 }
 
 @enduml

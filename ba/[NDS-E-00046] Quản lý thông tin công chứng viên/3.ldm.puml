@@ -29,11 +29,6 @@ entity CongChungVien {
   trangThai: string - Danh sách trạng thái
   soThe: string - Số thẻ công chứng viên
   toChucCongChungId: int - Tổ chức công chứng hiện tại
-  createdBy: string - Người tạo
-  updatedBy: string - Người cập nhật
-  createdAt: datetime - Ngày tạo
-  updatedAt: datetime - Ngày cập nhật
-  
 }
 
 entity ChungChiHanhNghe {
@@ -46,10 +41,6 @@ entity ChungChiHanhNghe {
   donViCap: string - Đơn vị cấp
   trangThai: string - Trạng thái chứng chỉ
   fileDinhKemId: string - ID File đính kèm
-  createdBy: string - Người tạo
-  updatedBy: string - Người cập nhật
-  createdAt: datetime - Ngày tạo
-  updatedAt: datetime - Ngày cập nhật
 }
 
 entity LichSuCapNhat {
