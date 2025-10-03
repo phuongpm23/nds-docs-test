@@ -23,10 +23,6 @@ entity HoSoCongChung {
   hoSoLuuTruDienTu: string - Link hồ sơ lưu trữ điện tử
   cacTaiLieuKhac: string - Link các tài liệu khác
   trangThai: string - Trạng thái hồ sơ
-  createdBy: string - Người tạo
-  updatedBy: string - Người cập nhật
-  createdAt: datetime - Ngày tạo
-  updatedAt: datetime - Ngày cập nhật
 }
 
 entity NguoiThamGiaGiaoDichCaNhan {
@@ -40,11 +36,7 @@ entity NguoiThamGiaGiaoDichCaNhan {
   soDienThoai: string - Số điện thoại
   email: string - Email
   loaiBenThamGia: string - Loại bên tham gia (Bên A, Bên B, Bên liên quan)
-  createdBy: string - Người tạo
-  updatedBy: string - Người cập nhật
-  createdAt: datetime - Ngày tạo
-  updatedAt: datetime - Ngày cập nhật
-}
+
 
 entity NguoiThamGiaGiaoDichToChuc {
   *nguoiThamGiaToChucId: int <<PK>> - ID bản ghi, tự động tăng

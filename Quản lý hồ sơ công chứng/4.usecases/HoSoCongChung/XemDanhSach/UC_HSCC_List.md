@@ -1,14 +1,20 @@
 # Use Case: UC_HSCC_List (Xem danh sách hồ sơ công chứng)
 
 ## User Story
-- Với vai trò là **Chuyên viên tại Sở Tư pháp/Lãnh đạo Sở Tư pháp/Lãnh đạo Bộ Tư pháp/Công chứng viên/Nhân viên TCHNCC**, tôi muốn có thể xem danh sách hồ sơ công chứng theo phạm vi quyền hạn của mình để nắm được thông tin tổng quan về các hồ sơ công chứng.
+- Với vai trò là **Chuyên viên tại Sở Tư pháp/Lãnh đạo Sở Tư pháp/Lãnh đạo Phòng HCBTTP tại Sở TP**, tôi muốn có thể xem danh sách hồ sơ công chứng của các tổ chức công chứng thuộc phạm vi quản lý của Sở Tư pháp để nắm được thông tin tổng quan về các hồ sơ công chứng.
+- Với vai trò là **Lãnh đạo Bộ Tư pháp/Lãnh đạo Cục Bổ trợ tư pháp/Chuyên viên Cục Bổ trợ tư pháp**, tôi muốn có thể xem danh sách hồ sơ công chứng của toàn bộ hệ thống để nắm được thông tin tổng quan về các hồ sơ công chứng.
+- Với vai trò là **Công chứng viên/Nhân viên TCHNCC**, tôi muốn có thể xem danh sách hồ sơ công chứng của tổ chức mình để nắm được thông tin tổng quan về các hồ sơ công chứng.
 
 ## Acceptance Criteria
 - Hệ thống hiển thị danh sách hồ sơ công chứng theo phạm vi quyền hạn của người dùng.
 - Danh sách hiển thị các thông tin cơ bản của hồ sơ công chứng.
-- Hệ thống hỗ trợ phân trang danh sách hồ sơ.
-- Hệ thống hỗ trợ sắp xếp theo các cột thông tin.
-- Người dùng có thể truy cập chi tiết từng hồ sơ từ danh sách.
+- Nếu số lượng bản ghi vượt quá giới hạn hiển thị, hệ thống phải cung cấp phân trang (10 bản ghi 1 trang).
+- Hỗ trợ xuất (Export) danh sách theo điều kiện đã tìm  (chi tiết trong UC_HSCC_Export).
+- Mỗi dòng có action: Xem chi tiết, Sửa, Xóa, Xem lịch sử (tuỳ quyền).  
+- Nếu có lỗi tải dữ liệu, hiển thị thông báo lỗi.
+<!-- - Danh sách hồ sơ công chứng hiển thị theo thứ tự thời gian cập nhật từ mới tới cũ nhất. -->
+- Hệ thống cho phép tìm kiếm hồ sơ công chứng (chi tiết trong UC_HSCC_Search).    
+- Nếu không có công chứng viên nào trong hệ thống, hiển thị thông báo “Không có dữ liệu hồ sơ công chứng”.
 
 ## Tác nhân chính
 - Chuyên viên tại Sở Tư pháp
@@ -22,7 +28,7 @@
 - Người dùng có quyền "Xem danh sách hồ sơ công chứng".
 
 ## Luồng chính
-1. Người dùng chọn chức năng **Danh sách hồ sơ công chứng** từ menu chính.
+1. Người dùng chọn chức năng **Quản lý hồ sơ công chứng** từ menu chính.
 2. Hệ thống xác định phạm vi dữ liệu hiển thị theo quyền của người dùng:
    - Chuyên viên/Lãnh đạo Sở Tư pháp: Xem hồ sơ trên địa bàn tỉnh/thành phố
    - Lãnh đạo Bộ Tư pháp/Cục BTP: Xem hồ sơ toàn quốc hoặc theo địa phương được chỉ định

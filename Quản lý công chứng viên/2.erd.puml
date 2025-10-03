@@ -4,17 +4,15 @@ left to right direction
 entity CongChungVien
 entity ChungChiHanhNghe
 entity ChuKySo
-entity LichSuCapNhatCCV
-entity LichSuCapNhatChuKySo
-entity LichSuCapNhatChungChi
+entity LichSuCapNhat
 entity ToChucCongChung
 
-CongChungVien ||..o{ ChuKySo
+CongChungVien ||..{ ChuKySo
 CongChungVien ||..|| ChungChiHanhNghe
 ToChucCongChung ||..{ CongChungVien
-ChuKySo ||..{ LichSuCapNhatChuKySo
-CongChungVien ||..{ LichSuCapNhatCCV
-ChungChiHanhNghe ||..{ LichSuCapNhatChungChi
+ChuKySo ||..{ LichSuCapNhat
+CongChungVien ||..{ LichSuCapNhat
+ChungChiHanhNghe ||..{ LichSuCapNhat
 
 @enduml
 

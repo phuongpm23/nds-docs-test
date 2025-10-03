@@ -26,7 +26,7 @@
 ## Luồng chính
 1. Người dùng truy cập thành công màn hình danh sách công chứng viên (**SCR_CCV_List**)
 2. Người dùng truy cập trang lịch sử cập nhật công chứng viên băng cách click vào biểu tượng xem lịch sử cập nhật 1 công chứng viên trong danh sách
-3. Hệ thống truy vấn lịch sử cập nhật công chứng viên theo ID (**ENT_LichSuCapNhatCCV**).
+3. Hệ thống truy vấn lịch sử cập nhật công chứng viên theo ID (**ENT_LichSuCapNhat**).
 4. Hệ thống hiển thị popup lịch sử cập nhật công chứng viên (**SCR_CCV_History**) bao gồm các thông tin
     - Thời gian
     - Người thực hiện
@@ -49,4 +49,4 @@
 ## Liên kết
 - Activity Diagram: [AD_CCV_History.puml]
 - Form/Screen: [SCR_CCV_History.md]
-- Entity liên quan: ENT_LichSuCapNhatCCV
+- Entity liên quan: ENT_LichSuCapNhat

@@ -48,9 +48,9 @@ Nơi tập trung để xem và quản lý công chứng viên trên hệ thống
 | Ô điền tên tổ chức công chứng | input    | Điền thông tin để tìm kiếm (**UC_CCV_Search**)                                                                                   |
 | Ô chọn trạng thái             | dropdown | Chọn trạng thái từ danh sách trạng thái hoạt động của công chứng viên (Giống với SCR_CCV_Create) để tìm kiếm (**UC_CCV_Search**) |
 | Nút xuất danh sách            | Button   | Hiển thị nếu có quyền, click sẽ xuất danh sách theo điều kiện đã tìm (UC_CCV_Export)                                             |
-| Nút thêm mới                  | Button   | Hiển thị nếu có quyền, click sẽ mở popup thêm công chứng viên (UC_CCV_Create)                                                    |
-| Biểu tượng xem chi tiết       | Button   | Hiển thị nếu có quyền, click sẽ mở popup xem chi tiết công chứng viên (UC_CCV_Detail)                                            |
-| Biểu tượng sửa                | Button   | Hiển thị nếu có quyền, click sẽ mở popup chỉnh sửa công chứng viên (UC_CCV_Update)                                               |
+| Nút thêm mới                  | Button   | Hiển thị nếu có quyền, click sẽ mở màn hình thêm công chứng viên (UC_CCV_Create)                                                    |
+| Biểu tượng xem chi tiết       | Button   | Hiển thị nếu có quyền, click sẽ mở màn hình xem chi tiết công chứng viên (UC_CCV_Detail)                                            |
+| Biểu tượng sửa                | Button   | Hiển thị nếu có quyền, click sẽ mở màn hình chỉnh sửa công chứng viên (UC_CCV_Update)                                               |
 | Biểu tượng xóa                | Button   | Hiển thị nếu có quyền, click sẽ mở popup xác nhận xóa công chứng viên (UC_CCV_Delete)                                            |
 | Biểu tượng lịch sử cập nhật   | Button   | Hiển thị nếu có quyền, click sẽ mở popup xem lịch sử cập nhật thông tin công chứng viên (UC_CCV_History)                         |
 

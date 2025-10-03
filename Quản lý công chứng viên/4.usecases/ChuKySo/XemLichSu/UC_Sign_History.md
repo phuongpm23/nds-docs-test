@@ -26,8 +26,8 @@
 ## Luồng chính
 1. Người dùng truy cập thành công màn hình danh sách thông tin đăng ký chữ ký số (**SCR_Sign_List**)
 2. Người dùng truy cập trang lịch sử cập nhật thông tin đăng ký chữ ký số băng cách click vào biểu tượng xem lịch sử cập nhật 1 thông tin đăng ký chữ ký số trong danh sách
-3. Hệ thống truy vấn lịch sử cập nhật thông tin đăng ký chữ ký số theo ID (**ENT_LichSuCapNhatChuKySo**).
-4. Hệ thống hiển thị popup lịch sử cập nhật thông tin đăng ký chữ ký số (**SCR_Sign_History**) bao gồm các thông tin
+3. Hệ thống truy vấn lịch sử cập nhật thông tin đăng ký chữ ký số theo ID (**ENT_LichSuCapNhat**).
+4. Hệ thống hiển thị màn hình lịch sử cập nhật thông tin đăng ký chữ ký số (**SCR_Sign_History**) bao gồm các thông tin
     - Thời gian
     - Người thực hiện
     - Thao tác
@@ -35,7 +35,7 @@
     - Giá trị cũ
     - Giá trị mới
 5. Hệ thống hiển thị các nút chức năng.
-- Biểu tượng quay lại và nút đóng => Bấm vào đóng popup, chuyển về màn hình danh sách thông tin đăng ký chữ ký số (**SCR_Sign_List**)
+- Biểu tượng quay lại và nút đóng => Bấm vào đóng, chuyển về màn hình danh sách thông tin đăng ký chữ ký số (**SCR_Sign_List**)
 6. Kết thúc Use case
 
 ## Luồng phụ / ngoại lệ
@@ -49,4 +49,4 @@
 ## Liên kết
 - Activity Diagram: [AD_Sign_History.puml]
 - Form/Screen: [SCR_Sign_History.md]
-- Entity liên quan: ENT_LichSuCapNhatChuKySo
+- Entity liên quan: ENT_LichSuCapNhat

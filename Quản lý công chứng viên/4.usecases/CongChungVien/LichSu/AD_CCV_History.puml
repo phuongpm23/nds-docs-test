@@ -7,7 +7,7 @@ start
 :Người dùng lựa chọn xem lịch sử cập nhật 1 công chứng viên bắng cách bấm vào biểu tượng xem lịch sử;
 :Kiểm tra quyền truy cập;
 if (Có quyền?) then (Yes)
-  :Truy vấn dữ liệu lịch sử cập nhật công chứng viên theo ID thông tin \n(**ENT_LichSuCapNhatCCV**);
+  :Truy vấn dữ liệu lịch sử cập nhật công chứng viên theo ID thông tin \n(**ENT_LichSuCapNhat**);
   if (Có dữ liệu?) then (Yes)
     :Hiển thị thông tin lịch sử cập nhật công chứng viên \n(**SCR_CCV_History**);
     stop

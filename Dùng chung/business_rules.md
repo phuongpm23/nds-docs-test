@@ -85,7 +85,7 @@ Tài liệu này mô tả **các quy chuẩn nghiệp vụ chung** áp dụng ch
 | Input lựa chọn/dropdown | Click vào, hệ thống hiển thị mặc định 5 giá trị, có thể scroll xuống để hiển thị thêm. Hiển thị ô điền thông tin tìm kiếm, khi người dùng điền, hệ thống lọc giá trị để chọn theo từ đã điền |
 | Quy tắc click nút tab   | Gõ tab, hệ thống tự động chuyển từ field này sang field kế tiếp, từ trái sang phải, từ trên xuống . Nếu tab ở input lựa chọn, chọn ngay giá trị đầu tiên                                     |
 
-## 10. Popup nhập/xác nhận/hiển thị thông tin
+## 10. Popup
 | Nội dung       | Quy chuẩn nghiệp vụ                                                |
 |----------------|--------------------------------------------------------------------|
 | Nút "Đóng"     | Luôn hiển thị trong popup, click vào sẽ hủy thao tác và đóng popup |
