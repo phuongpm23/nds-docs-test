@@ -15,24 +15,25 @@ Hiển thị đầy đủ hồ sơ cá nhân,thông tin hành nghề của công
 
 <div style="overflow-x:auto">
 
-| Trường thông tin                | Control  | Field          | Max length | Bắt buộc (Y/N) | Cho phép sửa (Y/N) | Mô tả                       |
-|:--------------------------------|:---------|:---------------|:-----------|:---------------|:-------------------|:----------------------------|
-| Họ và tên                       | text     | hoVaTen        | -          | -              | -                  | Họ tên công chứng viên      |
-| Ngày sinh                       | datetime | ngaySinh       | -          | -              | -                  | Ngày sinh                   |
-| Giới tính                       | text     | gioiTinh       | -          | -              | -                  | Giới tính                   |
-| Số điện thoại                   | text     | soDienThoai    | -          | -              | -                  | Số điện thoại liên hệ       |
-| Quốc tịch                       | text     | quocTich       | -          | -              | -                  | Quốc tịch                   |
-| Dân tộc                         | text     | danToc         | -          | -              | -                  | Dân tộc                     |
-| Email                           | text     | email          | -          | -              | -                  | Email                       |
-| Số giấy tờ (CMND/CCCD/Hộ chiếu) | text     | soGiayTo       | -          | Y              | -                  | Thông tin giấy tờ định danh |
-| Ngày cấp                        | datetime | ngayCap        | -          | -              | -                  | Ngày cấp giấy tờ định danh  |
-| Nơi cấp                         | text     | noiCap         | -          | -              | -                  | Nơi cấp giấy tờ định danh   |
-| Địa chỉ thường trú (cũ)         | text     | diaChiCu       | -          | -              | -                  | Địa chỉ thường trú          |
-| Tỉnh/Thành phố thường trú (cũ)  | text     | tinhThanhPhoCu | -          | -              | -                  | Thông tin cũ                |
-| Phường/Xã thường trú (cũ)       | text     | phuongXaCu     | -          | -              | -                  | Thông tin cũ                |
-| Địa chỉ thường trú              | text     | diaChiCu       | -          | -              | -                  | Địa chỉ thường trú          |
-| Tỉnh/Thành phố thường trú (mới) | text     | tinhThanhPho   | -          | -              | -                  | Thông tin hiện tại          |
-| Phường/Xã thường trú (mới)      | text     | phuongXa       | -          | -              | -                  | Thông tin hiện tại          |
+| Trường thông tin                | Control  | Field            | Max length | Bắt buộc (Y/N) | Cho phép sửa (Y/N) | Mô tả                                                    |
+|:--------------------------------|:---------|:-----------------|:-----------|:---------------|:-------------------|:---------------------------------------------------------|
+| Ảnh công chứng viên             | image    | anhCongChungVien | -          | -              | -                  | Ảnh công chứng viên (hiển thị ảnh mặc định nếu không có) |
+| Họ và tên                       | text     | hoVaTen          | -          | -              | -                  | Họ tên công chứng viên                                   |
+| Ngày sinh                       | datetime | ngaySinh         | -          | -              | -                  | Ngày sinh                                                |
+| Giới tính                       | text     | gioiTinh         | -          | -              | -                  | Giới tính                                                |
+| Số điện thoại                   | text     | soDienThoai      | -          | -              | -                  | Số điện thoại liên hệ                                    |
+| Quốc tịch                       | text     | quocTich         | -          | -              | -                  | Quốc tịch                                                |
+| Dân tộc                         | text     | danToc           | -          | -              | -                  | Dân tộc                                                  |
+| Email                           | text     | email            | -          | -              | -                  | Email                                                    |
+| Số giấy tờ (CMND/CCCD/Hộ chiếu) | text     | soGiayTo         | -          | Y              | -                  | Thông tin giấy tờ định danh                              |
+| Ngày cấp                        | datetime | ngayCap          | -          | -              | -                  | Ngày cấp giấy tờ định danh                               |
+| Nơi cấp                         | text     | noiCap           | -          | -              | -                  | Nơi cấp giấy tờ định danh                                |
+| Địa chỉ thường trú (cũ)         | text     | diaChiCu         | -          | -              | -                  | Địa chỉ thường trú                                       |
+| Tỉnh/Thành phố thường trú (cũ)  | text     | tinhThanhPhoCu   | -          | -              | -                  | Thông tin cũ                                             |
+| Phường/Xã thường trú (cũ)       | text     | phuongXaCu       | -          | -              | -                  | Thông tin cũ                                             |
+| Địa chỉ thường trú              | text     | diaChiCu         | -          | -              | -                  | Địa chỉ thường trú                                       |
+| Tỉnh/Thành phố thường trú (mới) | text     | tinhThanhPho     | -          | -              | -                  | Thông tin hiện tại                                       |
+| Phường/Xã thường trú (mới)      | text     | phuongXa         | -          | -              | -                  | Thông tin hiện tại                                       |
 
 </div>
 
