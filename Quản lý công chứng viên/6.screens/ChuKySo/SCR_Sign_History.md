@@ -35,7 +35,7 @@ Popup hiển thị danh sách lịch sử cập nhật của một hồ sơ đă
 
 | Tên        | Loại   | Mô tả                                                   |
 | :--------- | :----- | :------------------------------------------------------ |
-| Đóng       | Button | Đóng popup, quay lại màn hình danh sách **SCR_CKS_List** |
+| Đóng       | Button | Đóng popup, quay lại màn hình danh sách **SCR_Sign_List** |
 | Quay lại   | Icon   | Chức năng tương tự nút Đóng                             |
 
 </div>
@@ -45,6 +45,6 @@ Popup hiển thị danh sách lịch sử cập nhật của một hồ sơ đă
 - Lỗi hệ thống → Hiển thị thông báo lỗi, không tải dữ liệu.  
 
 ## Liên kết
-- Activity Diagram: [AD_CKS_History.puml]  
-- Form/Screen: [SCR_CKS_List.md], [SCR_CKS_History.md]  
+- Activity Diagram: [AD_Sign_History.puml]  
+- Form/Screen: [SCR_Sign_List.md], [SCR_Sign_History.md]  
 - Entity liên quan: ENT_LichSuCapNhat  

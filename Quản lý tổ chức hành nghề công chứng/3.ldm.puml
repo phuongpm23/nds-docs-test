@@ -7,11 +7,13 @@ entity ToChucCongChung
 entity ChuKySo
 entity LichSuCapNhatTCHNCC
 
-entity LichSuCapNhatTCHNCC {
+entity LichSuCapNhat {
   *lichSuCapNhatId: int <<PK>> - Id bản ghi lịch sử cập nhật, tự động tăng
+  loaiThaoTac: string - Thêm mới/Cập nhật/Xóa
   truongThongtinCapNhat: string - Trường thông tin cập nhật
   truongThongTinId: string - Mã trường thông tin cập nhật
-  thayDoi: string - Thông tin thay đổi
+  giaTriCu: string - Thông tin giá trị cũ
+  giaTriMoi: string - Thông tin thay đổi
   createdAt: datetime - Ngày tạo
   updatedAt: datetime      - Ngày cập nhật
   createdBy: string - Người tạo

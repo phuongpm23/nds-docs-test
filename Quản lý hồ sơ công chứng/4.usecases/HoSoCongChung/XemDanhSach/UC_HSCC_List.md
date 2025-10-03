@@ -14,7 +14,7 @@
 - Nếu có lỗi tải dữ liệu, hiển thị thông báo lỗi.
 <!-- - Danh sách hồ sơ công chứng hiển thị theo thứ tự thời gian cập nhật từ mới tới cũ nhất. -->
 - Hệ thống cho phép tìm kiếm hồ sơ công chứng (chi tiết trong UC_HSCC_Search).    
-- Nếu không có công chứng viên nào trong hệ thống, hiển thị thông báo “Không có dữ liệu hồ sơ công chứng”.
+- Nếu không có hồ sơ công chứng nào trong hệ thống, hiển thị thông báo “Không có dữ liệu hồ sơ công chứng”.
 
 ## Tác nhân chính
 - Chuyên viên tại Sở Tư pháp

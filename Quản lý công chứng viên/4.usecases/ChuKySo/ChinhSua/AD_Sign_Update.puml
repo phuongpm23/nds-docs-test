@@ -12,11 +12,11 @@ start
       :Cập nhật trạng thái thành "Mới tạo";
       if (Ghi thành công?) then (Có)
         :Thông báo "Lưu nháp thông tin đăng ký chữ ký số thành công";
-        :Chuyển hướng về danh sách\n(**SCR_CKS_List**);
+        :Chuyển hướng về danh sách\n(**SCR_Sign_List**);
         stop
       else (Không)
         :Thông báo lỗi hệ thống;
-        :Ở lại màn hình màn hình\n(**SCR_CKS_Create**);
+        :Ở lại màn hình màn hình\n(**SCR_Sign_Create**);
         stop
       endif
     case (Trình duyệt)
@@ -26,26 +26,26 @@ start
         :Cập nhật trạng thái thành "Chờ duyệt";
           if (Ghi thành công?) then (Có)
             :Thông báo "Trình duyệt thông tin đăng ký chữ ký số thành công";
-            :Chuyển hướng về danh sách\n(**SCR_CKS_List**);
+            :Chuyển hướng về danh sách\n(**SCR_Sign_List**);
             stop
           else (Không)
             :Thông báo lỗi hệ thống;
-            :Ở lại màn hình màn hình\n(**SCR_CKS_Create**);
+            :Ở lại màn hình màn hình\n(**SCR_Sign_Create**);
             stop
           endif
       else (Sai)
         :Thông báo lỗi;
-        :Ở lại màn hình\n(**SCR_CKS_create**);
+        :Ở lại màn hình\n(**SCR_Sign_create**);
         stop
       endif
     case (Đóng)
       :Xác nhận hủy thao tác?;
       if (Đồng ý?) then (Có)
         :Hủy thao tác;
-        :Chuyển hướng về danh sách\n(**SCR_CKS_List**);
+        :Chuyển hướng về danh sách\n(**SCR_Sign_List**);
         stop
       else (Không)
-        :Ở lại màn hình\n(**SCR_CKS_Create**);
+        :Ở lại màn hình\n(**SCR_Sign_Create**);
         stop
       endif
   endswitch
