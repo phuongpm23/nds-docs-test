@@ -1,0 +1,86 @@
+@startuml ldm
+!pragma layout smetana
+left to right direction
+
+entity CongChungVien
+entity ChungChiHanhNghe
+entity LichSuCapNhat
+entity ChuKySo
+
+entity CongChungVien {
+  *congChungVienId: int <<PK>> - Id công chứng viên, tự động tăng
+  loaiGiayTo: string - Loại giấy tờ CMND/Căn Cước/CCCD
+  soGiayTo: string - Số CMND/Căn cước/CCCD 
+  ngayCap: date - Ngày cấp
+  noiCap: string - Nơi cấp
+  hoVaTen: string - Họ và tên công chứng viên
+  ngaySinh: datetime - Ngày tháng năm sinh
+  gioiTinh: int - Nam là 1, Nữ là 2
+  quocTich: string - Quốc tịch
+  danToc: string - Dân tộc
+  diaChi: string - Địa chỉ
+  tinhThanhPho: int - Mã tỉnh thành phố từ 1/7
+  phuongXa: int - Mã phường xã từ 1/7
+  diaChiCu: string - Địa chỉ
+  tinhThanhPhoCu: int - Mã tỉnh thành phố trước 1/7
+  phuongXaCu: int - Mã phường xã cũ trước 1/7
+  anhCongChungVien: string - Link ảnh công chứng viên
+  soDienThoai: string - Số điện thoại của công chứng viên
+  email: string - Email công chứng viên
+  trangThai: string - Danh sách trạng thái
+  soThe: string - Số thẻ công chứng viên
+  toChucCongChungId: int - Tổ chức công chứng hiện tại
+  createdBy: string - Người tạo
+  updatedBy: string - Người cập nhật
+  createdAt: datetime - Ngày tạo
+  updatedAt: datetime - Ngày cập nhật
+  
+}
+
+entity ChungChiHanhNghe {
+  *chungChiId: int <<PK>> - ID bản ghi
+  congChungVienId: int <<Fk>> - ID công chứng viên
+  soChungChi: string - Số chứng chỉ
+  ngayCap: date - Ngày cấp
+  ngayHieuLuc: date - Ngày hiệu lực
+  ngayHetHan: date - Ngày hết hạn
+  donViCap: string - Đơn vị cấp
+  trangThai: string - Trạng thái chứng chỉ
+  fileDinhKemId: string - ID File đính kèm
+  createdBy: string - Người tạo
+  updatedBy: string - Người cập nhật
+  createdAt: datetime - Ngày tạo
+  updatedAt: datetime - Ngày cập nhật
+}
+
+entity ChuKySo {
+  *chuKySoId: int <<PK>> - Id thông tin đăng ký chữ ký số, tự động tăng
+  congChungVienId: int <<Fk>> - Id công chứng viên
+  toChucCongChungId: int <<FK>> - ID tổ chức công chứng
+  soSerial: string - Số serial
+  loaiChuKySo: string - Loại chữ ký số cá nhân/tổ chức
+  ngayHieuLuc: date - Ngày hiệu lực
+  ngayKetThuc: date - Ngày hết hạn
+  nhaCungCap: string - Tên nhà cung cấp
+  trangThai: string - Trạng thái phê duyệt thông tin đăng ký chữ ký số
+  thoiGianGui: datetime - Thời gian gửi thông tin
+  nguoiGui: string - Người gửi thông tin
+  thoiGianDuyet: datetime - Thời gian duyệt
+  nguoiDuyet: string - Người duyệt
+  fileDinhKemId: string - ID link file đính kèm
+}
+
+entity LichSuCapNhat {
+  *lichSuCapNhatId: int <<PK>> - Id bản ghi lịch sử cập nhật, tự động tăng
+  loaiThaoTac: string - Thêm mới/Cập nhật/Xóa
+  truongThongtinCapNhat: string - Trường thông tin cập nhật
+  truongThongTinId: string - Mã trường thông tin cập nhật
+  giaTriCu: string - Thông tin giá trị cũ
+  giaTriMoi: string - Thông tin thay đổi
+  createdAt: datetime - Ngày tạo
+  updatedAt: datetime      - Ngày cập nhật
+  createdBy: string - Người tạo
+  updatedBy: string - Người cập nhật
+}
+
+@enduml

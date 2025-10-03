@@ -37,7 +37,7 @@
     - Truy vấn chính xác theo tên tổ chức công chứng đã chọn
 6. Hệ thống hiển thị danh sách công chứng viên theo kết quả đã truy vấn được bao gồm các thông tin: (STT, Họ và tên, số thẻ, số chứng chỉ hành nghề, tổ chức công chứng đang hành nghề, trạng thái hoạt động, địa chỉ tổ chức công chứng)
 7. Hệ thống hiển thị danh sách công chứng viên theo thứ tự thời gian cập nhật từ mới tới cũ nhất
-8. Người dùng bấm vào xem chi tiết chứng chỉ hành nghề, hệ thống hiển thị popup chi tiết chứng chỉ hành nghề với các thông tin: 
+8. Người dùng bấm vào xem chi tiết chứng chỉ hành nghề (nếu có quyền tra cứu chứng chỉ), hệ thống hiển thị popup chi tiết chứng chỉ hành nghề với các thông tin: 
     - Số chứng chỉ
     - Ngày cấp
     - Nơi cấp

@@ -22,7 +22,7 @@
 - Người dùng có quyền xem danh sách công chứng viên
 
 ## Luồng chính
-1. Người dùng truy cập màn hình danh sách công chứng viên.
+1. Người dùng truy cập màn hình danh sách công chứng viên (**SCR_CCV_List**).
 2. Nếu người dùng thuộc cấp Bộ, hệ thống tải toàn bộ danh sách công chứng viên
 3. Nếu người dùng thuộc cấp Sở, hệ thống tải danh sách công chứng viên thuộc Sở Tư pháp của người dùng
 4. Hệ thống hiển thị màn hình danh sách công chứng viên theo thứ tự thời gian cập nhật từ mới tới cũ nhất (lấy dữ liệu từ ENT_CongChungVien và ENT_ToChucCongChung).
