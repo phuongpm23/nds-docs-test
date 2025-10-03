@@ -54,4 +54,4 @@
 ## Liên kết
 - Activity Diagram: [AD_Sign_Create.puml]
 - Form liên quan: [SCR_Sign_Create.md]
-- Entity liên quan: ChuKySo, CongChungVien, LichSuCapNhatChuKySo
+- Entity liên quan: ChuKySo, CongChungVien, LichSuCapNhat

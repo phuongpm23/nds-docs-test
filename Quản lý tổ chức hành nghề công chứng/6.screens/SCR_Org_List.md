@@ -49,9 +49,9 @@ Nơi tập trung để xem và quản lý tổ chức công chứng trên hệ t
 | Ô chọn tên Sở Tư pháp         | dropdown | Chọn từ danh sách Sở Tư pháp                                                                                                             |
 | Ô chọn trạng thái             | dropdown | Chọn trạng thái từ danh sách trạng thái hoạt động của tổ chức công chứng (Giống với SCR_Org_Create)                                      |
 | Nút xuất danh sách            | Button   | Hiển thị nếu có quyền, click sẽ xuất danh sách theo điều kiện đã tìm (UC_Org_Export)                                                     |
-| Nút thêm mới                  | Button   | Hiển thị nếu có quyền, click sẽ mở popup thêm tổ chức công chứng (UC_Org_Create)                                                         |
-| Biểu tượng xem chi tiết       | Button   | Hiển thị nếu có quyền, click sẽ mở popup xem chi tiết tổ chức công chứng (UC_Org_Detail)                                                 |
-| Biểu tượng sửa                | Button   | Hiển thị nếu có quyền, click sẽ mở popup chỉnh sửa tổ chức công chứng (UC_Org_Update)                                                    |
+| Nút thêm mới                  | Button   | Hiển thị nếu có quyền, click sẽ mở màn hình thêm tổ chức công chứng (UC_Org_Create)                                                         |
+| Biểu tượng xem chi tiết       | Button   | Hiển thị nếu có quyền, click sẽ mở màn hình xem chi tiết tổ chức công chứng (UC_Org_Detail)                                                 |
+| Biểu tượng sửa                | Button   | Hiển thị nếu có quyền, click sẽ mở màn hình chỉnh sửa tổ chức công chứng (UC_Org_Update)                                                    |
 | Biểu tượng xóa                | Button   | Hiển thị nếu có quyền, click sẽ mở popup xác nhận xóa tổ chức công chứng (UC_Org_Delete)                                                 |
 | Biểu tượng lịch sử cập nhật   | Button   | Hiển thị nếu có quyền, click sẽ mở popup xem lịch sử cập nhật thông tin tổ chức công chứng (UC_Org_History)                              |
 

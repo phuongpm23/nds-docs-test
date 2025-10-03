@@ -49,9 +49,9 @@ Nơi tập trung để xem và quản lý các chữ ký số.
 | Tìm kiếm                   | Input  | Nhập tiêu chí để tìm kiếm (**UC_CKS_Search**)                                                               |
 | Tìm kiếm                   | Button | Thực hiện tìm kiếm theo tiêu chí đã nhập và chọn                                                            |
 | Export                     | Button | Xuất danh sách đăng ký chữ ký số theo điều kiện tìm kiếm (**UC_CKS_Export**)                                |
-| Xem chi tiết               | Button | Hiển thị nếu có quyền xem chi tiết, click mở popup chi tiết thông tin đăng ký chữ ký số (**UC_CKS_Detail**) |
-| Đăng ký                    | Button | Hiển thị nếu có quyền thêm mới, click mở popup thêm mới đăng ký chữ ký số (**UC_CKS_Create**)               |
-| Sửa                        | Button | Hiển thị nếu có quyền chỉnh sửa, click mở popup chỉnh sửa đăng ký chữ ký số (**UC_CKS_Update**)             |
+| Xem chi tiết               | Button | Hiển thị nếu có quyền xem chi tiết, click mở màn hình chi tiết thông tin đăng ký chữ ký số (**UC_CKS_Detail**) |
+| Đăng ký                    | Button | Hiển thị nếu có quyền thêm mới, click mở màn hình thêm mới đăng ký chữ ký số (**UC_CKS_Create**)               |
+| Sửa                        | Button | Hiển thị nếu có quyền chỉnh sửa, click mở màn hình chỉnh sửa đăng ký chữ ký số (**UC_CKS_Update**)             |
 | Xóa                        | Button | Hiển thị nếu có quyền xóa, click mở popup xác nhận xoá (**UC_CKS_Delete**)                                  |
 | Xem lịch sử                | Button | Hiển thị nếu có quyền, click mở popup lịch sử thay đổi (**UC_CKS_History**)                                 |
 

@@ -1,0 +1,47 @@
+@startuml AD_HSCC_List
+!pragma layout smetana
+title Activity Diagram: Xem danh sách hồ sơ công chứng
+start
+:Truy cập chức năng "Danh sách hồ sơ công chứng";
+:Xác định phạm vi quyền hạn của người dùng;
+note right: STP: Xem hồ sơ trên địa bàn tỉnh/thành phố
+BTP: Xem hồ sơ toàn quốc hoặc theo địa phương
+TCHNCC: Xem hồ sơ tại tổ chức của mình
+:Lấy danh sách hồ sơ công chứng theo phạm vi;
+if (Có dữ liệu?) then (Có)
+  :Hiển thị danh sách hồ sơ công chứng;
+  note right: Hiển thị thông tin:
+  - Mã hồ sơ
+  - Tên giao dịch
+  - Ngày công chứng
+  - Số công chứng
+  - Giá trị hợp đồng
+  - Tên tổ chức
+  - Tên công chứng viên
+  - Trạng thái hồ sơ
+  :Hỗ trợ phân trang, sắp xếp, tìm kiếm nhanh;
+  while (Thao tác trên danh sách?)
+    :Chọn thao tác;
+    switch (Thao tác?)
+      case (Xem chi tiết)
+        :Mở màn hình chi tiết hồ sơ\n(**UC_HSCC_Detail**);
+      case (Tìm kiếm)
+        :Thực hiện tìm kiếm theo từ khóa;
+        :Cập nhật danh sách kết quả;
+      case (Sắp xếp)
+        :Sắp xếp theo cột được chọn;
+        :Cập nhật danh sách;
+      case (Phân trang)
+        :Chuyển đến trang được chọn;
+        :Cập nhật danh sách;
+      case (Tìm kiếm nâng cao)
+        :Mở màn hình tìm kiếm nâng cao\n(**UC_HSCC_Search**);
+      case (Xuất danh sách)
+        :Mở màn hình xuất danh sách\n(**UC_HSCC_Export**);
+    endswitch
+  endwhile
+else (Không)
+  :Hiển thị thông báo "Không có dữ liệu hồ sơ công chứng";
+endif
+stop
+@enduml

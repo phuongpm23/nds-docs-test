@@ -1,0 +1,49 @@
+@startuml AD_HSCC_Delete
+!pragma layout smetana
+title Activity Diagram: Xóa hồ sơ công chứng
+start
+:Chọn chức năng "Xóa hồ sơ";
+:Kiểm tra quyền xóa hồ sơ;
+if (Có quyền xóa?) then (Có)
+  if (Hồ sơ tồn tại?) then (Có)
+    :Lấy thông tin chi tiết hồ sơ;
+    :Hiển thị hộp thoại xác nhận xóa;
+    note right: Hiển thị thông tin:
+    - Mã hồ sơ công chứng
+    - Tên giao dịch công chứng
+    - Ngày công chứng
+    - Cảnh báo: "Hành động này không thể hoàn tác"
+    :Người dùng xác nhận xóa?;
+    if (Đồng ý?) then (Có)
+      :Kiểm tra các điều kiện nghiệp vụ;
+      note right: - Hồ sơ không đang trong quá trình xử lý
+      - Hồ sơ không liên quan đến vụ việc tranh chấp
+      - Hồ sơ không bị khóa bởi người dùng khác
+      if (Đáp ứng điều kiện?) then (Có)
+        :Ghi nhận thông tin xóa vào ENT_LichSuCapNhatHoSo;
+        :Xóa thông tin các bên tham gia trong ENT_NguoiThamGiaGiaoDichCaNhan/ToChuc;
+        :Xóa thông tin tài sản trong ENT_TaiSan;
+        :Xóa thông tin tài liệu đính kèm;
+        :Xóa thông tin hồ sơ trong ENT_HoSoCongChung;
+        :Hiển thị thông báo "Xóa hồ sơ công chứng thành công";
+        :Cập nhật lại danh sách hồ sơ;
+      else (Không)
+        :Hiển thị thông báo lỗi tương ứng;
+        note right: - "Không thể xóa hồ sơ đang trong quá trình xử lý"
+        - "Không thể xóa hồ sơ liên quan đến vụ việc đang tranh chấp"
+        - "Hồ sơ đang bị khóa bởi người dùng khác"
+      endif
+    else (Không)
+      :Đóng hộp thoại xác nhận;
+      :Quay lại màn hình trước đó;
+    endif
+  else (Không)
+    :Hiển thị thông báo "Hồ sơ không tồn tại hoặc đã bị xóa";
+    :Cập nhật lại danh sách hồ sơ;
+  endif
+else (Không)
+  :Hiển thị thông báo "Bạn không có quyền xóa hồ sơ này";
+  :Quay lại màn hình trước đó;
+endif
+stop
+@enduml

@@ -10,7 +10,7 @@ Popup hiển thị danh sách lịch sử cập nhật của một hồ sơ đă
 
 ## Thành phần
 
-### Bảng lịch sử cập nhật (ENT_LichSuCapNhatChuKySo)
+### Bảng lịch sử cập nhật (ENT_LichSuCapNhat)
 
 <div style="overflow-x:auto">
 
@@ -47,4 +47,4 @@ Popup hiển thị danh sách lịch sử cập nhật của một hồ sơ đă
 ## Liên kết
 - Activity Diagram: [AD_CKS_History.puml]  
 - Form/Screen: [SCR_CKS_List.md], [SCR_CKS_History.md]  
-- Entity liên quan: ENT_LichSuCapNhatChuKySo  
+- Entity liên quan: ENT_LichSuCapNhat  

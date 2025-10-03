@@ -1,5 +1,5 @@
 # Màn hình: Chi tiết thông tin  chữ ký số
-Popup hiển thị chi tiết chữ ký số, trạng thái phê duyệt và thông tin liên quan.
+Màn hình hiển thị chi tiết chữ ký số, trạng thái phê duyệt và thông tin liên quan.
 
 ## Điều kiện tiên quyết
 - Người dùng đã đăng nhập hệ thống.
@@ -36,10 +36,10 @@ Popup hiển thị chi tiết chữ ký số, trạng thái phê duyệt và th�
 
 | Tên         | Loại   | Mô tả                                                                                                                          |
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------------------------|
-| Đóng        | Button | Đóng popup, quay lại màn hình danh sách (**SCR_Sign_List**)                                                                     |
+| Đóng        | Button | Đóng màn hình, quay lại màn hình danh sách (**SCR_Sign_List**)                                                                     |
 | Duyệt       | Button | Chỉ hiển thị nếu người dùng có quyền phê duyệt → Cập nhật trạng thái = "Đã duyệt" và lưu lịch sử                               |
 | Từ chối     | Button | Chỉ hiển thị nếu người dùng có quyền phê duyệt → Cập nhật trạng thái = "Từ chối" và lưu lịch sử                                |
-| Chỉnh sửa   | Button | Chỉ hiển thị nếu người dùng có quyền chỉnh sửa → mở popup chỉnh sửa, Chỉ hiển thị khi trạng thái là "Mới tạo" hoặc "Chờ duyệt" |
+| Chỉnh sửa   | Button | Chỉ hiển thị nếu người dùng có quyền chỉnh sửa → mở màn hình chỉnh sửa, Chỉ hiển thị khi trạng thái là "Mới tạo" hoặc "Chờ duyệt" |
 | Trình duyệt | Button | Chỉ hiển thị nếu người dùng có quyền chỉnh sửa và trạng thái là "Mới tạo" → Cập nhật trạng thái = "Chờ duyệt" và lưu lịch sử   |
 
 </div>

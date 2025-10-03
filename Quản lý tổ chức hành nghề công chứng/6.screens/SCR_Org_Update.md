@@ -1,5 +1,5 @@
 # Màn hình: Chỉnh sửa tổ chức công chứng
-Popup form cho phép chỉnh sửa thông tin một tổ chức hành nghề công chứng.
+Form cho phép chỉnh sửa thông tin một tổ chức hành nghề công chứng.
 
 ## Điều kiện tiên quyết
 - Người dùng đã đăng nhập và có quyền chỉnh sửa tổ chức công chứng.
@@ -31,5 +31,5 @@ Popup form cho phép chỉnh sửa thông tin một tổ chức hành nghề cô
 
 | Tên | Loại   | Mô tả                                                                                                 |
 |:----|:-------|:------------------------------------------------------------------------------------------------------|
-| Lưu | Button | Lưu dữ liệu nhập vào. Nếu hợp lệ thì cập nhật dữ liệu và đóng popup. Chi tiết trong **UC_Org_Update** |
-| Hủy | Button | Hủy thao tác, đóng popup mà không lưu dữ liệu                                                         |
+| Lưu | Button | Lưu dữ liệu nhập vào. Nếu hợp lệ thì cập nhật dữ liệu và đóng màn hình. Chi tiết trong **UC_Org_Update** |
+| Hủy | Button | Hủy thao tác, đóng màn hình mà không lưu dữ liệu, về trang danh sách                                                         |

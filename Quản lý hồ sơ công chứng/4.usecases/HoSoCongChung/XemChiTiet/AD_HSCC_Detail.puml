@@ -1,0 +1,71 @@
+@startuml AD_HSCC_Detail
+!pragma layout smetana
+title Activity Diagram: Xem chi tiết hồ sơ công chứng
+start
+:Chọn "Xem chi tiết" từ danh sách hồ sơ;
+:Kiểm tra quyền truy cập hồ sơ;
+note right: STP: Xem hồ sơ trên địa bàn tỉnh/thành phố
+BTP: Xem hồ sơ toàn quốc hoặc theo địa phương
+TCHNCC: Xem hồ sơ tại tổ chức của mình
+if (Có quyền truy cập?) then (Có)
+  if (Hồ sơ tồn tại?) then (Có)
+    :Lấy thông tin chi tiết hồ sơ;
+    :Hiển thị thông tin chung hồ sơ;
+    note right: - Mã hồ sơ
+    - Tên giao dịch
+    - Ngày công chứng
+    - Số công chứng
+    - Nội dung giao dịch
+    - Giá trị hợp đồng
+    - Tên tổ chức
+    - Tên công chứng viên
+    :Lấy danh sách bên tham gia cá nhân;
+    :Hiển thị thông tin bên tham gia cá nhân;
+    note right: - Họ tên
+    - CMND/CCCD
+    - Địa chỉ
+    - Số điện thoại
+    :Lấy danh sách bên tham gia tổ chức;
+    :Hiển thị thông tin bên tham gia tổ chức;
+    note right: - Tên tổ chức
+    - Mã số thuế
+    - Địa chỉ
+    - Người đại diện
+    :Lấy thông tin tài sản;
+    :Hiển thị thông tin chi tiết tài sản;
+    note right: - Loại tài sản
+    - Thông tin chi tiết
+    - Giá trị tài sản
+    :Lấy danh sách tài liệu đính kèm;
+    :Hiển thị tài liệu đính kèm;
+    note right: - Văn bản công chứng giấy
+    - Hồ sơ lưu trữ điện tử
+    - Các tài liệu khác
+    :Hiển thị các chức năng thao tác theo quyền;
+    while (Thao tác trên chi tiết?)
+      :Chọn thao tác;
+      switch (Thao tác?)
+        case (Quay lại)
+          :Quay về danh sách hồ sơ\n(**UC_HSCC_List**);
+        case (Chỉnh sửa)
+          :Mở màn hình chỉnh sửa hồ sơ\n(**UC_HSCC_Update**);
+        case (In/In lại văn bản)
+          :Thực hiện in văn bản công chứng;
+        case (Tạo phụ lục)
+          :Mở màn hình tạo phụ lục hồ sơ;
+        case (Xóa hồ sơ)
+          :Mở màn hình xóa hồ sơ\n(**UC_HSCC_Delete**);
+        case (Tải tài liệu)
+          :Tải tài liệu đính kèm được chọn;
+      endswitch
+    endwhile
+  else (Không)
+    :Hiển thị thông báo "Hồ sơ không tồn tại hoặc đã bị xóa";
+    :Quay về danh sách hồ sơ\n(**UC_HSCC_List**);
+  endif
+else (Không)
+  :Hiển thị thông báo "Bạn không có quyền truy cập hồ sơ này";
+  :Quay về danh sách hồ sơ\n(**UC_HSCC_List**);
+endif
+stop
+@enduml

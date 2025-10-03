@@ -12,11 +12,11 @@ if (Người dùng xác nhận?) then (Có)
   :Người dùng bấm nút "Xác nhận";
   :Hệ thống kiểm tra ràng buộc hồ sơ công chứng;
   if (Công chứng viên có hồ sơ đang hiệu lực?) then (Có)
-    :Hiển thị cảnh báo lỗi "Không thể xóa công chứng viên đang có hồ sơ công chứng còn hiệu lực\n(**SCR_CCV_DeleteC**);
+    :Hiển thị cảnh báo lỗi "Không thể xóa công chứng viên đang có hồ sơ công chứng còn hiệu lực\n(****);
     stop
   else (Không)
     :Xóa dữ liệu công chứng viên khỏi \n(**ENT_CongChungVien**);
-    :Hệ thống ghi lại lịch sử cập nhật thông tin \n(**ENT_LichSuCapNhatThongtin**);
+    :Hệ thống ghi lại lịch sử cập nhật thông tin \n(**ENT_LichSuCapNhat**);
     :Đóng popup xác nhận và cập nhật lại danh sách công chứng viên\n(**SCR_CCV_List**);
     :Hiển thị thông báo "Xóa thành công thông tin công chứng viên";
     stop

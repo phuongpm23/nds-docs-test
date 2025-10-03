@@ -52,4 +52,4 @@
 ## Liên kết
 - Activity Diagram: [AD_Sign_Update.puml]
 - Form liên quan: [SCR_Sign_Update.md]
-- Entity liên quan: ChuKySo, LichSuCapNhatChuKySo
+- Entity liên quan: ChuKySo, LichSuCapNhat

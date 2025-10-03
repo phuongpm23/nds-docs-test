@@ -1,0 +1,96 @@
+@startuml AD_HSCC_Update
+!pragma layout smetana
+title Activity Diagram: Chỉnh sửa hồ sơ công chứng
+start
+:Chọn chức năng "Chỉnh sửa hồ sơ";
+:Kiểm tra quyền chỉnh sửa hồ sơ;
+if (Có quyền chỉnh sửa?) then (Có)
+  if (Hồ sơ tồn tại?) then (Có)
+    :Lấy thông tin chi tiết hồ sơ;
+    :Hiển thị form chỉnh sửa với dữ liệu hiện có;
+    note right: Form có các tab:
+    - Thông tin chung
+    - Bên tham gia
+    - Tài sản
+    - Tài liệu đính kèm
+    :Chọn tab để chỉnh sửa;
+    while (Thực hiện thay đổi?)
+      :Chọn tab và nội dung cần chỉnh sửa;
+      switch (Tab được chọn?)
+        case (Thông tin chung)
+          :Chỉnh sửa thông tin chung hồ sơ;
+          note right: - Tên giao dịch công chứng
+          - Ngày công chứng
+          - Số công chứng
+          - Nội dung giao dịch
+          - Giá trị hợp đồng
+        case (Bên tham gia)
+          :Chọn bên tham gia cần chỉnh sửa;
+          switch (Thao tác?)
+            case (Chỉnh sửa)
+              :Chỉnh sửa thông tin bên tham gia;
+            case (Xóa)
+              :Xác nhận xóa bên tham gia?;
+              if (Đồng ý?) then (Có)
+                :Xóa bên tham gia;
+              endif
+            case (Thêm mới)
+              :Thêm mới bên tham gia;
+          endswitch
+        case (Tài sản)
+          :Chỉnh sửa thông tin tài sản;
+          note right: - Loại tài sản
+          - Thông tin chi tiết về tài sản
+          - Giá trị tài sản
+        case (Tài liệu đính kèm)
+          :Chọn tài liệu cần xử lý;
+          switch (Thao tác?)
+            case (Xóa)
+              :Xác nhận xóa tài liệu?;
+              if (Đồng ý?) then (Có)
+                :Xóa tài liệu đính kèm;
+              endif
+            case (Thêm mới)
+              :Tải lên tài liệu mới;
+          endswitch
+      endswitch
+      :Chọn "Tiếp tục chỉnh sửa" hoặc "Hoàn thành";
+    endwhile
+    :Chọn thao tác cuối cùng;
+    switch (Thao tác?)
+      case (Lưu)
+        :Kiểm tra tính hợp lệ của dữ liệu;
+        note right: - Kiểm tra trường bắt buộc
+        - Kiểm tra định dạng dữ liệu
+        - Kiểm tra logic nghiệp vụ
+        if (Hợp lệ?) then (Đúng)
+          :Ghi nhận các thay đổi vào ENT_LichSuCapNhatHoSo;
+          :Cập nhật thông tin hồ sơ vào ENT_HoSoCongChung;
+          :Cập nhật thông tin bên tham gia vào ENT_NguoiThamGiaGiaoDichCaNhan/ToChuc;
+          :Cập nhật thông tin tài sản vào ENT_TaiSan;
+          :Cập nhật thông tin tài liệu đính kèm;
+          :Hiển thị thông báo "Cập nhật hồ sơ công chứng thành công";
+          :Chuyển hướng về màn hình chi tiết hồ sơ\n(**UC_HSCC_Detail**);
+        else (Sai)
+          :Hiển thị thông báo lỗi chi tiết;
+          :Ở lại màn hình chỉnh sửa\n(**SCR_HSCC_Update**);
+        endif
+      case (Hủy)
+        :Xác nhận hủy thao tác?;
+        if (Đồng ý?) then (Có)
+          :Hủy thao tác;
+          :Chuyển hướng về màn hình chi tiết hồ sơ\n(**UC_HSCC_Detail**);
+        else (Không)
+          :Ở lại màn hình chỉnh sửa\n(**SCR_HSCC_Update**);
+        endif
+    endswitch
+  else (Không)
+    :Hiển thị thông báo "Hồ sơ không tồn tại hoặc đã bị xóa";
+    :Chuyển hướng về danh sách hồ sơ\n(**UC_HSCC_List**);
+  endif
+else (Không)
+  :Hiển thị thông báo "Bạn không có quyền chỉnh sửa hồ sơ này";
+  :Chuyển hướng về danh sách hồ sơ\n(**UC_HSCC_List**);
+endif
+stop
+@enduml

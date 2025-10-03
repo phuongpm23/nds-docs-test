@@ -1,5 +1,5 @@
 # Màn hình: Chi tiết tổ chức công chứng
-Màn hình popup hiển thị chi tiết thông tin của một tổ chức hành nghề công chứng.
+Màn hình hiển thị chi tiết thông tin của một tổ chức hành nghề công chứng.
 
 ## Điều kiện tiên quyết
 - Người dùng đã đăng nhập và có quyền xem thông tin chi tiết tổ chức công chứng.
@@ -39,7 +39,7 @@ Màn hình popup hiển thị chi tiết thông tin của một tổ chức hàn
 
 | Tên       | Loại   | Mô tả                                                                                       |
 |:----------|:-------|:--------------------------------------------------------------------------------------------|
-| Đóng      | Button | Đóng popup chi tiết                                                                         |
+| Đóng      | Button | Đóng màn hình chi tiết, về trang danh sách                                                                         |
 | Chỉnh sửa | Button | Mở form chỉnh sửa tổ chức công chứng (SCR_Org_Update), chỉ hiển thị khi người dùng có quyền |
 
 </div>
