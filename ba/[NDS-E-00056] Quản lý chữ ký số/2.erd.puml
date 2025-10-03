@@ -2,17 +2,13 @@
 !pragma layout smetana
 left to right direction
 entity CongChungVien
-entity ChungChiHanhNghe
 entity ChuKySo
 entity LichSuCapNhat
 entity ToChucCongChung
 
 CongChungVien ||..{ ChuKySo
-CongChungVien ||..|| ChungChiHanhNghe
-ToChucCongChung ||..{ CongChungVien
 ChuKySo ||..{ LichSuCapNhat
-CongChungVien ||..{ LichSuCapNhat
-ChungChiHanhNghe ||..{ LichSuCapNhat
+ToChucCongChung||..{ ChuKySo
 
 @enduml
 

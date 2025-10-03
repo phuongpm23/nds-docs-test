@@ -27,20 +27,6 @@ package "Quản lý chứng chỉ hành nghề" as P_CertMgmt {
     usecase "Xem chi tiết chứng chỉ hành nghề" as UC_ChungChi_Detail
 }
 
-'==================== Quản lý chữ ký số ====================
-package "Quản lý chữ ký số" as P_DigitalSign {
-    usecase "Xem danh sách đăng ký chữ ký số" as UC_Sign_List
-    usecase "Xem chi tiết đăng ký chữ ký số" as UC_Sign_Detail
-    usecase "Tìm kiếm đăng ký chữ ký số" as UC_Sign_Search
-    usecase "Đăng ký chữ ký số" as UC_Sign_Create
-    usecase "Sửa đăng ký chữ ký số" as UC_Sign_Update
-    usecase "Xóa đăng ký chữ ký số" as UC_Sign_Delete
-    usecase "Duyệt đăng ký chữ ký số" as UC_Sign_Approve
-    usecase "Từ chối phê duyệt đăng ký chữ ký số" as UC_Sign_Reject
-    usecase "Gửi duyệt đăng ký chữ ký số" as UC_Sign_Submit
-    usecase "Xem lịch sử đăng ký chữ ký số" as UC_Sign_History
-}
-
 '==================== Tra cứu thông tin công chứng viên ====================
 package "Tra cứu thông tin công chứng viên" as P_Search {
     usecase "Tra cứu công chứng viên toàn quốc" as UC_CCV_Lookup
@@ -61,11 +47,6 @@ CVSTP -- UC_CCV_History
 CVSTP -- UC_ChungChi_History
 CVSTP -- UC_ChungChi_Detail
 
-CVSTP -- UC_Sign_List
-CVSTP -- UC_Sign_Detail
-CVSTP -- UC_Sign_Search
-CVSTP -- UC_Sign_History
-
 CVSTP -- UC_CCV_Lookup
 CVSTP -- UC_ChungChi_Lookup
 
@@ -78,11 +59,6 @@ LeaderSTP -- UC_CCV_History
 
 LeaderSTP -- UC_ChungChi_History
 LeaderSTP -- UC_ChungChi_Detail
-
-LeaderSTP -- UC_Sign_List
-LeaderSTP -- UC_Sign_Detail
-LeaderSTP -- UC_Sign_Search
-LeaderSTP -- UC_Sign_History
 
 LeaderSTP -- UC_CCV_Lookup
 LeaderSTP -- UC_ChungChi_Lookup
@@ -97,33 +73,13 @@ UC_CCV_History -- LeaderBTP
 UC_ChungChi_History -- LeaderBTP
 UC_ChungChi_Detail -- LeaderBTP
 
-UC_Sign_List -- LeaderBTP
-UC_Sign_Detail -- LeaderBTP
-UC_Sign_Search -- LeaderBTP
-UC_Sign_History -- LeaderBTP
-
 UC_CCV_Lookup -- LeaderBTP
 UC_ChungChi_Lookup -- LeaderBTP
 
 ' Công chứng viên tại TCHNCC
 Staff <|-- CCV
-UC_Sign_History -- CCV
-
 
 ' Nhân viên tại TCHNCC
-UC_Sign_List -- Staff
-UC_Sign_Detail -- Staff
-UC_Sign_Search -- Staff
-UC_Sign_Create -- Staff
-UC_Sign_Update -- Staff
-UC_Sign_Delete -- Staff
-UC_Sign_Submit -- Staff
-
 UC_CCV_Lookup -- Staff
 UC_ChungChi_Lookup -- Staff
-
-'==================== Use Case Extend ====================
-UC_Sign_Detail <|-- UC_Sign_Approve : <<extend>>
-UC_Sign_Detail <|-- UC_Sign_Reject  : <<extend>>
-UC_Sign_Detail <|-- UC_Sign_Submit  : <<extend>>
 @enduml

@@ -5,7 +5,6 @@ left to right direction
 entity CongChungVien
 entity ChungChiHanhNghe
 entity LichSuCapNhat
-entity ChuKySo
 
 entity CongChungVien {
   *congChungVienId: int <<PK>> - Id công chứng viên, tự động tăng
@@ -51,23 +50,6 @@ entity ChungChiHanhNghe {
   updatedBy: string - Người cập nhật
   createdAt: datetime - Ngày tạo
   updatedAt: datetime - Ngày cập nhật
-}
-
-entity ChuKySo {
-  *chuKySoId: int <<PK>> - Id thông tin đăng ký chữ ký số, tự động tăng
-  congChungVienId: int <<Fk>> - Id công chứng viên
-  toChucCongChungId: int <<FK>> - ID tổ chức công chứng
-  soSerial: string - Số serial
-  loaiChuKySo: string - Loại chữ ký số cá nhân/tổ chức
-  ngayHieuLuc: date - Ngày hiệu lực
-  ngayKetThuc: date - Ngày hết hạn
-  nhaCungCap: string - Tên nhà cung cấp
-  trangThai: string - Trạng thái phê duyệt thông tin đăng ký chữ ký số
-  thoiGianGui: datetime - Thời gian gửi thông tin
-  nguoiGui: string - Người gửi thông tin
-  thoiGianDuyet: datetime - Thời gian duyệt
-  nguoiDuyet: string - Người duyệt
-  fileDinhKemId: string - ID link file đính kèm
 }
 
 entity LichSuCapNhat {
