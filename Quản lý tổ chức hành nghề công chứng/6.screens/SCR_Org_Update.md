@@ -33,3 +33,4 @@ Popup form cho phép chỉnh sửa thông tin một tổ chức hành nghề cô
 |:----|:-------|:------------------------------------------------------------------------------------------------------|
 | Lưu | Button | Lưu dữ liệu nhập vào. Nếu hợp lệ thì cập nhật dữ liệu và đóng popup. Chi tiết trong **UC_Org_Update** |
 | Hủy | Button | Hủy thao tác, đóng popup mà không lưu dữ liệu                                                         |
+

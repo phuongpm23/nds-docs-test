@@ -19,10 +19,10 @@ entity CongChungVien {
   gioiTinh: int - Nam là 1, Nữ là 2
   quocTich: string - Quốc tịch
   danToc: string - Dân tộc
-  diaChi: string - Địa chỉ
+  diaChi: string - Địa chỉ - Địa chỉ đường, số nhà từ 1/7
   tinhThanhPho: int - Mã tỉnh thành phố từ 1/7
   phuongXa: int - Mã phường xã từ 1/7
-  diaChiCu: string - Địa chỉ
+  diaChiCu: string - Địa chỉ đường, số nhà trước 1/7
   tinhThanhPhoCu: int - Mã tỉnh thành phố trước 1/7
   phuongXaCu: int - Mã phường xã cũ trước 1/7
   anhCongChungVien: string - Link ảnh công chứng viên
@@ -56,7 +56,7 @@ entity ChungChiHanhNghe {
 
 entity ChuKySo {
   *chuKySoId: int <<PK>> - Id thông tin đăng ký chữ ký số, tự động tăng
-  congChungVienId: int <<Fk>> - Id công chứng viên
+  congChungVienId: int <<FK>> - Id công chứng viên
   toChucCongChungId: int <<FK>> - ID tổ chức công chứng
   soSerial: string - Số serial
   loaiChuKySo: string - Loại chữ ký số cá nhân/tổ chức
