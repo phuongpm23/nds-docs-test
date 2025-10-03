@@ -30,13 +30,14 @@ Form cho phép người dùng nhập tiêu chí tra cứu và hiển thị danh 
 
 <div style="overflow-x:auto">
 
-| Trường thông tin             | Control | Field             | Max length | Bắt buộc (Y/N) | Cho phép sửa (Y/N) | Mô tả                                 |
-|:-----------------------------|:--------|:------------------|:-----------|:---------------|:-------------------|:--------------------------------------|
-| Họ và tên                    | text    | hoVaTen           | -          | -              | -                  | Họ và tên công chứng viên             |
-| Số thẻ CCV                   | text    | soThe             | -          | -              | -                  | Số hiệu thẻ hành nghề công chứng viên |
-| Số chứng chỉ hành nghề       | text    | soChungChi        | -          | -              | -                  | Số chứng chỉ hành nghề                |
-| Tổ chức công chứng hành nghề | text    | tenToChuCongChung | -          | -              | -                  | Tổ chức công chứng đang hành nghề     |
-| Trạng thái hoạt động         | text    | trangThai         | -          | -              | -                  | Trạng thái công chứng viên            |
+| Trường thông tin             | Control | Field             | Max length | Bắt buộc (Y/N) | Cho phép sửa (Y/N) | Mô tả                                                         |
+|:-----------------------------|:--------|:------------------|:-----------|:---------------|:-------------------|:--------------------------------------------------------------|
+| Họ và tên                    | text    | hoVaTen           | -          | -              | -                  | Họ và tên công chứng viên                                     |
+| Số thẻ CCV                   | text    | soThe             | -          | -              | -                  | Số hiệu thẻ hành nghề công chứng viên                         |
+| Số chứng chỉ hành nghề       | text    | soChungChi        | -          | -              | -                  | Số chứng chỉ hành nghề                                        |
+| Tổ chức công chứng hành nghề | text    | tenToChuCongChung | -          | -              | -                  | Tổ chức công chứng đang hành nghề                             |
+| Địa chỉ trụ sở               | text    | diaChi            | -          | -              | -                  | Hiển thị địa chỉ chi tiết của tổ chức + Phường xã, Tỉnh/Thành |
+| Trạng thái hoạt động         | text    | trangThai         | -          | -              | -                  | Trạng thái công chứng viên                                    |
 
 </div>
 
