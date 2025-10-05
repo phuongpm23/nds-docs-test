@@ -1,0 +1,88 @@
+@startuml AD_HSCC_Create
+!pragma layout smetana
+title Activity Diagram: Thêm mới hồ sơ công chứng
+start
+:Chọn chức năng "Thêm mới hồ sơ công chứng";
+:Hiển thị form tạo mới hồ sơ;
+note right: Form có các tab:
+- Thông tin chung
+- Bên tham gia
+- Tài sản
+- Tài liệu đính kèm
+:Nhập thông tin chung;
+note right: - Tên giao dịch công chứng
+- Ngày công chứng
+- Số công chứng
+- Nội dung giao dịch
+- Giá trị hợp đồng
+- Tổ chức công chứng
+- Công chứng viên thực hiện
+:Chọn tab "Bên tham gia";
+while (Thêm bên tham gia?)
+  :Chọn loại bên tham gia;
+  switch (Loại bên tham gia?)
+    case (Cá nhân)
+      :Nhập thông tin bên tham gia cá nhân;
+      note right: - Họ tên
+      - CMND/CCCD
+      - Địa chỉ
+      - Số điện thoại
+    case (Tổ chức)
+      :Nhập thông tin bên tham gia tổ chức;
+      note right: - Tên tổ chức
+      - Mã số thuế
+      - Địa chỉ
+      - Người đại diện
+  endswitch
+  :Lưu thông tin bên tham gia;
+  :Chọn "Thêm tiếp" hoặc "Hoàn thành";
+endwhile
+:Chọn tab "Tài sản";
+:Nhập thông tin tài sản;
+note right: - Loại tài sản
+- Thông tin chi tiết về tài sản
+- Giá trị tài sản
+:Chọn tab "Tài liệu đính kèm";
+while (Thêm tài liệu?)
+  :Chọn loại tài liệu;
+  switch (Loại tài liệu?)
+    case (Văn bản công chứng giấy)
+      :Tải lên file văn bản công chứng;
+    case (Hồ sơ lưu trữ điện tử)
+      :Tải lên file hồ sơ điện tử;
+    case (Tài liệu khác)
+      :Tải lên file tài liệu khác;
+  endswitch
+  :Lưu thông tin tài liệu;
+  :Chọn "Thêm tiếp" hoặc "Hoàn thành";
+endwhile
+:Chọn thao tác;
+switch (Thao tác?)
+  case (Lưu)
+    :Kiểm tra tính hợp lệ của dữ liệu;
+    note right: - Kiểm tra trường bắt buộc
+    - Kiểm tra định dạng dữ liệu
+    - Kiểm tra logic nghiệp vụ
+    if (Hợp lệ?) then (Đúng)
+      :Tạo mã hồ sơ công chứng tự động;
+      :Lưu thông tin hồ sơ vào ENT_HoSoCongChung;
+      :Lưu thông tin bên tham gia vào ENT_NguoiThamGiaGiaoDichCaNhan/ToChuc;
+      :Lưu thông tin tài sản vào ENT_TaiSan;
+      :Lưu thông tin tài liệu đính kèm;
+      :Hiển thị thông báo "Thêm mới hồ sơ công chứng thành công";
+      :Chuyển hướng về danh sách hồ sơ\n(**UC_HSCC_List**);
+    else (Sai)
+      :Hiển thị thông báo lỗi chi tiết;
+      :Ở lại màn hình tạo mới\n(**SCR_HSCC_Create**);
+    endif
+  case (Hủy)
+    :Xác nhận hủy thao tác?;
+    if (Đồng ý?) then (Có)
+      :Hủy thao tác;
+      :Chuyển hướng về danh sách hồ sơ\n(**UC_HSCC_List**);
+    else (Không)
+      :Ở lại màn hình tạo mới\n(**SCR_HSCC_Create**);
+    endif
+endswitch
+stop
+@enduml

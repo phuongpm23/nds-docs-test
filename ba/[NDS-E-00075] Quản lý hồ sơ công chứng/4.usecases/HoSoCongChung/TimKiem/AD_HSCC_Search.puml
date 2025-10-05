@@ -1,0 +1,61 @@
+@startuml AD_HSCC_Search
+!pragma layout smetana
+title Activity Diagram: Tìm kiếm hồ sơ công chứng
+start
+:Chọn chức năng "Tìm kiếm hồ sơ công chứng";
+:Hiển thị form tìm kiếm;
+note right: - Tìm kiếm nhanh theo từ khóa
+- Tìm kiếm nâng cao theo nhiều tiêu chí
+:Nhập tiêu chí tìm kiếm;
+:Chọn loại tìm kiếm;
+switch (Loại tìm kiếm?)
+  case (Tìm kiếm nhanh)
+    :Nhập từ khóa tìm kiếm chung;
+    :Bấm nút "Tìm kiếm";
+  case (Tìm kiếm nâng cao)
+    :Nhập các tiêu chí tìm kiếm;
+    note right: - Mã hồ sơ
+    - Tên giao dịch
+    - Ngày công chứng (từ - đến)
+    - Số công chứng
+    - Giá trị hợp đồng (từ - đến)
+    - Tên tổ chức công chứng
+    - Tên công chứng viên
+    - Tên bên tham gia
+    - Loại tài sản
+    - Địa chỉ tài sản
+    :Bấm nút "Tìm kiếm";
+endswitch
+:Xác định phạm vi tìm kiếm theo quyền;
+' note right: STP: Tìm kiếm hồ sơ trên địa bàn tỉnh/thành phố
+' BTP: Tìm kiếm hồ sơ toàn quốc hoặc theo địa phương;
+' TCHNCC: Tìm kiếm hồ sơ tại tổ chức của mình;
+:Thực hiện tìm kiếm theo tiêu chí;
+if (Tìm thấy kết quả?) then (Có)
+  :Hiển thị danh sách kết quả tìm kiếm;
+'   note right: Hiển thị thông tin cơ bản của hồ sơ
+'   Hỗ trợ phân trang và sắp xếp
+  while (Thao tác trên kết quả?)
+    :Chọn thao tác;
+    switch (Thao tác?)
+      case (Xem chi tiết)
+        :Mở màn hình chi tiết hồ sơ\n(**UC_HSCC_Detail**);
+      case (Chỉnh sửa tìm kiếm)
+        :Quay lại form tìm kiếm;
+        :Chỉnh sửa tiêu chí tìm kiếm;
+      case (Xuất kết quả)
+        :Mở màn hình xuất kết quả\n(**UC_HSCC_Export**);
+      case (Phân trang)
+        :Chuyển đến trang được chọn;
+        :Cập nhật danh sách kết quả;
+      case (Sắp xếp)
+        :Sắp xếp theo cột được chọn;
+        :Cập nhật danh sách kết quả;
+    endswitch
+  endwhile
+else (Không)
+  :Hiển thị thông báo "Không tìm thấy hồ sơ công chứng phù hợp";
+  :Hiển thị tùy chọn tìm kiếm lại;
+endif
+stop
+@enduml

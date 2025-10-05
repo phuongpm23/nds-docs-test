@@ -1,0 +1,67 @@
+@startuml ldm
+!pragma layout smetana
+left to right direction
+
+entity CongChungVien
+entity ChungChiHanhNghe
+entity LichSuCapNhat
+
+entity CongChungVien {
+  *congChungVienId: int <<PK>> - Id công chứng viên, tự động tăng
+  loaiGiayTo: string - Loại giấy tờ CMND/Căn Cước/CCCD
+  soGiayTo: string - Số CMND/Căn cước/CCCD 
+  ngayCap: date - Ngày cấp
+  noiCap: string - Nơi cấp
+  hoVaTen: string - Họ và tên công chứng viên
+  ngaySinh: datetime - Ngày tháng năm sinh
+  gioiTinh: int - Nam là 1, Nữ là 2
+  quocTich: string - Quốc tịch
+  danToc: string - Dân tộc
+  diaChi: string - Địa chỉ
+  tinhThanhPho: int - Mã tỉnh thành phố từ 1/7
+  phuongXa: int - Mã phường xã từ 1/7
+  diaChiCu: string - Địa chỉ
+  tinhThanhPhoCu: int - Mã tỉnh thành phố trước 1/7
+  phuongXaCu: int - Mã phường xã cũ trước 1/7
+  anhCongChungVien: string - Link ảnh công chứng viên
+  soDienThoai: string - Số điện thoại của công chứng viên
+  email: string - Email công chứng viên
+  trangThai: string - Danh sách trạng thái là Đăng ký tập sự, Đang tập sự, 
+    Tạm ngừng tập sự, Chấm dứt tập sự, Hoàn thành tập sự, 
+    Chờ tiếp nhận bổ nhiệm, Chờ bổ nhiệm, Đã bổ nhiệm, 
+    Đang hành nghề, Tạm đình chỉ hành nghề, Đã bổ nhiệm lại, 
+    Đã miễn nhiệm, Chờ bổ sung, Đã bổ sung, Từ chối bổ nhiệm, 
+    Đã thay đổi nơi tập sự, Chờ tiếp nhận miễn nhiệm, 
+    Chờ tiếp nhận bổ nhiệm lại, Từ chối miễn nhiệm, Chờ bổ nhiệm lại, 
+    Từ chối bổ nhiệm lại, Chờ miễn nhiệm, Thu hồi thẻ, Chờ cấp thẻ, 
+    Từ chối cấp thẻ, Đạt kết quả tập sự
+  soThe: string - Số thẻ công chứng viên
+  toChucCongChungId: int - Tổ chức công chứng hiện tại
+}
+
+entity ChungChiHanhNghe {
+  *chungChiId: int <<PK>> - ID bản ghi
+  congChungVienId: int <<Fk>> - ID công chứng viên
+  soChungChi: string - Số chứng chỉ
+  ngayCap: date - Ngày cấp
+  ngayHieuLuc: date - Ngày hiệu lực
+  ngayHetHan: date - Ngày hết hạn
+  donViCap: string - Đơn vị cấp
+  trangThai: string - Trạng thái chứng chỉ
+  fileDinhKemId: string - ID File đính kèm
+}
+
+entity LichSuCapNhat {
+  *lichSuCapNhatId: int <<PK>> - Id bản ghi lịch sử cập nhật, tự động tăng
+  loaiThaoTac: string - Thêm mới/Cập nhật/Xóa
+  truongThongtinCapNhat: string - Trường thông tin cập nhật
+  truongThongTinId: string - Mã trường thông tin cập nhật
+  giaTriCu: string - Thông tin giá trị cũ
+  giaTriMoi: string - Thông tin thay đổi
+  createdAt: datetime - Ngày tạo
+  updatedAt: datetime      - Ngày cập nhật
+  createdBy: string - Người tạo
+  updatedBy: string - Người cập nhật
+}
+
+@enduml

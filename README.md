@@ -1,2 +1,2 @@
-# ndsp-requirements
-Tài liệu thiết kế nghiệp vụ
+# nds-docs
+Kho tài liệu cho dự án CSDL Công Chứng

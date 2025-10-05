@@ -1,0 +1,38 @@
+@startuml ldm
+!pragma layout smetana
+left to right direction
+
+entity LichSuCapNhat
+entity ChuKySo
+
+entity ChuKySo {
+  *chuKySoId: int <<PK>> - Id thông tin đăng ký chữ ký số, tự động tăng
+  congChungVienId: int <<Fk>> - Id công chứng viên
+  toChucCongChungId: int <<FK>> - ID tổ chức công chứng
+  soSerial: string - Số serial
+  loaiChuKySo: string - Loại chữ ký số cá nhân/tổ chức
+  ngayHieuLuc: date - Ngày hiệu lực
+  ngayKetThuc: date - Ngày hết hạn
+  nhaCungCap: string - Tên nhà cung cấp
+  trangThai: string - Trạng thái phê duyệt thông tin đăng ký chữ ký số
+  thoiGianGui: datetime - Thời gian gửi thông tin
+  nguoiGui: string - Người gửi thông tin
+  thoiGianDuyet: datetime - Thời gian duyệt
+  nguoiDuyet: string - Người duyệt
+  fileDinhKemId: string - ID link file đính kèm
+}
+
+entity LichSuCapNhat {
+  *lichSuCapNhatId: int <<PK>> - Id bản ghi lịch sử cập nhật, tự động tăng
+  loaiThaoTac: string - Thêm mới/Cập nhật/Xóa
+  truongThongtinCapNhat: string - Trường thông tin cập nhật
+  truongThongTinId: string - Mã trường thông tin cập nhật
+  giaTriCu: string - Thông tin giá trị cũ
+  giaTriMoi: string - Thông tin thay đổi
+  createdAt: datetime - Ngày tạo
+  updatedAt: datetime      - Ngày cập nhật
+  createdBy: string - Người tạo
+  updatedBy: string - Người cập nhật
+}
+
+@enduml

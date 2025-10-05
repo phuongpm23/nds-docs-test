@@ -1,0 +1,26 @@
+@startuml erd
+!pragma layout smetana
+left to right direction
+
+entity HoSoCongChung
+entity NguoiThamGiaGiaoDichToChuc
+entity NguoiThamGiaGiaoDichCaNhan
+entity LichSuCapNhatHoSo
+entity TaiSan
+entity CongChungVien
+entity ToChucCongChung
+
+' Mối quan hệ chính
+HoSoCongChung ||..o{ NguoiThamGiaGiaoDichCaNhan
+HoSoCongChung ||..o{ NguoiThamGiaGiaoDichToChuc
+HoSoCongChung ||..o{ TaiSan
+HoSoCongChung ||..o{ LichSuCapNhatHoSo
+
+' Mối quan hệ với các entity khác
+HoSoCongChung }o..|| CongChungVien
+HoSoCongChung }o..|| ToChucCongChung
+
+' Mối quan hệ giữa CongChungVien và ToChucCongChung
+CongChungVien }o..|| ToChucCongChung
+
+@enduml
