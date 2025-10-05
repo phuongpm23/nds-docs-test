@@ -96,3 +96,68 @@ Tài liệu này mô tả **các quy chuẩn nghiệp vụ chung** áp dụng ch
 | Nút "Đóng"     | Luôn hiển thị trong popup, click vào sẽ hủy thao tác và đóng popup |
 | Biểu tượng "x" | Luôn hiển thị trong popup, click vào sẽ hủy thao tác và đóng popup |
 
+## 10. Danh sách Sở Tư pháp
+Sở Tư pháp Thành phố Hà Nội
+Sở Tư pháp Hà Giang
+Sở Tư pháp Cao Bằng
+Sở Tư pháp Bắc Kạn
+Sở Tư pháp Tuyên Quang
+Sở Tư pháp Lào Cai
+Sở Tư pháp Điện Biên
+Sở Tư pháp Lai Châu
+Sở Tư pháp Sơn La
+Sở Tư pháp Yên Bái
+Sở Tư pháp Hòa Bình
+Sở Tư pháp Thái Nguyên
+Sở Tư pháp Lạng Sơn
+Sở Tư pháp Quảng Ninh
+Sở Tư pháp Bắc Giang
+Sở Tư pháp Phú Thọ
+Sở Tư pháp Vĩnh Phúc
+Sở Tư pháp Bắc Ninh
+Sở Tư pháp Hải Dương
+Sở Tư pháp Thành phố Hải Phòng
+Sở Tư pháp Hưng Yên
+Sở Tư pháp Thái Bình
+Sở Tư pháp Hà Nam
+Sở Tư pháp Nam Định
+Sở Tư pháp Ninh Bình
+Sở Tư pháp Thanh Hóa
+Sở Tư pháp Nghệ An
+Sở Tư pháp Hà Tĩnh
+Sở Tư pháp Quảng Bình
+Sở Tư pháp Quảng Trị
+Sở Tư pháp Thừa Thiên - Huế
+Sở Tư pháp Thành phố Đà Nẵng
+Sở Tư pháp Quảng Nam
+Sở Tư pháp Quảng Ngãi
+Sở Tư pháp Bình Định
+Sở Tư pháp Phú Yên
+Sở Tư pháp Khánh Hòa
+Sở Tư pháp Ninh Thuận
+Sở Tư pháp Bình Thuận
+Sở Tư pháp Kon Tum
+Sở Tư pháp Gia Lai
+Sở Tư pháp Đắk Lắk
+Sở Tư pháp Đắk Nông
+Sở Tư pháp Lâm Đồng
+Sở Tư pháp Bình Phước
+Sở Tư pháp Tây Ninh
+Sở Tư pháp Bình Dương
+Sở Tư pháp Đồng Nai
+Sở Tư pháp Bà Rịa - Vũng Tàu
+Sở Tư pháp Thành phố Hồ Chí Minh
+Sở Tư pháp Long An
+Sở Tư pháp Tiền Giang
+Sở Tư pháp Bến Tre
+Sở Tư pháp Trà Vinh
+Sở Tư pháp Vĩnh Long
+Sở Tư pháp Đồng Tháp
+Sở Tư pháp An Giang
+Sở Tư pháp Kiên Giang
+Sở Tư pháp Thành phố Cần Thơ
+Sở Tư pháp Hậu Giang
+Sở Tư pháp Sóc Trăng
+Sở Tư pháp Bạc Liêu
+Sở Tư pháp Cà Mau
+

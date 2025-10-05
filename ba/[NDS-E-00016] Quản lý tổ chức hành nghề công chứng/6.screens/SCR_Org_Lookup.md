@@ -5,7 +5,7 @@ Màn hình tra cứu tổ chức công chứng
 - Người dùng đã đăng nhập và có quyền tra cứu tổ chức công chứng.
 
 ## Nguyên mẫu
-[https://www.figma.com/design/STv6BI8XR469xhObHjgCHs/Test-Puml?node-id=61-27996&t=D6KMt6aiRNAU7m7V-1]
+[]
 
 ## Thành phần
 
@@ -13,14 +13,13 @@ Màn hình tra cứu tổ chức công chứng
 
 <div style="overflow-x:auto">
 
-| Trường thông tin       | Control | Field              | Max length | Bắt buộc (Y/N) | Giá trị mặc định | Cho phép sửa (Y/N) | Mô tả                                                                             |
-|:-----------------------|:--------|:-------------------|:-----------|:---------------|:-----------------|:-------------------|:----------------------------------------------------------------------------------|
-| Tên tổ chức công chứng | text    | tenToChucCongChung | -        | -              |                  | -                  | Tên của tổ chức hành nghề công chứng                                              |
-| Sở Tư pháp quản lý     | text    | soTuPhap           | -        | -              |                  | -                  | Tên Sở Tư pháp quản lý (Chỉ hiển thị cột này cho người dùng cấp bộ)               |
-| Trưởng văn phòng       | number  | truongVanPhongId   | -          | -              |                  | -                  | ID tổ chức công chứng là trưởng văn phòng công chứng                              |
-| Địa chỉ trụ sở         | text    | diaChi             | -        | -              |                  | -                  | Địa chỉ trụ sở chính                                                              |
-| Trạng thái hoạt động   | text    | trangThai          | -          | -              |                  | -                  | Trạng thái: Đang hoạt động, Chờ thành lập, Giải thể, … (theo enum)                |
-| Chức năng              | icon    | -                  | -          | -              |                  | -                  | Hiển thị danh sách nút: Xem chi tiết, sửa, xóa, xem lịch sử (tùy theo phân quyền) |
+| Trường thông tin       | Control | Field                                            | Max length | Bắt buộc (Y/N) | Giá trị mặc định | Cho phép sửa (Y/N) | Mô tả                                                                |
+|:-----------------------|:--------|:-------------------------------------------------|:-----------|:---------------|:-----------------|:-------------------|:---------------------------------------------------------------------|
+| Tên tổ chức công chứng | text    | tenDonVi                                         | -          | -              |                  | -                  | Tên của tổ chức hành nghề công chứng                                 |
+| Sở Tư pháp quản lý     | text    | tenDonVi                                         | -          | -              |                  | -                  | Tên Sở Tư pháp quản lý (Chỉ hiển thị cột này cho người dùng cấp bộ)  |
+| Trưởng văn phòng       | text    | hoDem + ten                                      | -          | -              |                  | -                  | Tên trưởng văn phòng                                                 |
+| Địa chỉ trụ sở         | text    | diaChiChiTiet + diaChiTinhThanh + diaChiPhuongXa | -          | -              |                  | -                  | Địa chỉ trụ sở hiện tại: Địa chỉ - Phường/xã - Tỉnh/Thành phố        |
+| Trạng thái hoạt động   | text    | trangThai                                        | -          | -              |                  | -                  | Trạng thái: Đang hoạt động, Chờ thành lập, Giải thể, … (theo entity) |
 
 </div>
 
@@ -30,10 +29,10 @@ Màn hình tra cứu tổ chức công chứng
 
 | Tên                           | Loại     | Mô tả                                                                                               |
 |:------------------------------|:---------|:----------------------------------------------------------------------------------------------------|
-| Ô tìm kiếm                    | Input    | Nhập tên tổ chức công chứng để tìm kiếm                                                            |
+| Ô tìm kiếm                    | Input    | Nhập tên tổ chức công chứng để tìm kiếm                                                             |
 | Biểu tượng tìm kiếm           | Button   | Bấm vào thực hiện tra cứu theo thông tin đã nhập/chọn (**UC_Org_Lookup**)                           |
 | Ô điền tên tổ chức công chứng | input    |                                                                                                     |
-| Ô chọn tỉnh thành phố         | dropdown |                                                                                                     |
+| Ô chọn Sở Tư pháp             | dropdown | Lấy từ danh sách Sở Tư pháp                                                                         |
 | Ô chọn trạng thái             | dropdown | Chọn trạng thái từ danh sách trạng thái hoạt động của tổ chức công chứng (Giống với SCR_Org_Create) |
 
 </div>

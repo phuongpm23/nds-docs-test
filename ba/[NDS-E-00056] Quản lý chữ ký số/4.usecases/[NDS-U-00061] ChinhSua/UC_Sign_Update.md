@@ -38,7 +38,7 @@
 6. Kết thúc use case.
 
 ## Luồng phụ / Ngoại lệ
-- Người dùng chọn **Hủy**: Form đóng, không lưu dữ liệu.
+- Người dùng chọn **Đóng**: Hiển thị popup xác nhận hủy thao tác. Nếu xác nhận, form đóng, không lưu dữ liệu, chuyển về màn danh sách. Nếu hủy xác nhận, đóng popup xác nhận
 - Nhập thiếu thông tin bắt buộc: Hiển thị cảnh báo lỗi.
 - Ngày hết hạn < ngày hiệu lực: Hiển thị lỗi "Ngày hết hạn không hợp lệ".
 - File đính kèm sai định dạng: Hiển thị lỗi "File không hợp lệ".

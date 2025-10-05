@@ -5,10 +5,9 @@
 
 ## Acceptance criteria
 - Hệ thống hiển thị form tìm kiếm với các tiêu chí
-    - Ô điền thông tin tìm kiếm theo "Họ và tên", "Số thẻ CCV"
-    - Ô điền tên công chứng viên
-    - Ô điền tên tổ chức công chứng
-    - Ô điền số thẻ CCV
+    - Ô điền thông tin tìm kiếm theo "Họ và tên công chứng viên", "Số thẻ CCV"
+    - Chọn Sở Tư pháp
+    - Chọn tổ chức công chứng
     - Chọn trạng thái từ danh sách 
 - Hiển thị bảng danh sách công chứng viên với các cột tông tin cơ bản (Họ và tên, số thẻ, tổ chức công chứng đang hành nghề, trạng thái hoạt động) theo tiêu chí đã tìm kiếm.
 - Nếu số lượng bản ghi vượt quá giới hạn hiển thị, hệ thống phải cung cấp phân trang (10 bản ghi 1 trang).
@@ -32,8 +31,9 @@
     - Truy vấn họ và tên công chứng viên gần giống với kết quả đã điền
     - Truy vấn chính xác số thẻ công chứng viên
     - Truy vấn chính xác theo trạng thái đã chọn
-    - Truy vấn gần đúng theo tên tổ chức công chứng đã chọn
-6. Hệ thống hiển thị danh sách công chứng theo kết quả đã truy vấn được
+    - Truy vấn chính xác theo tổ chức công chứng đã chọn
+    - Truy vấn chính xác theo Sở Tư pháp đã chọn
+6. Hệ thống hiển thị danh sách công chứng viên theo kết quả đã truy vấn được
 7. Hệ thống hiển thị danh sách công chứng viên theo thứ tự thời gian cập nhật từ mới tới cũ nhất
 8. Nếu số lượng bản ghi lớn hơn 10, hệ thống thực hiện phân trang, 10 bản ghi mỗi trang
 9. Kết thúc.
@@ -49,4 +49,4 @@
 ## Liên kết
 - Activity Diagram: [AD_CCV_Search.puml]
 - Form/Screen: [SCR_CCV_List.md]
-- Entity liên quan: ENT_CongChungVien, ENT_ToChucCongChung
+- Entity liên quan: **ENT_CongChungVien**, **ENT_ToChucCongChung**

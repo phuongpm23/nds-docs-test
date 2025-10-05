@@ -16,7 +16,7 @@ if (Người dùng xác nhận?) then (Có)
     stop
   else (Không)
     :Xóa dữ liệu tổ chức công chứng khỏi \n(**ENT_ToChucCongChung**);
-    :Hệ thống ghi lại lịch sử cập nhật thông tin \n(**ENT_LichSuCapNhatThongtin**);
+    :Hệ thống ghi lại lịch sử cập nhật thông tin;
     :Đóng popup xác nhận và cập nhật lại danh sách tổ chức công chứng\n(**SCR_Org_List**);
     :Hiển thị thông báo "Xóa thành công thông tin tổ chức công chứng";
     stop

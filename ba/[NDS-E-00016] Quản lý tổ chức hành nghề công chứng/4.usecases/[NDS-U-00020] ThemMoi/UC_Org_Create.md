@@ -20,7 +20,7 @@
 ## Luồng chính
 1. Người dùng chọn chức năng **Thêm mới tổ chức công chứng** từ danh sách (**UC_Org_List**).
 2. Hệ thống hiển thị form thêm mới (**SCR_Org_Create**).
-3. Người dùng nhập các thông tin cần thiết.
+3. Người dùng nhập các thông tin tổ chức công chứng.
 4. Người dùng bấm nút **Lưu**.
 5. Hệ thống kiểm tra tính hợp lệ của dữ liệu:
    - Nếu hợp lệ: Lưu dữ liệu vào **ENT_ToChucCongChung**.
@@ -29,9 +29,9 @@
 6. Kết thúc use case.
 
 ## Luồng phụ / Ngoại lệ
-- Người dùng chọn **Hủy**: Form đóng, không lưu dữ liệu.
-- Lỗi hệ thống: Hiển thị thông báo lỗi, không lưu dữ liệu.
-- Lỗi dữ liệu: Hiển thị thông báo lỗi (**UC_Org_CheckData**)
+- Người dùng chọn **Đóng**: Hiển thị popup xác nhận hủy thao tác. Nếu xác nhận, form đóng, không lưu dữ liệu, chuyển về màn danh sách. Nếu hủy xác nhận, đóng popup xác nhận.
+- Lỗi hệ thống: Hiển thị thông báo lỗi "Hệ thống phát sinh lỗi, vui lòng thử lại", không lưu dữ liệu.
+- Lỗi dữ liệu hoặc lưu thất bại: Hiển thị thông báo lỗi "Thêm mới tổ chức công chứng thất bại, vui lòng kiểm tra lại dữ liệu"
 
 ## Hậu điều kiện
 - Nếu thành công: tổ chức công chứng mới được thêm vào hệ thống.
@@ -40,4 +40,4 @@
 ## Liên kết
 - Activity Diagram: [AD_Org_Create.puml]
 - Form liên quan: [SCR_Org_Create.md]
-- Entity liên quan: ENT_ToChucCongChung
+- Entity liên quan: **ENT_ToChucCongChung**

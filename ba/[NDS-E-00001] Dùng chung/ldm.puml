@@ -29,7 +29,7 @@ entity File
 entity HoSoCongChungGiay {
     *hoSoID: int <<PK>> - ID bản ghi
     phuongThucCongChung: string - 
-    Công chứng giấy, Công chứng điện tử trực tiếp, Công chứng điện tử trực tuyến
+    Công chứng giấy
     ngayCongChung: datetime - Thời gian công chứng
     soCongChung: string - Số công chứng
     loaiGiaoDichId: int <<FK>> - ID bản ghi loại giao dịch
@@ -57,7 +57,7 @@ entity HoSoCongChungGiay {
 entity HoSoCongChungDienTu {
     *hoSoID: int <<PK>> - ID bản ghi
     phuongThucCongChung: string - 
-    Công chứng giấy, Công chứng điện tử trực tiếp, Công chứng điện tử trực tuyến
+    Công chứng điện tử trực tiếp, Công chứng điện tử trực tuyến
     ngayCongChung: datetime - Thời gian công chứng
     soCongChung: string - Số công chứng
     loaiGiaoDichId: int <<FK>> - ID bản ghi loại giao dịch
@@ -419,9 +419,9 @@ entity DonVi
     webSite: string - Thông tin website
     diaChiTinhThanh string - Địa chỉ tỉnh/thành phố của đơn vị
     diaChiPhuongXa: string - Địa chỉ phường/xã phố của đơn vị
-    diaChiChiTiet: string - Địa chỉ số nhà, tổ, thông, xóm của đơn vị
+    diaChiChiTiet: string - Địa chỉ số nhà, tổ, thôn, xóm của đơn vị
     thongTinKhac: string - Thông tin khác
-    trangThai: string - Trạng thái Hoạt động, Ngừng hoạt động
+    ' trangThai: string - Trạng thái Hoạt động, Ngừng hoạt động
 }
 ' Quản lý tổ chức hành nghề công chứng
 entity ToChucCongChung {
@@ -466,7 +466,15 @@ entity CongChungVien {
     soGiayTo: string - Số CMND/Căn cước/CCCD 
     ngayCap: date - Ngày cấp
     noiCap: string - Nơi cấp
-    trangThai: string - Danh sách trạng thái
+    trangThai: string - Đăng ký tập sự, Đang tập sự, 
+     Tạm ngừng tập sự, Chấm dứt tập sự, Hoàn thành tập sự, 
+     Chờ tiếp nhận bổ nhiệm, Chờ bổ nhiệm, Đã bổ nhiệm, 
+     Đang hành nghề, Tạm đình chỉ hành nghề, Đã bổ nhiệm lại, 
+     Đã miễn nhiệm, Chờ bổ sung, Đã bổ sung, Từ chối bổ nhiệm, 
+     Đã thay đổi nơi tập sự, Chờ tiếp nhận miễn nhiệm, 
+     Chờ tiếp nhận bổ nhiệm lại, Từ chối miễn nhiệm, Chờ bổ nhiệm lại, 
+     Từ chối bổ nhiệm lại, Chờ miễn nhiệm, Thu hồi thẻ, Chờ cấp thẻ, 
+     Từ chối cấp thẻ, Đạt kết quả tập sự
     soThe: string - Số thẻ công chứng viên
 }
 

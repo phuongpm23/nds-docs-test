@@ -35,4 +35,4 @@ Form cho phép chỉnh sửa thông tin chữ ký số đã có.
 |:------------|:-------|:------------------------------------------------------------------------------------------------|
 | Trình duyệt | Button | Kiểm tra hợp lệ, lưu dữ liệu vào ENT_ChuKySo với trạng thái = "Chờ duyệt"                       |
 | Lưu nháp    | Button | Không kiểm tra đầy đủ, Kiểm tra hợp lệ, lưu dữ liệu vào ENT_ChuKySo với trạng thái = "Tạo mới " |
-| Đóng        | Button | Đóng màn hình, về lại trang danh sách                                                                                      |
+| Đóng        | Button | Hiển thị popup xác nhận hủy thao tác                                                            |

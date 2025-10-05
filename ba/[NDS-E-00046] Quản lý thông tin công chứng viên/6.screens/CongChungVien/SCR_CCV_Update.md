@@ -15,14 +15,15 @@ Form cho phép chỉnh sửa thông tin công chứng viên, hiển thị dữ l
 
 | Trường thông tin                | Control  | Field          | Max length | Bắt buộc (Y/N) | Giá trị mặc định | Cho phép sửa (Y/N) | Mô tả                                          |
 |:--------------------------------|:---------|:---------------|:-----------|:---------------|:-----------------|:-------------------|:-----------------------------------------------|
-| Họ và tên                       | text     | hoVaTen        | 250        | Y              | -                | Y                  | Điền họ và tên công chứng viên                 |
+| Ảnh                       | upload file     | anhDaiDien        | -        | N              | -                | Y                  | Upload ảnh công chứng viên, chỉ chấp nhận định dạng ảnh dưới 10MB                 |
+| Họ và tên đệm                       | text     | hoDem        | 250        | Y              | -                | Y                  | Điền họ và tên đệm công chứng viên                 |
+| Tên                       | text     | ten        | 250        | Y              | -                | Y                  | Điền tên công chứng viên                 |
 | Ngày sinh                       | date     | ngaySinh       | -          | Y              | -                | Y                  | **BR9.3**                                      |
 | Giới tính                       | dropdown | gioiTinh       | -          | Y              | -                | Y                  | Nam/Nữ                                         |
 | Quốc tịch                       | text     | quocTich       | 20         | Y              | Việt Nam         | N                  |                                                |
 | Dân tộc                         | dropdown | danToc         | 20         | N              | -                | Y                  | Chọn từ danh mục dân tộc                       |
-| Số điện thoại                   | text     | soDienThoai    | 20         | N              | -                | Y                  | **BR9.4**                                      |
+| Số điện thoại                   | text     | dienThoaiDiDong    | 20         | N              | -                | Y                  | **BR9.4**                                      |
 | Email                           | text     | email          | 250        | N              | -                | Y                  |                                                |
-| Loại giấy tờ                    | dropdown | loaiGiayTo     | 50         | Y              | -                | Y                  | Chọn CMND/Căn cước/Căn cước công dân/Hộ chiếu  |
 | Số giấy tờ (CMND/CCCD/Hộ chiếu) | text     | soGiayTo       | 50         | Y              | -                | Y                  | **BR9.10**                                     |
 | Ngày cấp                        | datetime | ngayCap        | -          | Y              | -                | Y                  | **BR9.3**                                      |
 | Nơi cấp                         | text     | noiCap         | 500        | Y              | -                | Y                  |                                                |
@@ -40,11 +41,11 @@ Form cho phép chỉnh sửa thông tin công chứng viên, hiển thị dữ l
 - Thông tin được tự động điền từ dữ liệu đã lưu
 <div style="overflow-x:auto">
 
-| Trường thông tin           | Control  | Field                 | Max length | Bắt buộc (Y/N) | Giá trị mặc định | Cho phép sửa (Y/N) | Mô tả                                                                |
-|:---------------------------|:---------|:----------------------|:-----------|:---------------|:-----------------|:-------------------|:---------------------------------------------------------------------|
-| Tên tổ chức công chứng     | dropdown | tenToChucCongChung    | 250        | Y              | -                | Y                  | Chọn từ danh sách tổ chức công chứng thuộc Sở Tư pháp của người dùng |
-| Địa chỉ tổ chức công chứng | text     | diaChiToChucCongChung | 500        | N              | -                | N                  | Tự động điền từ tổ chức chọn                                         |
-| Số thẻ công chứng viên     | text     | soThe                 | 50         | Y              | -                | Y                  | Số hiệu thẻ hành nghề                                                |
+| Trường thông tin           | Control  | Field                            | Max length | Bắt buộc (Y/N) | Giá trị mặc định | Cho phép sửa (Y/N) | Mô tả                                                                |
+|:---------------------------|:---------|:---------------------------------|:-----------|:---------------|:-----------------|:-------------------|:---------------------------------------------------------------------|
+| Tên tổ chức công chứng     | dropdown | donViId               | 250        | Y              | -                | Y                  | Chọn từ danh sách tổ chức công chứng thuộc Sở Tư pháp của người dùng |
+| Địa chỉ tổ chức công chứng | text     | diaChiChiTiet + diaChiTinhThanh + diaChiPhuongXa | 500        | N              | -                | N                  | Tự động điền từ tổ chức chọn, disable                                |
+| Số thẻ công chứng viên     | text     | soThe                            | 50         | Y              | -                | Y                  | Số hiệu thẻ hành nghề                                                |
 
 </div>
 
@@ -52,9 +53,8 @@ Form cho phép chỉnh sửa thông tin công chứng viên, hiển thị dữ l
 
 <div style="overflow-x:auto">
 
-| Tên        | Loại    | Mô tả                                                                    |
-| :--------- | :------ | :----------------------------------------------------------------------- |
-| Lưu        | Button  | Kiểm tra hợp lệ, cập nhật dữ liệu vào ENT_CongChungVien       |
-| Đóng        | Button  | Đóng form, không lưu dữ liệu                                             |
-
+| Tên  | Loại   | Mô tả                                                   |
+|:-----|:-------|:--------------------------------------------------------|
+| Lưu  | Button | Kiểm tra hợp lệ, cập nhật dữ liệu vào ENT_CongChungVien |
+| Đóng | Button | Hiển thị popup xác nhận hủy thao tác                    |
 </div>

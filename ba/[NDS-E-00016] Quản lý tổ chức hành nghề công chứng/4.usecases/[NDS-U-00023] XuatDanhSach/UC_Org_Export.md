@@ -1,11 +1,11 @@
 # Use Case: Xuất danh sách tổ chức công chứng
 
 ## User Story
-- Là Chuyên viên STP, Lãnh đạo STP, Lãnh đạo phòng HCBTTP tại STP tôi muốn xuất được danh sách tổ chức công chứng thuộc Sở Tư pháp của mình theo kết quả tìm kiếm để có thể lấy được dữ liệu dưới dạng file excel
-- Là Lãnh đạo Bộ Tư pháp, Lãnh đạo Cục BTTP, Chuyên viên Cục BTTP, tôi muốn xuất được danh sách toàn bộ tổ chức công chứng trên hệ thống theo kết quả tìm kiếm để có thể lấy được dữ liệu dưới dạng file excel
+- Là **Chuyên viên STP, Lãnh đạo STP, Lãnh đạo phòng HCBTTP tại STP** tôi muốn xuất được danh sách tổ chức công chứng thuộc Sở Tư pháp của mình theo kết quả tìm kiếm để có thể lấy được dữ liệu dưới dạng file excel
+- Là **Lãnh đạo Bộ Tư pháp, Lãnh đạo Cục BTTP, Chuyên viên Cục BTTP**, tôi muốn xuất được danh sách toàn bộ tổ chức công chứng trên hệ thống theo kết quả tìm kiếm để có thể lấy được dữ liệu dưới dạng file excel
 
 ## Acceptance criteria
-- Xuất thành công danh sách gồm các trường thông tin
+- Xuất thành công danh sách tổ chức công chứng dưới dạng file excel
 
 ## Tác nhân chính
 - Chuyên viên STP, Lãnh đạo STP, Lãnh đạo phòng HCBTTP tại STP, Lãnh đạo Bộ Tư pháp, Lãnh đạo Cục BTTP, Chuyên viên Cục BTTP
@@ -27,9 +27,9 @@
 
 ## Hậu điều kiện
 - Nếu thành công: Người dùng xuất được danh sách tổ chức công chứng.
-- Nếu thất bại: Thông báo lỗi.
+- Nếu thất bại: Thông báo lỗi "Xuất danh sách thất bại, vui lòng thử lại".
 
 ## Liên kết
 - Activity Diagram: [AD_Org_Export.puml]
 - Form/Screen: [SCR_Org_List.md]
-- Entity liên quan: ENT_CongChungVien, ENT_ToChucCongChung
+- Entity liên quan: **ENT_CongChungVien**, **ENT_ToChucCongChung**

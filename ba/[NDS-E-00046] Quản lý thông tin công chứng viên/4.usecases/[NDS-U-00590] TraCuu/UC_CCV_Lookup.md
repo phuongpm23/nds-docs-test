@@ -8,7 +8,7 @@
     - Ô điền thông tin tra cứu theo "Họ và tên", "Số thẻ CCV", "Số chứng chỉ hành nghề"
     - Bộ lọc:
         - Trạng thái
-        - Tỉnh/Thành phố của tổ chức hành nghề công chứng
+        - Sở Tư pháp
         - Tên tổ chức hành nghề công chứng
 - Hiển thị bảng danh sách công chứng viên với các cột thông tin cơ bản (Họ và tên, số thẻ, số chứng chỉ hành nghề, tổ chức công chứng đang hành nghề, trạng thái hoạt động) theo tiêu chí đã tra cứu.
 - Nếu số lượng bản ghi vượt quá giới hạn hiển thị, hệ thống phải cung cấp phân trang (10 bản ghi 1 trang).

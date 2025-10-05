@@ -2,10 +2,9 @@
 !pragma layout smetana
 left to right direction
 
-entity CongChungVien
+entity DonVi
 entity ToChucCongChung
-entity ChuKySo
-entity LichSuCapNhatTCHNCC
+entity LichSuCapNhat
 
 entity LichSuCapNhat {
   *lichSuCapNhatId: int <<PK>> - Id bản ghi lịch sử cập nhật, tự động tăng
@@ -20,15 +19,26 @@ entity LichSuCapNhat {
   updatedBy: string - Người cập nhật
 }
 
+entity DonVi
+{
+    *donViId: int <<PK>> - ID bản ghi
+    loaiDonVi: string - Thông tin loại đơn vị 
+    Bộ Tư Pháp, Sở Tư pháp, 
+    Tổ chức hành nghề công chứng, Đơn vị gửi thông tin ngăn chặn
+    thuocDonVi: int <<FK>> - ID bản ghi đơn vị
+    tenDonVi: string - Tên đơn vị
+    dienThoai: string - Số điện thoại 
+    email: string - Thông tin email
+    fax: string - Thông tin số fax
+    webSite: string - Thông tin website
+    diaChiTinhThanh: string - Địa chỉ tỉnh/thành phố của đơn vị
+    diaChiPhuongXa: string - Địa chỉ phường/xã phố của đơn vị
+    diaChiChiTiet: string - Địa chỉ số nhà, tổ, thông, xóm của đơn vị
+    thongTinKhac: string - Thông tin khác
+    trangThai: string - Trạng thái Hoạt động, Ngừng hoạt động
+}
+
 entity ToChucCongChung {
-  *toChucCongChungId: int <<PK>> ID bản ghi, tự động tăng
-  tenToChucCongChung: string - Tên tổ chức hành nghề công chứng
-  soTuPhap: string - Sở Tư pháp quản lý tổ chức công chứng
-  diaChi: string - Địa chỉ trụ sở
-  tinhThanhPho: string - Địa chỉ tỉnh/thành phố của tổ chức công chứng
-  phuongXa: string - Địa chỉ phường/Xã của tổ chức công chứng
-  soDienThoai: string - Số điện thoại tổ chức công chứng
-  email: string - Email tổ chức công chứng
   truongVanPhongId: int - ID công chứng viên là trưởng văn phòng công chứng
   trangThai: string - Trạng thái hoạt động của tổ chức Đang hoạt động, Chờ thành lập, 
     Giải thể, Chấm dứt hoạt động, Chưa hoạt động, Thu hồi QĐ cho phép thành lập, 

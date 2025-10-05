@@ -1,7 +1,7 @@
 # Use Case: Xóa tổ chức công chứng
 
 ## User Story
-- Là Chuyên viên STP, tôi muốn xóa được tổ chức công chứng thuộc Sở Tư pháp của mình, để có thể loại bỏ những bản ghi đã bị tạo nhầm.
+- Là **Chuyên viên STP**, tôi muốn xóa được tổ chức công chứng thuộc Sở Tư pháp của mình, để có thể loại bỏ những bản ghi đã bị tạo nhầm.
 
 ## Acceptance criteria
 - Khi người dùng chọn Xóa tổ chức công chứng, hệ thống phải hiển thị hộp thoại xác nhận với nội dung: “Bạn có chắc chắn muốn xóa tổ chức công chứng này không?”.
@@ -43,4 +43,4 @@
 ## Liên kết
 - Activity Diagram: [AD_Org_Delete.puml]
 - Form/Screen: [SCR_Org_List.md], [SCR_Org_Delete.md]
-- Entity liên quan: ENT_CongChungVien
+- Entity liên quan: ENT_ToChucCongChung

@@ -1,16 +1,14 @@
 # Use Case: Tìm kiếm tổ chức công chứng
 
 ## User Story
-- Là Chuyên viên STP, Lãnh đạo STP, Lãnh đạo phòng HCBTTP tại STP, tôi muốn tìm kiếm theo nhiều tiêu chí, để có thể nhanh chóng tìm ra thông tin tổ chức công chứng trong danh sách quản lý thuộc Sở Tư pháp của mình
-- Là Chuyên viên STP, Lãnh đạo STP, Lãnh đạo phòng HCBTTP tại STP, tôi muốn tìm kiếm theo nhiều tiêu chí, để có thể nhanh chóng tìm ra thông tin tổ chức công chứng trong danh sách quản lý toàn bộ hệ thống
+- Là **Chuyên viên STP, Lãnh đạo STP, Lãnh đạo phòng HCBTTP tại STP**, tôi muốn tìm kiếm theo nhiều tiêu chí, để có thể nhanh chóng tìm ra thông tin tổ chức công chứng trong danh sách quản lý thuộc Sở Tư pháp của mình
+- Là **Lãnh đạo Bộ Tư pháp, Lãnh đạo Cục BTTP, Chuyên viên Cục BTTP**, tôi muốn tìm kiếm theo nhiều tiêu chí, để có thể nhanh chóng tìm ra thông tin tổ chức công chứng trong danh sách quản lý toàn bộ hệ thống
 
 ## Acceptance criteria
 - Hệ thống hiển thị form tìm kiếm với các tiêu chí
-    - Ô điền thông tin tìm kiếm theo "Tên tổ chức công chứng"
+    - Ô điền thông tin tìm kiếm theo "Tên tổ chức công chứng" hoặc "Tên trưởng văn phòng"
     - Ô chọn Sở tư pháp
     - Chọn trạng thái hoạt động 
-    - Điền địa chỉ trụ sở
-    - Điền tên trưởng văn phòng
 - Hiển thị bảng danh sách tổ chức công chứng với các cột tông tin cơ bản (Tên tổ chức công chứng, Địa chỉ tổ chức công chứng, Tên trưởng văn phòng công chứng, Sở Tư pháp (hiển thị nếu người dùng thuộc bộ), Trạng thái) theo tiêu chí đã tìm kiếm.
 - Nếu số lượng bản ghi vượt quá giới hạn hiển thị, hệ thống phải cung cấp phân trang (10 bản ghi 1 trang).
 - Nếu có lỗi tải dữ liệu, hiển thị thông báo lỗi.
@@ -26,18 +24,17 @@
 
 ## Luồng chính
 1. Người dùng truy cập màn hình danh sách tổ chức công chứng (**UC_Org_List**).
-2. Người dùng điền thông tin tìm kiếm (theo tên tổ chức công chứng)
+2. Người dùng điền thông tin tìm kiếm (theo tên tổ chức công chứng hoặc tên trưởng văn phòng)
 3. Người dùng lọc tiêu chí tìm kiếm
 4. Người dùng bấm nút "Tìm kiếm"
 5. Nếu người dùng thuộc cấp Bộ, hệ thống thực hiện truy vấn trên toàn bộ danh sách tổ chức công chứng của hệ thống
 6. Nếu người dùng thuộc cấp Sở, hệ thống truy vấn trên danh sách tổ chức công chứng thuộc Sở Tư pháp gắn với người dùng
 7. Hệ thống truy vấn thông tin tổ chức công chứng
-    - Truy vấn tên tổ chức công chứng gần giống với kết quả đã điền
+    - Truy vấn tên tổ chức công chứng gần giống với kết quả đã điền.
+    - Nếu không có dữ liệu, thực hiện truy vấn theo tên trưởng văn phòng gần giống với kết quả đã điền
     - Truy vấn chính xác theo trạng thái đã chọn
     - Truy vấn chính xác theo Sở tư pháp đã chọn
-    - Truy vấn địa chỉ gần giống với kết quả đã điền
-    - Truy vấn tên trưởng văn phòng gần giống với kết quả đã điền
-8. Hệ thống hiển thị danh sách công chứng theo kết quả đã truy vấn được
+8. Hệ thống hiển thị danh sách tổ chức công chứng theo kết quả đã truy vấn được
 9. Hệ thống hiển thị danh sách tổ chức công chứng theo thứ tự thời gian cập nhật từ mới tới cũ nhất
 10. Nếu số lượng bản ghi lớn hơn 10, hệ thống thực hiện phân trang, 10 bản ghi mỗi trang
 11. Kết thúc.
@@ -53,4 +50,4 @@
 ## Liên kết
 - Activity Diagram: [AD_Org_Search.puml]
 - Form/Screen: [SCR_Org_List.md]
-- Entity liên quan: ENT_ToChucCongChung
+- Entity liên quan: **ENT_ToChucCongChun**g

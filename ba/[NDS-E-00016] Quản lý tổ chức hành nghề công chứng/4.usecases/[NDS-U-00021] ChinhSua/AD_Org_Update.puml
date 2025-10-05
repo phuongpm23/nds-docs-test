@@ -9,9 +9,9 @@ start
 :Chọn thao tác;
   switch (Thao tác?)
     case (Lưu)
-      :Kiểm tra tính hợp lệ dữ liệu \n(**UC_Org_CheckData**);
+      :Kiểm tra tính hợp lệ dữ liệu;
       if (Hợp lệ?) then (Đúng)
-        :Ghi nhận dữ liệu tổ chức công chứng;
+        :Cập nhật dữ liệu tổ chức công chứng;
           if (Ghi thành công?) then (Có)
             :Thông báo "Cập nhật thông tin tổ chức công chứng thành công";
             :Chuyển hướng về danh sách\n(**SCR_Org_List**);
@@ -20,7 +20,7 @@ start
             :Ở lại màn hình màn hình\n(**SCR_Org_Update**);
           endif
       else (Sai)
-        :Thông báo lỗi => Mô tả trong \n(**UC_Org_CheckData**);
+        :Thông báo lỗi;
         :Ở lại màn hình\n(**SCR_Org_Update**);
       endif
     case (Đóng)

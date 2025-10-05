@@ -6,7 +6,7 @@
 - Với vai trò là **Lãnh đạo Bộ Tư pháp, Lãnh đạo Cục BTTP, Chuyên viên Cục BTTP**, tôi muốn xem toàn bộ danh sách chữ ký đã đăng ký trên hệ thống, để thống kê và theo dõi trạng thái.
 
 ## Acceptance Criteria
-- Hệ thống hiển thị danh sách hồ sơ đăng ký chữ ký số với các trường: Tên tổ chức công chứng, Số serial, Nhà cung cấp dịch vụ, Trạng thái, Loại chữ ký số.
+- Hệ thống hiển thị danh sách hồ sơ đăng ký chữ ký số với các trường: Tên tổ chức công chứng, Số serial, Nhà cung cấp dịch vụ, Trạng thái, Loại chữ ký số, tên công chứng viên.
 - Nếu số lượng bản ghi vượt quá giới hạn hiển thị, hệ thống phải cung cấp phân trang (10 bản ghi 1 trang).
 - Từ danh sách, người dùng có thể mở chi tiết, sửa , xóa, xem lịch sử (nếu có quyền và đúng trạng thái)
 - Hiển thị thông báo lỗi nếu không tải được dữ liệu.

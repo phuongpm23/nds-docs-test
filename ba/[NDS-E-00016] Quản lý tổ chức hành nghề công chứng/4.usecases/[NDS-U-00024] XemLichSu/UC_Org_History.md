@@ -1,8 +1,8 @@
 # Use Case: Xem lịch sử cập nhật tổ chức công chứng
 
 ## User Story
-- Là Chuyên viên STP, Lãnh đạo STP, Lãnh đạo phòng HCBTTP tại STP, tôi muốn xem được lịch sử cập nhật thông tin tổ chức công chứng thuộc Sở Tư pháp của mình để có thể truy vết và xem các thay đổi của thông tin
-- Là Lãnh đạo Bộ Tư pháp, Lãnh đạo Cục BTTP, Chuyên viên Cục BTTP, tôi muốn xem được lịch sử cập nhật thông tin của toàn bộ tổ chức công chứng để có thể truy vết và xem các thay đổi của thông tin
+- Là **Chuyên viên STP, Lãnh đạo STP, Lãnh đạo phòng HCBTTP tại STP**, tôi muốn xem được lịch sử cập nhật thông tin tổ chức công chứng thuộc Sở Tư pháp của mình để có thể truy vết và xem các thay đổi của thông tin
+- Là **Lãnh đạo Bộ Tư pháp, Lãnh đạo Cục BTTP, Chuyên viên Cục BTTP**, tôi muốn xem được lịch sử cập nhật thông tin của toàn bộ tổ chức công chứng để có thể truy vết và xem các thay đổi của thông tin
 
 ## Acceptance criteria
 - Hệ thống hiển thị lịch sử cập nhật dưới dạng danh sách
@@ -50,4 +50,4 @@
 ## Liên kết
 - Activity Diagram: [AD_Org_History.puml]
 - Form/Screen: [SCR_Org_History.md]
-- Entity liên quan: ENT_LichSuCapNhatTCHNCC
+- Entity liên quan: **ENT_ToChucCongChung**

@@ -12,8 +12,8 @@
     - Chọn trạng thái
     - Chọn nhà cung cấp dịch vụ
     - Chọn loại chữ ký số
-    - Điền tên công chứng viên
-    - Điền tên tổ chức hành nghề công chứng
+    - Chọn Sở Tư pháp
+    - Chọn tổ chức công chứng
 - Hiển thị bảng danh sách Thông tin đăng ký chữ ký số với các cột tông tin cơ bản (Tên tổ chức công chứng, Số serial, Nhà cung cấp dịch vụ, Trạng thái, Loại chữ ký số, tên công chứng viên) theo tiêu chí đã tìm kiếm.
 - Nếu số lượng bản ghi vượt quá giới hạn hiển thị, hệ thống phải cung cấp phân trang (10 bản ghi 1 trang).
 - Nếu có lỗi tải dữ liệu, hiển thị thông báo lỗi.
@@ -37,7 +37,8 @@
     - Truy vấn chính xác số serial đã điền
     - Truy vấn chính xác theo trạng thái đăng ký đã chọn
     - Truy vấn chính xác theo nhà cung cấp dịch vụ đã chọn
-    - Truy vấn gần đúng tên tổ chức công chứng
+    - Truy vấn chính xác theo tổ chức công chứng đã chọn
+    - Truy vấn chính xác theo Sở Tư pháp đã chọn
     - Truy vấn chính xác loại chữ ký số đã chọn
 6. Hệ thống hiển thị danh sách thông tin đăng ký chữ ký số theo kết quả đã truy vấn được
 7. Hệ thống hiển thị danh sách Thông tin đăng ký chữ ký số theo thứ tự thời gian cập nhật từ mới tới cũ nhất

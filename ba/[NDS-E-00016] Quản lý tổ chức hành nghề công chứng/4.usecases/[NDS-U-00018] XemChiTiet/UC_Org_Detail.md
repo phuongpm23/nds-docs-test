@@ -15,8 +15,7 @@
     - Số điện thoại
     - Trưởng văn phòng
     - Trạng thái hoạt động 
-    - Ngày tạo
-    - Ngày cập nhật
+    - Danh sách công chứng viên: Họ và tên, số thẻ, chức vụ (Công chứng viên/trưởng văn phòng), trạng thái
 - Người dùng có thể quay lại danh sách tổ chức công chứng.
 - Nếu không tìm thấy dữ liệu, hệ thống hiển thị thông báo "Không tìm thấy thông tin tổ chức công chứng".
 - Nếu có lỗi hệ thống, hiển thị thông báo lỗi.  
@@ -39,10 +38,9 @@
     - Tỉnh/Thành phố
     - Phường/Xã 
     - Số điện thoại
-    - Trưởng văn phòng: Họ và tên, số giấy tờ, giới tính, ngày sinh, số thẻ, trạng thái hoạt động
+    - Trưởng văn phòng: Họ và tên
     - Trạng thái hoạt động 
-    - Ngày tạo
-    - Ngày cập nhật
+    - Danh sách công chứng viên: Họ và tên, số thẻ, chức vụ (Công chứng viên/trưởng văn phòng), trạng thái
 5. Hệ thống hiển thị các nút chức năng.
 - Biểu tượng quay lại và nút đóng => Bấm vào chuyển về màn hình danh sách tổ chức công chứng (**SCR_Org_List**)
 - Chỉnh sửa => Mô tả trong use case chỉnh sửa thông tin tổ chức công chứng (**UC_Org_Update**) và màn hình (**SCR_Org_Detail**)
@@ -59,4 +57,4 @@
 ## Liên kết
 - Activity Diagram: [AD_Org_Detail.puml]
 - Form/Screen: [SCR_Org_Detail.md]
-- Entity liên quan: ENT_ToChucCongChung
+- Entity liên quan:** ENT_ToChucCongChung**

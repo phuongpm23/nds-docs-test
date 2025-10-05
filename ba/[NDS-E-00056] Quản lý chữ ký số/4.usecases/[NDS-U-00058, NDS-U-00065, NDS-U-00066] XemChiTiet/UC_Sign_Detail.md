@@ -41,6 +41,7 @@
    - Ngày hiệu lực
    - Ngày hết hạn 
    - File đính kèm
+   - Ghi chú
    - Trạng thái
    - Người duyệt
    - Thời gian duyệt
@@ -67,4 +68,4 @@
 ## Liên kết
 - Activity Diagram: [AD_Sign_Detail.puml]
 - Form/Screen: [SCR_Sign_Detail.md]
-- Entity liên quan: ENT_ChuKySo
+- Entity liên quan: **ENT_ChuKySo**

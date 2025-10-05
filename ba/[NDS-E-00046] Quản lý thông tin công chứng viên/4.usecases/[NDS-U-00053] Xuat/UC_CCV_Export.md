@@ -1,7 +1,7 @@
 # Use Case: Xuất danh sách công chứng viên
 
 ## User Story
-- Là Chuyên viên STP, Lãnh đạo STP, Lãnh đạo phòng HCBTTP tại STP, Lãnh đạo Bộ Tư pháp, Lãnh đạo Cục BTTP, Chuyên viên Cục BTTP, tôi muốn xuất được danh sách công chứng viên trên hệ thống theo kết quả tìm kiếm để có thể lấy được dữ liệu dưới dạng file excel
+- Là **Chuyên viên STP, Lãnh đạo STP, Lãnh đạo phòng HCBTTP tại STP, Lãnh đạo Bộ Tư pháp, Lãnh đạo Cục BTTP, Chuyên viên Cục BTTP**, tôi muốn xuất được danh sách công chứng viên trên hệ thống theo kết quả tìm kiếm để có thể lấy được dữ liệu dưới dạng file excel
 
 ## Acceptance criteria
 - Xuất thành công danh sách gồm các trường thông tin
@@ -31,4 +31,4 @@
 ## Liên kết
 - Activity Diagram: [AD_CCV_Export.puml]
 - Form/Screen: [SCR_CCV_List.md]
-- Entity liên quan: ENT_CongChungVien, ENT_ToChucCongChung
+- Entity liên quan: **ENT_CongChungVien**, **ENT_ToChucCongChung**

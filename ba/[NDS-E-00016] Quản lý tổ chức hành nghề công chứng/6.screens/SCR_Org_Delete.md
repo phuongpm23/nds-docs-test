@@ -5,7 +5,7 @@ Popup xác nhận khi người dùng thực hiện thao tác xóa tổ chức c�
 - Người dùng đã đăng nhập và có quyền xóa tổ chức công chứng.
 
 ## Nguyên mẫu
-[https://www.figma.com/design/STv6BI8XR469xhObHjgCHs/Test-Puml?node-id=61-26622&t=D6KMt6aiRNAU7m7V-1]
+[]
 
 ## Thành phần
 

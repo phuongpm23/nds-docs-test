@@ -15,18 +15,19 @@ Màn hình hiển thị chi tiết chữ ký số, trạng thái phê duyệt v�
 
 <div style="overflow-x:auto">
 
-| Trường thông tin | Control   | Field            | Max length | Bắt buộc (Y/N) | Cho phép sửa (Y/N) | Mô tả                                             |
-|:-----------------|:----------|:-----------------|:-----------|:---------------|:-------------------|:--------------------------------------------------|
-| Công chứng viên  | text      | tenCongChungVien | 255        | Y              | N                  | Tên công chứng viên nếu là loại chữ ký số cá nhân |
-| Loại chữ ký số   | text      | loaiChuKy        | 100        | Y              | N                  | Thông tin loại chữ ký số                          |
-| Nhà cung cấp     | text      | nhaCungCap       | 255        | Y              | N                  | Nhà cung cấp chứng thư số                         |
-| Số serial        | text      | soSerial         | 100        | Y              | N                  | Mã định danh chứng thư số                         |
-| Ngày hiệu lực    | datetime  | ngayHieuLuc      | -          | Y              | N                  | Ngày bắt đầu hiệu lực                             |
-| Ngày hết hạn     | datetime  | ngayHetHan       | -          | Y              | N                  | Ngày hết hạn                                      |
-| File đính kèm    | file/link | fileDinhKem      | -          | N              | N                  | File chứng thư số đính kèm                        |
-| Trạng thái       | text      | trangThai        | 50         | Y              | N                  | Mới tạo / Chờ duyệt / Đã duyệt / Từ chối          |
-| Người duyệt      | text      | nguoiDuyet       | 255        | N              | N                  | Tên người phê duyệt                               |
-| Thời gian duyệt  | datetime  | thoiGianDuyet    | -          | N              | N                  | Thời gian phê duyệt                               |
+| Trường thông tin | Control   | Field         | Max length | Bắt buộc (Y/N) | Cho phép sửa (Y/N) | Mô tả                                                            |
+|:-----------------|:----------|:--------------|:-----------|:---------------|:-------------------|:-----------------------------------------------------------------|
+| Công chứng viên  | text      | hodem + ten   | -          | -              | N                  | Tên công chứng viên nếu là loại chữ ký số cá nhân                |
+| Loại chữ ký số   | text      | loaiChuKy     | -          | -              | N                  | Thông tin loại chữ ký số                                         |
+| Nhà cung cấp     | text      | nhaCungCap    | -          | -              | N                  | Nhà cung cấp chứng thư số                                        |
+| Số serial        | text      | soSerial      | -          | -              | N                  | Mã định danh chứng thư số                                        |
+| Ngày hiệu lực    | datetime  | ngayHieuLuc   | -          | -              | N                  | Ngày bắt đầu hiệu lực                                            |
+| Ngày hết hạn     | datetime  | ngayHetHan    | -          | -              | N                  | Ngày hết hạn. Nếu quá hạn, hiển thị thông báo "Hết hạn" bên cạnh |
+| File đính kèm    | file/link | fileDinhKem   | -          | -              | N                  | File đính kèm                                                    |
+| Ghi chú          | text      | ghiChu        | -          | -              | N                  | File chứng thư số đính kèm                                       |
+| Trạng thái       | text      | trangThai     | -          | -              | N                  | Mới tạo / Chờ duyệt / Đã duyệt / Từ chối                         |
+| Người duyệt      | text      | nguoiDuyet    | -          | -              | N                  | Tên người phê duyệt                                              |
+| Thời gian duyệt  | datetime  | thoiGianDuyet | -          | -              | N                  | Thời gian phê duyệt                                              |
 
 </div>
 

@@ -8,7 +8,7 @@ start
   :Chọn thao tác;
   switch (Thao tác?)
     case (Lưu)
-      :Kiểm tra tính hợp lệ dữ liệu \n(**UC_Org_CheckData**);
+      :Kiểm tra tính hợp lệ dữ liệu;
       if (Hợp lệ?) then (Đúng)
         :Ghi nhận dữ liệu tổ chức công chứng;
           if (Ghi thành công?) then (Có)
@@ -19,7 +19,7 @@ start
             :Ở lại màn hình màn hình\n(**SCR_Org_Create**);
           endif
       else (Sai)
-        :Thông báo lỗi => Mô tả trong \n(**UC_Org_CheckData**);
+        :Thông báo lỗi;
         :Ở lại màn hình\n(**SCR_Org_create**);
       endif
     case (Đóng)

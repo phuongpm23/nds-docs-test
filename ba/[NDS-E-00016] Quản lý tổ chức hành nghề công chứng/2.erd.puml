@@ -4,12 +4,12 @@ left to right direction
 
 entity ToChucCongChung
 entity CongChungVien
-entity ChuKySo
-entity LichSuCapNhatTCHNCC
+entity LichSuCapNhat
+entity Donvi
 
 ToChucCongChung ||..{ CongChungVien
-ToChucCongChung ||..o{ ChuKySo
-ToChucCongChung ||..{ LichSuCapNhatTCHNCC
+ToChucCongChung ||..{ LichSuCapNhat
+ToChucCongChung ||..|| DonVi
 
 @enduml
 

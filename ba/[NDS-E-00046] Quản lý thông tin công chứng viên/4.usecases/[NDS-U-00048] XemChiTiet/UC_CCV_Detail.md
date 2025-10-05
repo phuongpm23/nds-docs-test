@@ -7,6 +7,7 @@
 ## Acceptance criteria
 - Hệ thống hiển thị đầy đủ thông tin chi tiết của công chứng viên được chọn từ danh sách.
 - Các trường thông tin bao gồm: 
+    - Ảnh công chứng viên
     - Họ tên 
     - Ngày sinh
     - Giới tính
@@ -44,6 +45,7 @@
 3. Nếu người dùng có quyền xem chứng chỉ hành nghề, hệ thống truy vấn danh sách chứng chỉ hành nghề công chứng viên theo congChungVienId (**ENT_ChungChiHanhNghe**)
 4. Hệ thống hiển thị màn hình chi tiết công chứng viên (**SCR_CCV_Detail**) bao gồm các thông tin
     - Thông tin chung (**ENT_CongChungVien**)
+        - Ảnh công chứng viên
         - Họ tên 
         - Ngày sinh
         - Giới tính
@@ -88,4 +90,4 @@
 ## Liên kết
 - Activity Diagram: [AD_CCV_Detail.puml]
 - Form/Screen: [SCR_CCV_Detail.md]
-- Entity liên quan: ENT_CongChungVien, ENT_ToChucCongChung, ENT_ChungChiHanhNghe
+- Entity liên quan: **ENT_CongChungVien**, **ENT_ToChucCongChung**, E**NT_ChungChiHanhNghe**

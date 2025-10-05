@@ -33,6 +33,6 @@ Form cho phép công chứng viên/nhân viên TCHNCC đăng ký chữ ký số 
 | Tải File đính kèm | button | button Upload file đính kèm (định dạng PDF)                             |
 | Trình duyệt       | Button | Kiểm tra hợp lệ và lưu vào ENT_ChuKySo với trạng thái = "Chờ duyệt"     |
 | Lưu nháp          | Button | Lưu dữ liệu với trạng thái = "Mới tạo", không bắt buộc đầy đủ thông tin |
-| Hủy               | Button | Đóng form, không lưu dữ liệu                                            |
+| Đóng              | Button | Hiển thị popup xác nhận hủy thao tác                                    |
 
 </div>
