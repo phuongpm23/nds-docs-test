@@ -4,21 +4,21 @@ Tài liệu này mô tả **các quy chuẩn nghiệp vụ chung** áp dụng ch
 
 ## BR1. Phân trang dữ liệu
 
-| Nội dung          | Quy chuẩn nghiệp vụ                                                                                                                                                          |
-|-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cách hiển thị     | Danh sách dữ liệu được phân trang, mặc định 10 bản ghi/trang                                                                                                                 |
-| Điều chỉnh        | Người dùng có thể thay đổi số bản ghi/trang: 10, 20, 50, 100, các thông tin hiển thị và điều hướng thay đổi theo số bản ghi/trang mà người dùng chọn                         |
-| Điều hướng        | Có biểu tượng chuyển "Trang trước", "Trang sau". Hiển thị số trang hiện tại, mỗi số đại diện cho một trang dữ liệu. Người dùng có thể bấm vào để chuyển sang trang tương ứng.                |
-| Thông tin bổ sung | Luôn hiển thị tổng số bản ghi và tổng số trang. Hiển thị theo định dạng ""STT bản ghi đầu tiên của trang" - "STT bản ghi cuối cuối cùng trang" trên "tổng số lượng bản ghi"" |
+| Nội dung          | Quy chuẩn nghiệp vụ                                                                                                                                                           |
+|-------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Cách hiển thị     | Danh sách dữ liệu được phân trang, mặc định 10 bản ghi/trang                                                                                                                  |
+| Điều chỉnh        | Người dùng có thể thay đổi số bản ghi/trang: 10, 20, 50, 100, các thông tin hiển thị và điều hướng thay đổi theo số bản ghi/trang mà người dùng chọn                          |
+| Điều hướng        | Có biểu tượng chuyển "Trang trước", "Trang sau". Hiển thị số trang hiện tại, mỗi số đại diện cho một trang dữ liệu. Người dùng có thể bấm vào để chuyển sang trang tương ứng. |
+| Thông tin bổ sung | Luôn hiển thị tổng số bản ghi và tổng số trang. Hiển thị theo định dạng ""STT bản ghi đầu tiên của trang" - "STT bản ghi cuối cuối cùng trang" trên "tổng số lượng bản ghi""  |
 
 
 ## BR2. Hiển thị danh sách
 
-| Nội dung | Quy chuẩn nghiệp vụ |
-|----------|----------------------|
-| Thứ tự hiển thị | Mặc định thứ tự hiển thị là theo thời gian cập nhật từ mới tới cũ nhất. Nếu có thay đổi về thứ tự, sẽ mô tả trong Usecase |
+| Nội dung           | Quy chuẩn nghiệp vụ                                                                                                                                                             |
+|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Thứ tự hiển thị    | Mặc định thứ tự hiển thị là theo thời gian cập nhật từ mới tới cũ nhất. Nếu có thay đổi về thứ tự, sẽ mô tả trong Usecase                                                       |
 | Thông tin hiển thị | Thông tin nào bị trống hoặc không có dữ liệu, hiện dấu "-". Thông tin nào dài quá 2 dòng, chỉ hiển thị 1 phần thông tin, hiển thị biểu tượng "...", hover vào hiển thị chi tiết |
-| Hiển thị ngày | Hiển thị ngày theo định dạng dd/mm/yyyy hh:mm nếu là datetime hoặc dd/mm/yyyy nếu là date|
+| Hiển thị ngày      | Hiển thị ngày theo định dạng dd/mm/yyyy hh:mm nếu là datetime hoặc dd/mm/yyyy nếu là date                                                                                       |
 
 ## BR3. Tìm kiếm và lọc
 
@@ -37,16 +37,16 @@ Tài liệu này mô tả **các quy chuẩn nghiệp vụ chung** áp dụng ch
 | Tên file       | Tên theo Entity + ngày giờ xuất. Ví dụ: `DanhSachCongChungVien-20251002-0930.xlsx`                 |
 | Dữ liệu xuất   | Dữ liệu xuất đúng theo điều kiện tìm kiếm, bộ lọc. Danh sách xuất ra giống với danh sách hiển thị. |
 | Giới hạn       | Xuất tối đa 50.000 bản ghi trong một lần                                                           |
-| Định dạng cột  | Ngày hiển thị `dd/MM/yyyy` hoặc `dd/MM/yyyy HH:mm`, số tiền có dấu phân cách hàng nghìn                                    |
+| Định dạng cột  | Ngày hiển thị `dd/MM/yyyy` hoặc `dd/MM/yyyy HH:mm`, số tiền có dấu phân cách hàng nghìn            |
 
 
 ## BR5. File đính kèm
 
-| Nội dung           | Quy chuẩn nghiệp vụ                                                                                            |
-|--------------------|----------------------------------------------------------------------------------------------------------------|
-| Định dạng cho phép | Tùy từng trường hợp cụ thể sẽ mô tả trong chi tiết                                                             |
-| Dung lượng         | Tối đa 10MB/file, nếu có thay đổi sẽ quy định rõ trong usecase hoặc screen                                                                                               |
-| Xem file           | Đối với file PDF và file ảnh, click vào hiển thị màn hình preview |
+| Nội dung           | Quy chuẩn nghiệp vụ                                                        |
+|--------------------|----------------------------------------------------------------------------|
+| Định dạng cho phép | Tùy từng trường hợp cụ thể sẽ mô tả trong chi tiết                         |
+| Dung lượng         | Tối đa 10MB/file, nếu có thay đổi sẽ quy định rõ trong usecase hoặc screen |
+| Xem file           | Đối với file PDF và file ảnh, click vào hiển thị màn hình preview          |
 
 
 ## BR6. Nhật ký cập nhật (Audit log)
@@ -96,5 +96,8 @@ Tài liệu này mô tả **các quy chuẩn nghiệp vụ chung** áp dụng ch
 | Nút "Đóng"     | Luôn hiển thị trong popup, click vào sẽ hủy thao tác và đóng popup |
 | Biểu tượng "x" | Luôn hiển thị trong popup, click vào sẽ hủy thao tác và đóng popup |
 
-
+## 11. Button
+| Nội dung | Quy chuẩn nghiệp vụ                                                            |
+|----------|--------------------------------------------------------------------------------|
+| Tooltips | Khi hover vào 1 biểu tượng/nút không có label, hệ thống hiện thị tooltip mô tả |
 

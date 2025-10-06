@@ -25,7 +25,7 @@ if (Có quyền?) then (Yes)
       stop
     endif  
   else (No)
-    :Không hiển thị danh sách chứng chỉ hành nghề;
+    :Không hiển thị chứng chỉ hành nghề;
     stop
   endif
 else (No)

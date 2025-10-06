@@ -16,7 +16,7 @@ Nơi tập trung để xem và quản lý công chứng viên trên hệ thống
 
 | Trường thông tin     | Control | Field                                            | Max length | Bắt buộc (Y/N) | Giá trị mặc định | Cho phép sửa (Y/N) | Mô tả                                                                                                     |
 |:---------------------|:--------|:-------------------------------------------------|:-----------|:---------------|:-----------------|:-------------------|:----------------------------------------------------------------------------------------------------------|
-| Sở Tư pháp           | text    | tenDonVi                                         | -          | -              | -                | -                  | Hiển thị tên Sở Tư pháp                                                                                   |
+| Sở Tư pháp           | text    | tenDonVi                                         | -          | -              | -                | -                  | Hiển thị tên Sở Tư pháp (Không hiển thị cột này với người dùng cấp Sở)                                                                                  |
 | Họ và tên            | text    | hoDem + ten                                      | -          | -              | -                | -                  | Họ và tên công chứng viên                                                                                 |
 | Số thẻ               | text    | soThe                                            | -          | -              | -                | -                  | Số hiệu thẻ hành nghề công chứng                                                                          |
 | Tổ chức công chứng   | text    | tenDonVi                                         | -          | -              | -                | -                  | Tên tổ chức công chứng đang hành nghề                                                                     |
@@ -34,8 +34,8 @@ Nơi tập trung để xem và quản lý công chứng viên trên hệ thống
 |:------------------------------|:---------|:---------------------------------------------------------------------------------------------------------------------------------|
 | Ô tìm kiếm                    | Input    | Chỉ hiển thị khi người dùng có quyền tìm kiếm công chứng viên, nhập tên công chứng viên hoặc số thẻ để tìm kiếm                  |                                                        |
 | Ô chọn trạng thái             | dropdown | Chỉ hiển thị khi người dùng có quyền tìm kiếm công chứng viên, Chọn trạng thái từ danh sách trạng thái hoạt động của công chứng viên (Giống với SCR_CCV_Create) để tìm kiếm (**UC_CCV_Search**) |
-| Ô chọn Sở Tư pháp            | dropdown | Chỉ hiển thị khi người dùng có quyền tìm kiếm công chứng viên, Chọn Sở Tư pháp từ danh sách Sở Tư pháp để tìm kiếm (**UC_CCV_Search**) |
-| Ô chọn Tổ chức công chứng            | dropdown | Chỉ hiển thị khi người dùng có quyền tìm kiếm công chứng viên, Chọn tổ chức công chứng theo Sở Tư Pháp đã chọn (**UC_CCV_Search**) |
+| Ô chọn Sở Tư pháp            | dropdown | Chỉ hiển thị khi người dùng có quyền tìm kiếm công chứng viên, Không hiển thị với người dùng cấp Sở. Chọn Sở Tư pháp từ danh sách Sở Tư pháp để tìm kiếm (**UC_CCV_Search**) |
+| Ô chọn Tổ chức công chứng            | dropdown | Chỉ hiển thị khi người dùng có quyền tìm kiếm công chứng viên. Chọn tổ chức công chứng theo Sở Tư Pháp đã chọn/hiện tại (**UC_CCV_Search**) |
 | Biểu tượng tìm kiếm           | Button   | Bấm vào thực hiện tìm kiếm theo thông tin đã nhập/chọn (UC_CCV_Search)   |
 | Biểu tượng reset           | Button   | Bấm vào thực hiện reset kết quả tìm kiếm, hiển thị lại danh sách mặc định |   
 | Nút xuất danh sách            | Button   | Hiển thị nếu có quyền, click sẽ xuất danh sách theo điều kiện đã tìm (UC_CCV_Export)                                             |

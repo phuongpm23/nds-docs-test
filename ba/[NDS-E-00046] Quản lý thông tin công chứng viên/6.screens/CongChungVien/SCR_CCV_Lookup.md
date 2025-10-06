@@ -58,10 +58,11 @@ Form cho phép người dùng nhập tiêu chí tra cứu và hiển thị danh 
 
 <div style="overflow-x:auto">
 
-| Tên          | Loại    | Mô tả                                                                 |
-| :----------- | :------ | :-------------------------------------------------------------------- |
-| Tra cứu      | Button  | Thực hiện tra cứu theo tiêu chí đã nhập                               |
-| Phân trang   | Control | Hiển thị danh sách theo trang (10 bản ghi/trang)                      |
-| Đóng popup   | Button  | Đóng popup chi tiết chứng chỉ hành nghề, quay lại màn hình tra cứu     |
+| Tên        | Loại    | Mô tả                                                              |
+|:-----------|:--------|:-------------------------------------------------------------------|
+| Tra cứu    | Button  | Thực hiện tra cứu theo tiêu chí đã nhập                            |
+| Phân trang | Control | Hiển thị danh sách theo trang (10 bản ghi/trang)                   |
+| Đóng popup | Button  | Đóng popup chi tiết chứng chỉ hành nghề, quay lại màn hình tra cứu |
+| Reset      | Button  | Reset màn hình tra cứu                                             |
 
 </div>

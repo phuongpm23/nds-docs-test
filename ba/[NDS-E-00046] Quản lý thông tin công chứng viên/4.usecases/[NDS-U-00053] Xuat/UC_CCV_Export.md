@@ -17,7 +17,14 @@
 1. Người dùng truy cập thành công màn hình danh sách công chứng viên.
 2. Người dùng tìm kiếm danh sách công chứng viên cần xuất (UC_CCV_Export).
 3. Người dùng bấm xuất danh sách.
-4. Nếu người dùng có quyền, hệ thống xuất danh sách công chứng viên theo kết quả đã tìm kiếm
+4. Nếu người dùng có quyền, hệ thống xuất danh sách công chứng viên theo kết quả đã tìm kiếm. File excel danh sách bao gồm các cột bên dưới
+    - Sở Tư pháp
+    - Họ và tên
+    - Số thẻ
+    - Số CCCD/CMND/Hộ chiếu
+    - Tổ chức công chứng
+    - Địa chỉ tổ chức công chứng
+    - Trạng thái
 5. Kết thúc.
 
 ## Luồng phụ / ngoại lệ

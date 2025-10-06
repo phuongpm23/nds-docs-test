@@ -6,7 +6,7 @@ Popup hiển thị lịch sử cập nhật thông tin chứng chỉ hành ngh�
 - Người dùng có quyền xem lịch sử cập nhật chứng chỉ hành nghề.
 
 ## Nguyên mẫu
-[https://www.figma.com/design/STv6BI8XR469xhObHjgCHs/Test-Puml?node-id=44-15333&t=qhcu7sCD1S2A6kb5-1]
+[https://www.figma.com/design/G1GnG3ecpubkOPJjxrEiRo/CSDL.CC_V1?node-id=156-18473&t=AJ0R7XTWgx3u3lfZ-1]
 
 ## Thành phần
 

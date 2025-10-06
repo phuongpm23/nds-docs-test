@@ -70,10 +70,11 @@ Hiển thị đầy đủ hồ sơ cá nhân,thông tin hành nghề của công
 
 <div style="overflow-x:auto">
 
-| Tên                        | Loại   | Mô tả                                                                            |
-|:---------------------------|:-------|:---------------------------------------------------------------------------------|
-| Quay lại / Đóng            | Button | Trở về màn hình danh sách công chứng viên (**SCR_CCV_List**)                     |
-| Chỉnh sửa                  | Button | Mở màn hình chỉnh sửa thông tin công chứng viên (**UC_CCV_Update**)              |
-| Lịch sử cập nhật chứng chỉ | Button | Xem lịch sử cập nhật chứng chỉ (**UC_ChungChi_History**) (Hiển thị nếu có quyền) |
+| Tên                        | Loại   | Mô tả                                                                                  |
+|:---------------------------|:-------|:---------------------------------------------------------------------------------------|
+| Quay lại / Đóng            | Button | Trở về màn hình danh sách công chứng viên (**SCR_CCV_List**)                           |
+| Chỉnh sửa                  | Button | Mở màn hình chỉnh sửa thông tin công chứng viên (**UC_CCV_Update**)                    |
+| Lịch sử cập nhật chứng chỉ | Button | Hiển thị lịch sử cập nhật chứng chỉ (**UC_ChungChi_History**) (Hiển thị nếu có quyền)  |
+| Lịch sử cập nhật           | Button | Hiển thị lịch sử cập nhật công chứng viên (**UC_CCV_History**) (Hiển thị nếu có quyền) |
 
 </div>
