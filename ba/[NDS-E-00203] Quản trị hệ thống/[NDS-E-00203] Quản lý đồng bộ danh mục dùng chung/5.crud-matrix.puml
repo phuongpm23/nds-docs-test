@@ -1,0 +1,28 @@
+@startuml CDUD_Admin
+note as CDUD_Admin
+| Entity                | List (R) | Search (R) | API (Sync) | History (R) |
+| :-------------------- | :------: | :--------: | :--------: | :----------:|
+| DM_Quoctich           |    R     |     R      |     C      |      R      |
+| DM_TinhTP_old         |    R     |     R      |     C      |      R      |
+| DM_Phuongxa_old       |    R     |     R      |     C      |      R      |
+| DM_TinhTP_new         |    R     |     R      |     C      |      R      |
+| DM_Phuongxa_new       |    R     |     R      |     C      |      R      |
+| DM_Dantoc             |    R     |     R      |     C      |      R      |
+| DM_Gioitinh           |          |            |     C      |      R      |
+end note
+@enduml
+
+@startuml CDUD_CVBTP
+note as CDUD_CVBTP
+| Entity                | List (R) | Search (R) | API (Sync) | History (R) |
+| :-------------------- | :------: | :--------: | :--------: | :----------:|
+| DM_Quoctich           |    R     |     R      |            |             |
+| DM_TinhTP_old         |    R     |     R      |            |             |
+| DM_Phuongxa_old       |    R     |     R      |            |             |
+| DM_TinhTP_new         |    R     |     R      |            |             |
+| DM_Phuongxa_new       |    R     |     R      |            |             |
+| DM_Dantoc             |    R     |     R      |            |             |
+| DM_Gioitinh           |          |            |            |             |
+end note
+@enduml
+

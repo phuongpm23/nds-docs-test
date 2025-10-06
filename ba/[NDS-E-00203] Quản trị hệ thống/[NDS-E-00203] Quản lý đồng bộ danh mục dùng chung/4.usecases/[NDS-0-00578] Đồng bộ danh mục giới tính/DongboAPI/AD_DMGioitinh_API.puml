@@ -1,0 +1,23 @@
+@startuml DMGioitinh_API
+!pragma layout smetana
+title Activity Diagram: Đồng bộ danh mục giới tính
+
+start
+: Hệ thống gọi API hệ thống khác để lấy danh mục giới tính;
+: Hệ thống khác xử lý yêu cầu và trả về dữ liệu danh mục giới tính;
+: Kiểm tra dữ liệu trả về;
+
+if (Hợp lệ?) then (Yes)
+  : Cập nhật thêm bản ghi mới danh mục giới tính vào DB (**DMGioitinh**);
+  if (Có dữ liệu?) then (Yes)
+    : Hiển thị thông tin danh mục giới tính \n (**DMGioitinh**);
+    : Thông báo đồng bộ thông tin thành công;
+  else (No)
+    : Hiển thị "Không có dữ liệu danh mục giới tính";
+  endif
+else (No)
+  : Thông báo lỗi "Không có quyền truy cập";
+endif
+
+stop
+@enduml

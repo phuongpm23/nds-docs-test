@@ -1,0 +1,15 @@
+@startuml ldm
+!pragma layout smetana
+left to right direction
+
+entity DMQuoctich
+entity DMTinhTP_old
+entity DMTinhTP_new
+entity DMPhuongxa_old
+entity DMPhuonhxa_new
+entity DMDantoc 
+entity DMGioitinh
+
+
+'Những danh mục có các trường thông tin tương ứng DM_LoaiGDCC
+@enduml

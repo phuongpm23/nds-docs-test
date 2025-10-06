@@ -1,0 +1,23 @@
+@startuml DM_Loaitaisan_Search
+!pragma layout smetana
+title Activity Diagram: Tìm kiếm danh mục Loại tài sản
+
+start
+:Người dùng truy cập màn hình danh sách danh mục Loại tài sản;
+if (Có quyền?) then (Yes)
+  :Người dùng điền thông tin tìm kiếm;
+  :Người dùng lọc các điều kiện tìm kiếm;
+  :Người dùng bấm nút tìm kiếm hoặc gõ Enter;
+  :Truy vấn dữ liệu thông tin danh mục Loại tài sản và điều kiện tìm kiếm;
+  if (Có dữ liệu?) then (Yes)
+    :Hiển thị danh sách danh mục Loại tài sản \n(**DM_LoaiGDCC_List**);
+    stop
+  else (No)
+    :Hiển thị "Không có danh mục theo điều kiện tìm kiếm";
+    stop
+  endif
+else (No)
+  :Không hiển thị thanh tìm kiếm;
+  stop
+endif
+@enduml

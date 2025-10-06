@@ -1,0 +1,33 @@
+@startuml DM_LoaiGDCC_Update
+!pragma layout smetana
+title Activity Diagram: Chỉnh sửa danh mục loại giao dịch công chứng
+start
+:Truy cập chức năng "Danh sách danh mục loại giao dịch công chứng";
+:Chọn chỉnh sửa danh mục đã có trong danh sách;
+:Hiển thị form nhập thông tin chỉnh sửa;
+:Nhập thông tin chỉnh sửa danh mục;
+  :Chọn thao tác;
+  switch (Thao tác?)
+    case (Lưu thông tin)
+      :Ghi nhận dữ liệu danh mục loại giao dịch công chứng;
+        if (Ghi thành công?) then (Có)
+        :Thông báo "Lưu thông tin danh mục loại giao dịch công chứng thành công";
+        :Chuyển hướng về danh sách\n(**DM_LoaiGDCC**);
+        stop
+      else (Không)
+        :Thông báo lỗi hệ thống;
+        :Ở lại màn hình màn hình\n(**DM_LoaiGDCC_Update**);
+        stop
+      endif
+    case (Đóng)
+      :Xác nhận hủy thao tác?;
+      if (Đồng ý?) then (Có)
+        :Hủy thao tác;
+        :Chuyển hướng về danh sách\n(**DM_LoaiGDCC**);
+        stop
+      else (Không)
+        :Ở lại màn hình\n(**DM_LoaiGDCC_Update**);
+        stop
+      endif
+  endswitch
+@enduml

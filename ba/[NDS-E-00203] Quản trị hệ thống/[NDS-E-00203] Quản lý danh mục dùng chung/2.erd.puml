@@ -1,0 +1,17 @@
+@startuml erd
+!pragma layout smetana
+left to right direction
+
+entity DM_LoaiGDCC
+entity DM_TenGDCC
+entity DM_Loaitaisan
+entity DM_TTGiaodich
+entity DM_Giayto
+entity DM_BenLQ
+entity DM_Chucvu
+
+
+
+@enduml
+
+

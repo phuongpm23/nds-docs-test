@@ -1,0 +1,23 @@
+@startuml DM_Giayto_List
+!pragma layout smetana
+title Activity Diagram: Xem danh sách danh mục giấy tờ 
+
+start
+
+:Người dùng truy cập màn hình danh sách danh mục giấy tờ ;
+:Kiểm tra quyền truy cập;
+if (Người dùng có quyền?) then (Có)
+  :Kiểm tra thông tin phân quyền người dùng;
+  :Tải danh sách giấy tờ ;
+  if (Danh sách có dữ liệu?) then (Có)
+    :Sắp xếp theo thời gian cập nhật (mới → cũ);
+    :Hiển thị danh sách;
+  else (Không)
+    :Hiển thị thông báo "Không có bản ghi danh mục";
+  endif
+else (Không)
+  :Hiển thị thông báo "Không có quyền truy cập";
+endif
+
+stop
+@enduml

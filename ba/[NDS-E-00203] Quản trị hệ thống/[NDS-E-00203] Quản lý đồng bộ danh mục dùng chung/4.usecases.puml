@@ -1,0 +1,121 @@
+@startuml
+!pragma layout smetana
+left to right direction
+
+'==================== Actors ====================
+actor "Quản trị hệ thống" as Admin
+actor "Chuyên viên Cục BTTP" as CVBTP
+actor "Hệ thống khác" as Hethongkhac
+
+'==================== Quản lý đồng bộ danh mục ====================
+package "Quản lý đồng bộ danh mục Quốc tịch" as DMQuoctich {
+    usecase "Xem danh sách danh mục Quốc tịch" as UC_DMQuoctich_List
+    usecase "Tìm kiếm danh mục Quốc tịch" as UC_DMQuoctich_Search
+    usecase "Đồng bộ danh mục Quốc tịch qua API" as UC_DMQuoctich_API
+    usecase "Xem lịch sử đồng bộ danh mục Quốc tịch" as UC_DMQuoctich_History
+}
+
+package "Quản lý đồng bộ tỉnh/thành phố (cũ)" as DMTinhTP_old {
+    usecase "Xem danh sách danh mục tỉnh/thành phố (cũ)" as UC_DMTinhTP_old_List
+    usecase "Tìm kiếm danh mục tỉnh/thành phố (cũ)" as UC_DMTinhTP_old_Search
+    usecase "Đồng bộ danh mục tỉnh/thành phố (cũ) qua API" as UC_DMTinhTP_old_API
+    usecase "Xem lịch sử đồng bộ danh mục tỉnh/thành phố (cũ)" as UC_DMTinhTP_old_History
+}
+
+package "Quản lý đồng bộ phường/xã (cũ)" as DMPhuongxa_old {
+    usecase "Xem danh sách danh mục phường/xã (cũ)" as UC_DMPhuongxa_old_List
+    usecase "Tìm kiếm danh mục phường/xã (cũ)" as UC_DMPhuongxa_old_Search
+    usecase "Đồng bộ danh mục phường/xã (cũ) qua API" as UC_DMPhuongxa_old_API
+    usecase "Xem lịch sử đồng bộ danh mục phường/xã (cũ)" as UC_DMPhuongxa_old_History
+}
+
+package "Quản lý đồng bộ tỉnh/thành phố (mới)" as DMTinhTP_new {
+    usecase "Xem danh sách danh mục tỉnh/thành phố (mới)" as UC_DMTinhTP_new_List
+    usecase "Tìm kiếm danh mục tỉnh/thành phố (mới)" as UC_DMTinhTP_new_Search
+    usecase "Đồng bộ danh mục tỉnh/thành phố (mới) qua API" as UC_DMTinhTP_new_API
+    usecase "Xem lịch sử đồng bộ danh mục tỉnh/thành phố (mới)" as UC_DMTinhTP_new_History
+}
+
+package "Quản lý đồng bộ phường/xã (mới)" as DMPhuongxa_new {
+    usecase "Xem danh sách danh mục phường/xã (mới)" as UC_DMPhuongxa_new_List
+    usecase "Tìm kiếm danh mục phường/xã (mới)" as UC_DMPhuongxa_new_Search
+    usecase "Đồng bộ danh mục phường/xã (mới) qua API" as UC_DMPhuongxa_new_API
+    usecase "Xem lịch sử đồng bộ danh mục phường/xã (mới)" as UC_DMPhuongxa_new_History
+}
+
+package "Quản lý đồng bộ danh mục dân tộc" as DMDantoc {
+    usecase "Xem danh sách danh mục dân tộc" as UC_DMDantoc_List
+    usecase "Tìm kiếm danh mục dân tộc" as UC_DMDantoc_Search
+    usecase "Đồng bộ danh mục dân tộc qua API" as UC_DMDantoc_API
+    usecase "Xem lịch sử đồng bộ danh mục dân tộc" as UC_DMDantoc_History
+}
+
+package "Quản lý đồng bộ danh mục giới tính" as DMGioitinh {
+    usecase "Đồng bộ danh mục giới tính qua API" as UC_DMGioitinh_API
+    usecase "Xem lịch sử đồng bộ danh mục giới tính" as UC_DMGioitinh_History
+}
+
+
+
+'==================== Liên kết Actor → UC ====================
+' Quản trị viên
+
+Admin -- UC_DMQuoctich_List
+Admin -- UC_DMQuoctich_Search
+Admin -- UC_DMQuoctich_History
+
+Admin -- UC_DMTinhTP_old_List
+Admin -- UC_DMTinhTP_old_Search
+Admin -- UC_DMTinhTP_old_History
+
+Admin -- UC_DMPhuongxa_old_List
+Admin -- UC_DMPhuongxa_old_Search
+Admin -- UC_DMPhuongxa_old_History
+
+Admin -- UC_DMTinhTP_new_List
+Admin -- UC_DMTinhTP_new_Search
+Admin -- UC_DMTinhTP_new_History
+
+Admin -- UC_DMPhuongxa_new_List
+Admin -- UC_DMPhuongxa_new_Search
+Admin -- UC_DMPhuongxa_new_History
+
+Admin -- UC_DMDantoc_List
+Admin -- UC_DMDantoc_Search
+Admin -- UC_DMDantoc_History
+
+Admin -- UC_DMGioitinh_API
+Admin -- UC_DMGioitinh_History
+
+Hethongkhac -- UC_DMQuoctich_API
+
+Hethongkhac -- UC_DMTinhTP_old_API
+
+Hethongkhac -- UC_DMPhuongxa_old_API
+
+Hethongkhac -- UC_DMTinhTP_new_API
+
+Hethongkhac -- UC_DMPhuongxa_new_API
+
+Hethongkhac -- UC_DMDantoc_API
+
+CVBTP -- UC_DMQuoctich_List
+CVBTP -- UC_DMQuoctich_Search
+
+CVBTP -- UC_DMTinhTP_old_List
+CVBTP -- UC_DMTinhTP_old_Search
+
+CVBTP -- UC_DMPhuongxa_old_List
+CVBTP -- UC_DMPhuongxa_old_Search
+
+CVBTP -- UC_DMTinhTP_new_List
+CVBTP -- UC_DMTinhTP_new_Search
+
+CVBTP -- UC_DMPhuongxa_new_List
+CVBTP -- UC_DMPhuongxa_new_Search
+
+CVBTP -- UC_DMDantoc_List
+CVBTP -- UC_DMDantoc_Search
+
+
+@enduml

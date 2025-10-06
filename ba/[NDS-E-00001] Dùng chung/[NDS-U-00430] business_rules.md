@@ -79,8 +79,8 @@ Tài liệu này mô tả **các quy chuẩn nghiệp vụ chung** áp dụng ch
 ## BR9. Nhập thông tin
 | STT | Nội dung                | Quy chuẩn nghiệp vụ                                                                                                                                                                                                                                     |
 |-----|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1   | Kiểm tra định dạng      | Nếu trường thông tin sai định dạng dữ liệu, hệ thống hiển thị cảnh báo ngay dưới ô là "Sai định dạng thông tin". Áp dụng cho toàn bộ form trên hệ thống                                                                                                    |
-| 2   | Kiểm tra bắt buộc       | Nếu trường thông tin bắt buộc không được nhập khi bấm lưu, hệ thống hiển thị cảnh báo ngay dưới ô là "Nhập thông tin bắt buộc". Áp dụng cho toàn bộ form trên toàn hệ thống                                                                                |
+| 1   | Kiểm tra định dạng      | Nếu trường thông tin sai định dạng dữ liệu, hệ thống hiển thị cảnh báo ngay dưới ô là "Sai định dạng thông tin". Áp dụng cho toàn bộ form trên hệ thống                                                                                                 |
+| 2   | Kiểm tra bắt buộc       | Nếu trường thông tin bắt buộc không được nhập khi bấm lưu, hệ thống hiển thị cảnh báo ngay dưới ô là "Nhập thông tin bắt buộc". Áp dụng cho toàn bộ form trên toàn hệ thống                                                                             |
 | 3   | Ngày sinh, ngày cấp     | Chọn từ lịch, không cho phép chọn ngày lớn hơn ngày hiện tại                                                                                                                                                                                            |
 | 4   | Số điện thoại           | Hệ thống cho phép nhập theo cả dạng `0xxxxxxxxx` hoặc `+84xxxxxxxxx`.Nếu nhập `+84` thì tự động chuyển thành `0`.Định dạng: Đủ 10 chữ số với di động, , không cho phép ký tự đặc biệt (`-`, khoảng trắng,…), với cố định 10-11 chữ số                   |
 | 5   | Input lựa chọn/dropdown | Click vào, hệ thống hiển thị mặc định 5 giá trị nếu có nhiều hơn 5, có thể scroll xuống để hiển thị thêm. Hiển thị ô điền thông tin tìm kiếm, khi người dùng điền, hệ thống lọc giá trị để chọn theo từ đã điền. Áp dụng cho toàn bộ form trên hệ thống |
@@ -96,68 +96,5 @@ Tài liệu này mô tả **các quy chuẩn nghiệp vụ chung** áp dụng ch
 | Nút "Đóng"     | Luôn hiển thị trong popup, click vào sẽ hủy thao tác và đóng popup |
 | Biểu tượng "x" | Luôn hiển thị trong popup, click vào sẽ hủy thao tác và đóng popup |
 
-## 10. Danh sách Sở Tư pháp
-Sở Tư pháp Thành phố Hà Nội
-Sở Tư pháp Hà Giang
-Sở Tư pháp Cao Bằng
-Sở Tư pháp Bắc Kạn
-Sở Tư pháp Tuyên Quang
-Sở Tư pháp Lào Cai
-Sở Tư pháp Điện Biên
-Sở Tư pháp Lai Châu
-Sở Tư pháp Sơn La
-Sở Tư pháp Yên Bái
-Sở Tư pháp Hòa Bình
-Sở Tư pháp Thái Nguyên
-Sở Tư pháp Lạng Sơn
-Sở Tư pháp Quảng Ninh
-Sở Tư pháp Bắc Giang
-Sở Tư pháp Phú Thọ
-Sở Tư pháp Vĩnh Phúc
-Sở Tư pháp Bắc Ninh
-Sở Tư pháp Hải Dương
-Sở Tư pháp Thành phố Hải Phòng
-Sở Tư pháp Hưng Yên
-Sở Tư pháp Thái Bình
-Sở Tư pháp Hà Nam
-Sở Tư pháp Nam Định
-Sở Tư pháp Ninh Bình
-Sở Tư pháp Thanh Hóa
-Sở Tư pháp Nghệ An
-Sở Tư pháp Hà Tĩnh
-Sở Tư pháp Quảng Bình
-Sở Tư pháp Quảng Trị
-Sở Tư pháp Thừa Thiên - Huế
-Sở Tư pháp Thành phố Đà Nẵng
-Sở Tư pháp Quảng Nam
-Sở Tư pháp Quảng Ngãi
-Sở Tư pháp Bình Định
-Sở Tư pháp Phú Yên
-Sở Tư pháp Khánh Hòa
-Sở Tư pháp Ninh Thuận
-Sở Tư pháp Bình Thuận
-Sở Tư pháp Kon Tum
-Sở Tư pháp Gia Lai
-Sở Tư pháp Đắk Lắk
-Sở Tư pháp Đắk Nông
-Sở Tư pháp Lâm Đồng
-Sở Tư pháp Bình Phước
-Sở Tư pháp Tây Ninh
-Sở Tư pháp Bình Dương
-Sở Tư pháp Đồng Nai
-Sở Tư pháp Bà Rịa - Vũng Tàu
-Sở Tư pháp Thành phố Hồ Chí Minh
-Sở Tư pháp Long An
-Sở Tư pháp Tiền Giang
-Sở Tư pháp Bến Tre
-Sở Tư pháp Trà Vinh
-Sở Tư pháp Vĩnh Long
-Sở Tư pháp Đồng Tháp
-Sở Tư pháp An Giang
-Sở Tư pháp Kiên Giang
-Sở Tư pháp Thành phố Cần Thơ
-Sở Tư pháp Hậu Giang
-Sở Tư pháp Sóc Trăng
-Sở Tư pháp Bạc Liêu
-Sở Tư pháp Cà Mau
+
 

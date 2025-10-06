@@ -1,0 +1,62 @@
+@startuml ldm
+!pragma layout smetana
+left to right direction
+
+entity DM_LoaiGDCC
+entity DM_TenGDCC
+entity DM_Loaitaisan
+entity DM_TTGiaodich
+entity DM_Giayto
+entity DM_BenLQ
+entity DM_Chucvu
+
+entity DM_LoaiGDCC {
+  STT: int - Số thứ tự, tự động tăng
+  *Ma_DM_LoaiGDCC: string - Mã danh mục Loại giao dịch công chứng
+  *TenDM_loaiGDCC: string - Tên danh mục Loại giao dịch công chứng
+  trangThai: Trạng thái danh mục còn hiệu lực/hết hiệu lực
+}
+
+entity DM_TenGDCC {
+  STT: int - Số thứ tự, tự động tăng
+  *Ma_DM_TenGDCC: string - Mã danh mục Tên giao dịch công chứng
+  *TenDM_TenGDCC: string - Tên danh mục Tên giao dịch công chứng
+  trangThai: Trạng thái danh mục còn hiệu lực/hết hiệu lực
+}
+
+entity DM_TTGiaodichCC {
+  STT: int - Số thứ tự, tự động tăng
+  *Ma_DM_TTGiaodichCC: string - Mã danh mục Trạng thái giao dịch công chứng
+  *Ten_DM_TTGiaodichCC: string - Tên danh mục Trạng thái giao dịch công chứng
+  trangThai: Trạng thái danh mục còn hiệu lực/hết hiệu lực
+}
+
+entity DM_Loaitaisan {
+  STT: int - Số thứ tự, tự động tăng
+  *Ma_DM_Loaitaisan: string - Mã danh mục loại tài sản
+  *Ten_DM_Loaitaisan: string - Tên danh mục loại tài sản
+  trangThai: Trạng thái danh mục còn hiệu lực/hết hiệu lực
+}
+
+entity DM_Giayto {
+  STT: int - Số thứ tự, tự động tăng
+  *Ma_DM_Giayto: string - Mã danh mục giấy tờ
+  *Ten_DM_Giayto: string - Tên danh mục giấy tờ
+  trangThai: Trạng thái danh mục còn hiệu lực/hết hiệu lực
+}
+
+entity DM_BenLQ {
+  STT: int - Số thứ tự, tự động tăng
+  *Ma_DM_BenLQ: string - Mã danh mục bên liên quan
+  *Ten_DM_BenLQ: string - Tên danh mục bên liên quan
+  trangThai: Trạng thái danh mục còn hiệu lực/hết hiệu lực
+}
+
+entity DM_Chucvu {
+  STT: int - Số thứ tự, tự động tăng
+  *Ma_DM_Chucvu: string - Mã danh mục chức vụ
+  *Ten_DM_Chucvu: string - Tên danh mục chúc vụ
+  trangThai: Trạng thái danh mục còn hiệu lực/hết hiệu lực
+}
+
+@enduml

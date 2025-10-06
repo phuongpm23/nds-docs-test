@@ -1,0 +1,24 @@
+@startuml AD_DMPhuongxa_moi_History
+!pragma layout smetana
+title Activity Diagram: Xem lịch sử đồng bộ danh mục phường xã (mới)
+
+start
+:Người dùng truy cập thành công màn hình danh sách danh mục phường xã (mới) \n(**SCR_DMPhuongxa_moi_List**);
+:Người dùng lựa chọn xem lịch sử đồng bộ \n bằng cách bấm vào biểu tượng xem lịch sử;
+:Kiểm tra quyền truy cập;
+
+if (Có quyền?) then (Yes)
+  :Truy vấn dữ liệu lịch sử đồng bộ danh mục phường xã (mới) \n(**DMPhuongxa_moi**);
+
+  if (Có dữ liệu?) then (Yes)
+    :Hiển thị thông tin lịch sử đồng bộ danh mục phường xã (mới) \n(**SCR_DMPhuongxa_moi_History**);
+  else (No)
+    :Hiển thị "Không có dữ liệu lịch sử đồng bộ danh mục phường xã (mới)";
+  endif
+
+else (No)
+  :Thông báo lỗi "Không có quyền truy cập";
+endif
+
+stop
+@enduml

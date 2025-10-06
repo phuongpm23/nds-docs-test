@@ -1,0 +1,14 @@
+@startuml erd
+!pragma layout smetana
+left to right direction
+entity DMQuoctich
+entity DMTinhTP_old
+entity DMTinhTP_new
+entity DMPhuongxa_old
+entity DMPhuonhxa_new
+entity DMDantoc 
+entity DMGioitinh
+
+@enduml
+
+

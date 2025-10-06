@@ -1,0 +1,25 @@
+@startuml AD_Phuongxa_new_Search
+!pragma layout smetana
+title Activity Diagram: Tìm kiếm danh mục phường xã (mới)
+
+start
+:Người dùng truy cập màn hình danh sách danh mục phường xã (mới);
+
+if (Có quyền?) then (Yes)
+  :Người dùng điền thông tin tìm kiếm;
+  :Người dùng lọc các điều kiện tìm kiếm;
+  :Người dùng bấm nút tìm kiếm hoặc gõ Enter;
+  :Hệ thống truy vấn dữ liệu danh mục theo thông tin và điều kiện tìm kiếm;
+
+  if (Có dữ liệu?) then (Yes)
+    :Hiển thị danh sách danh mục phường xã (mới) \n theo thông tin và điều kiện tìm kiếm \n(**SCR_Phuongxa_new_list**);
+  else (No)
+    :Hiển thị "Không có dữ liệu danh mục phường xã (mới)";
+  endif
+
+else (No)
+  :Không hiển thị thanh tìm kiếm;
+endif
+
+stop
+@enduml
