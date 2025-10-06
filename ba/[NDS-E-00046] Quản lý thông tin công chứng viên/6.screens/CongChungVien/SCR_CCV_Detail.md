@@ -6,8 +6,7 @@ Hiển thị đầy đủ hồ sơ cá nhân,thông tin hành nghề của công
 - Người dùng có quyền xem chi tiết thông tin công chứng viên.
 
 ## Nguyên mẫu
-[https://www.figma.com/design/STv6BI8XR469xhObHjgCHs/Test-Puml?node-id=31-34764&t=qhcu7sCD1S2A6kb5-1]
-[https://www.figma.com/design/STv6BI8XR469xhObHjgCHs/Test-Puml?node-id=44-16244&t=qhcu7sCD1S2A6kb5-1]
+[https://www.figma.com/design/G1GnG3ecpubkOPJjxrEiRo/CSDL.CC_V1?node-id=135-16264&t=AJ0R7XTWgx3u3lfZ-1]
 
 ## Thành phần
 

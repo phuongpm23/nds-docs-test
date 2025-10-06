@@ -5,7 +5,7 @@ Form cho phép chỉnh sửa thông tin công chứng viên, hiển thị dữ l
 - Người dùng đã đăng nhập và có quyền chỉnh sửa công chứng viên.
 
 ## Nguyên mẫu
-[https://www.figma.com/design/STv6BI8XR469xhObHjgCHs/Test-Puml?node-id=44-17314&t=qhcu7sCD1S2A6kb5-1]
+[https://www.figma.com/design/G1GnG3ecpubkOPJjxrEiRo/CSDL.CC_V1?node-id=135-16198&t=AJ0R7XTWgx3u3lfZ-1]
 
 ## Thành phần
 

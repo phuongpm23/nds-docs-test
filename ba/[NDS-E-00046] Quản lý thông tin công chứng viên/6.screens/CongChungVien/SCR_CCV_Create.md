@@ -5,7 +5,7 @@ Form cho phép nhập và lưu thông tin công chứng viên mới vào hệ th
 - Người dùng đã đăng nhập và có quyền thêm mới công chứng viên.
  
 ## Nguyên mẫu
-[]
+[https://www.figma.com/design/G1GnG3ecpubkOPJjxrEiRo/CSDL.CC_V1?node-id=135-16133&t=AJ0R7XTWgx3u3lfZ-1]
 
 ## Thành phần
 

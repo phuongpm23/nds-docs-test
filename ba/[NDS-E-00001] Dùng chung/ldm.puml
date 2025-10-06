@@ -9,7 +9,6 @@ entity YeuCauKhoiPhucDuLieu
 entity TaiSan
 entity CaNhan
 entity ToChuc
-entity BenLienQuan
 entity ThongTinNganChan
 entity ThongTinGiaiToa
 entity CongChungVien
@@ -25,11 +24,8 @@ entity HuongDanSuDung
 entity CauHoi
 entity File
 
-
-entity HoSoCongChungGiay {
+entity HoSoCongChung {
     *hoSoID: int <<PK>> - ID bản ghi
-    phuongThucCongChung: string - 
-    Công chứng giấy
     ngayCongChung: datetime - Thời gian công chứng
     soCongChung: string - Số công chứng
     loaiGiaoDichId: int <<FK>> - ID bản ghi loại giao dịch
@@ -46,36 +42,25 @@ entity HoSoCongChungGiay {
     fileVanBanCongChungDienTuId: int <<FK>> - ID file
     fileHoSoLuuTruDienTuId: int <<FK>> - ID file
     giaoDichCongChunglienQuanID: int <<FK>> - ID hồ sơ công chứng khác 
+    ghiChu: string - Ghi chú
+    trangThai: string - Trạng thái hồ sơ Lưu nháp, Lưu chính thức
+}
+entity HoSoCongChungGiay {
+    phuongThucCongChung: string - Công chứng giấy
+    fileVanBanCongChungDienTuId: int <<FK>> - ID file
+    fileHoSoLuuTruDienTuId: int <<FK>> - ID file
+    giaoDichCongChunglienQuanID: int <<FK>> - ID hồ sơ công chứng khác 
     nguoiChuyenDoiId: int <<FK>> - ID công chứng viên thực hiện
     chuyển đổi văn bản công chứng giấy sang điện tử
     thoiGianChuyenDoi: datetime - thời gian chuyển đổi
     văn bản công chứng giấy sang điện tử
-    ghiChu: string - Ghi chú
-    trangThai: string - Trạng thái hồ sơ Lưu nháp, Lưu chính thức
+
 }
 
 entity HoSoCongChungDienTu {
-    *hoSoID: int <<PK>> - ID bản ghi
-    phuongThucCongChung: string - 
-    Công chứng điện tử trực tiếp, Công chứng điện tử trực tuyến
-    ngayCongChung: datetime - Thời gian công chứng
-    soCongChung: string - Số công chứng
-    loaiGiaoDichId: int <<FK>> - ID bản ghi loại giao dịch
-    tenGiaoDichId: int <<FK>> - ID bản ghi tên giao dịch
-    noiDungGiaoDich: string - Nội dung giao dịch
-    giaTri: numeric - Giá trị giao dịch
-    benLienQuan: object - thông tin bên liên quan cá nhân/tổ chức
-    taiSan: object - thông tin tài sản
-    congChungVienId: int <<FK>> - ID công chứng viên
-    toChucCongChungId: int <<FK>> - ID tổ chức công chứng
-    diaDiemCongChung: string - địa điểm công chứng
-    phiCongChung: numeric - Phí công chứng
-    thuLaoCongChung: numeric - Thù lao công chứng
+    phuongThucCongChung: string - Công chứng điện tử trực tiếp, Công chứng điện tử trực tuyến
     fileVanBanCongChungDienTuId: int <<FK>> - ID file
     fileHoSoKhac: object - thông tin các thành phần khác của file
-    giaoDichCongChunglienQuanID: int <<FK>> - ID hồ sơ công chứng khác 
-    ghiChu: string - Ghi chú
-    trangThai: string - Trạng thái hồ sơ Lưu nháp, Lưu chính thức
 }
 
 entity HoSoCongChung_TheChap
@@ -91,6 +76,13 @@ entity HoSoCongChung_UyQuyen
 {
     thoiHan: date - thời hạn của giao dịch là thuê mượn,
     cầm cố, bảo lãnh, ủy quyền, vay
+}
+entity HoSoCongChung_lienQuan
+{
+    quanHeHoSoCongChungId: int <<PK>> - ID bản ghi
+    hoSoCongChungChinhId: int <<FK>> - ID hồ sơ công chứng chính
+    hoSoCongChungLienQuanId: int <<FK>> - ID hồ sơ công chứng liên quan
+    loaiQuanHe: string - Quan hệ giữa 2 hồ sơ công chứng Hủy, Phụ lục
 }
 
 entity TaiSan
@@ -297,9 +289,9 @@ entity ToChuc
 {
     *toChucId: int <<PK>> - ID tổ chức
     tenToChuc: string - Tên tổ chức
-    loaiGiayToPhapNhan: - Thông tin loại giấy tờ pháp nhân
+    loaiGiayToPhapNhan: string - Thông tin loại giấy tờ pháp nhân
     Giấy chứng nhận đăng ký hoạt động chi nhánh/phòng giao dịch,
-    Giấy chứng nhận đăng ký doanh nghiệp
+    Giấy chứng nhận đăng ký doanh nghiệp,
     Giấy chứng nhận đăng ký kinh doanh
     soGiayToPhapNhan: string - Số giấy tờ pháp nhân
     ngayCap: date - Ngày cấp
@@ -334,11 +326,11 @@ entity File
 {
     *fileId: int <<PK>> - ID bản ghi file
     tenFile: string - Tên file
+    moTa: string - Mô tả file
     duongDan: string - Đường dẫn lưu trữ file
     kichThuoc: numeric - Kích thước file (bytes)
     dinhDang: string - Định dạng file (pdf, doc, jpg, etc.)
     loaiFile: string - Loại file (Văn bản công chứng, Hồ sơ lưu trữ, Hồ sơ khác, Giấy tờ pháp lý, etc.)
-
 }
 
 entity ThongTinNganChan{
@@ -387,21 +379,21 @@ entity YeuCauChuyenQuyenSoHuuHoSo{
     *yeuCauChuyenQuyenSoHuuHoSoId: int <<PK>> - ID bản ghi
     nguoiYeuCauId: int <<FK>> - ID người dùng yêu cầu chuyển quyền sở hữu
     toChucChuyenSoHuuId: int <<FK>> - ID tổ chức công chứng chuyển quyền sở hữu
-    toChucNhanQuyenSoHuuId: int <<FK> - ID tổ chức công chứng nhận quyền sở hữu
+    toChucNhanQuyenSoHuuId: int <<FK>> - ID tổ chức công chứng nhận quyền sở hữu
     ngayYeuCau: date - Thời gian yêu cầu mở hồ sơ công chứng
     hoSoCongChung: object - Thông tin hồ sơ công chứng
     nguoiDuyetId: int <<FK>> - ID người dùng phê duyệt yêu cầu chuyển quyền sở hữu hồ sơ
     trangThai: string - Trạng thái Chờ duyệt, Duyệt, Từ chối
 }
 entity YeuCauKhoiPhucDuLieu{
-    *yeuCauChuyenQuyenSoHuuHoSoId: int <<PK>> - ID bản ghi
+    *yeuCauKhoiPhucDuLieuId: int <<PK>> - ID bản ghi
     nguoiYeuCauId: int <<FK>> - ID người dùng yêu cầu khôi phục dữ liệu
     toChucCongChungId: int <<FK>> - ID tổ chức công chứng yêu cầu khôi phục dữ liệu
     ngayYeuCau: date - Thời gian yêu cầu mở hồ sơ công chứng
     thoiGianTu: date - Thời gian khôi phục dữ liệu từ
     thoiGianDen: date - Thời gian khôi phục dữ liệu đến
     nguoiDuyetId: int <<FK>> - ID người dùng phê duyệt yêu cầu khôi phục dữ liệu
-    hoSoCongChung: object: Thông tin hồ sơ công chứng
+    hoSoCongChung: object - Thông tin hồ sơ công chứng
     trangThai: string - Trạng thái Chờ duyệt, Duyệt, Từ chối
 }
 ' Quản lý đơn vị
@@ -411,22 +403,24 @@ entity DonVi
     loaiDonVi: string - Thông tin loại đơn vị 
     Bộ Tư Pháp, Sở Tư pháp, 
     Tổ chức hành nghề công chứng, Đơn vị gửi thông tin ngăn chặn
-    thuocDonVi: int <<FK>> - ID bản ghi đơn vị
+    donViChaId: int <<FK>> - ID bản ghi đơn vị
     tenDonVi: string - Tên đơn vị
     dienThoai: string - Số điện thoại 
     email: string - Thông tin email
     fax: string - Thông tin số fax
     webSite: string - Thông tin website
-    diaChiTinhThanh string - Địa chỉ tỉnh/thành phố của đơn vị
+    diaChiTinhThanh: string - Địa chỉ tỉnh/thành phố của đơn vị
     diaChiPhuongXa: string - Địa chỉ phường/xã phố của đơn vị
-    diaChiChiTiet: string - Địa chỉ số nhà, tổ, thôn, xóm của đơn vị
+    diaChiChiTiet: string - Địa chỉ số nhà, tổ, thông, xóm của đơn vị
     thongTinKhac: string - Thông tin khác
-    ' trangThai: string - Trạng thái Hoạt động, Ngừng hoạt động
+    trangThai: string - Trạng thái Hoạt động, Ngừng hoạt động
 }
 ' Quản lý tổ chức hành nghề công chứng
 entity ToChucCongChung {
-  truongVanPhongId: int - ID công chứng viên là trưởng văn phòng công chứng
-  trangThai: string - Trạng thái hoạt động của tổ chức Đang hoạt động, Chờ thành lập, 
+    *toChucCongChungId: int <<PK>> - ID bản ghi
+    masoThue: string - Mã số thuế
+    truongVanPhongId: int - ID công chứng viên là trưởng văn phòng công chứng
+    trangThai: string - Trạng thái hoạt động của tổ chức Đang hoạt động, Chờ thành lập, 
     Giải thể, Chấm dứt hoạt động, Chưa hoạt động, Thu hồi QĐ cho phép thành lập, 
     Chờ cấp Giấy ĐKHĐ, Từ chối cấp Giấy ĐKHĐ, Đã hợp nhất, Đã thành lập, 
     Từ chối thành lập, Tạm ngưng hoạt động, 
@@ -466,21 +460,13 @@ entity CongChungVien {
     soGiayTo: string - Số CMND/Căn cước/CCCD 
     ngayCap: date - Ngày cấp
     noiCap: string - Nơi cấp
-    trangThai: string - Đăng ký tập sự, Đang tập sự, 
-     Tạm ngừng tập sự, Chấm dứt tập sự, Hoàn thành tập sự, 
-     Chờ tiếp nhận bổ nhiệm, Chờ bổ nhiệm, Đã bổ nhiệm, 
-     Đang hành nghề, Tạm đình chỉ hành nghề, Đã bổ nhiệm lại, 
-     Đã miễn nhiệm, Chờ bổ sung, Đã bổ sung, Từ chối bổ nhiệm, 
-     Đã thay đổi nơi tập sự, Chờ tiếp nhận miễn nhiệm, 
-     Chờ tiếp nhận bổ nhiệm lại, Từ chối miễn nhiệm, Chờ bổ nhiệm lại, 
-     Từ chối bổ nhiệm lại, Chờ miễn nhiệm, Thu hồi thẻ, Chờ cấp thẻ, 
-     Từ chối cấp thẻ, Đạt kết quả tập sự
+    trangThai: string - Danh sách trạng thái
     soThe: string - Số thẻ công chứng viên
 }
 
 entity ChungChiHanhNghe {
     *chungChiId: int <<PK>> - ID bản ghi
-    congChungVienId: int <<Fk>> - ID công chứng viên
+    congChungVienId: int <<FK>> - ID công chứng viên
     soChungChi: string - Số chứng chỉ
     ngayCap: date - Ngày cấp
     ngayHieuLuc: date - Ngày hiệu lực
@@ -492,7 +478,7 @@ entity ChungChiHanhNghe {
 
 entity ChuKySo {
     *chuKySoId: int <<PK>> - Id thông tin đăng ký chữ ký số, tự động tăng
-    congChungVienId: int <<Fk>> - Id công chứng viên
+    congChungVienId: int <<FK>> - Id công chứng viên
     toChucCongChungId: int <<FK>> - ID tổ chức công chứng
     soSerial: string - Số serial
     loaiChuKySo: string - Loại chữ ký số cá nhân/tổ chức
@@ -507,16 +493,55 @@ entity ChuKySo {
     fileDinhKem: string - link file đính kèm
 }
 entity VaiTro
+{
+    vaiTroId: int <<PK>> - ID bản ghi
+    tenVaiTro: string - Tên vai trò
+    moTa: string - Thông tin mô tả
+    ngayTao: datetime - Ngày tạo bản ghi
+    nguoiTao: int <<FK>> - ID người dùng thêm mới bản ghi
+    ngayCapNhat: datetime - Ngày cập nhật bản ghi
+    nguoiCapNhat: int <<FK>> - ID người dùng cập nhật bản ghi
+    quyenChucNangId: object - Thông tin quyền chức năng
+}
 entity QuyenChucNang
+{
+    quyenChucNangId: int <<PK>> - ID bản ghi
+    tenQuyen: string - Tên quyền chức năng
+}
 
 ' Quản lý thông báo
 entity ThongBao
+{
+    thongBaoId: int <<PK>> - ID bản ghi
+    loaiThongBao: string - Loại thông báo Thông báo nội bộ,
+    Thông báo gửi STP, Thông báo gửi TCHNCC
+    tieuDe: string - Tiêu đề thông báo
+    noiDung: string - Nội dung thông báo
+    fileThongBaoId: int <<FK>> - ID File
+}
 
 ' Quản lý hướng dẫn sử dụng
 entity HuongDanSuDung
+{
+    huongDanSuDungId: int <<PK>> - ID bản ghi
+    tieuDe: string - Tiêu đề hướng dẫn sử dụng
+    noiDung: string - Nội dung thông báo
+    fileHuongDanSuDungId: int <<FK>> - ID File
+}
 
 'Quản lý câu hỏi thường gặp
 entity CauHoi
+{
+    cauHoiId: int <<PK>> - ID bản ghi
+    cauHoi: string - Nội dung câu hỏi
+    giaiDap: string - Nội dung câu trả lời
+}
+
+HoSoCongChung_lienQuan --|> HoSoCongChung
+HoSoCongChung_TheChap --|> HoSoCongChung
+HoSoCongChung_UyQuyen --|> HoSoCongChung
+HoSoCongChungGiay --|> HoSoCongChung
+HoSoCongChungDienTu --|> HoSoCongChung
 
 BDS_Dat --|> TaiSan
 BDS_DatVaTaiSanGanLienVoiDat --|> TaiSan
@@ -539,5 +564,6 @@ HoSoCongChungDienTu --|> HoSoCongChung_UyQuyen
 
 CongChungVien --|> NguoiDung
 ToChucCongChung --|> DonVi
+
 
 @enduml

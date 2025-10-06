@@ -5,7 +5,7 @@ Popup xác nhận khi người dùng thực hiện thao tác xóa công chứng 
 - Người dùng đã đăng nhập và có quyền xóa công chứng viên.
 
 ## Nguyên mẫu
-[https://www.figma.com/design/STv6BI8XR469xhObHjgCHs/Test-Puml?node-id=32-42161&t=qhcu7sCD1S2A6kb5-1]
+[https://www.figma.com/design/G1GnG3ecpubkOPJjxrEiRo/CSDL.CC_V1?node-id=153-17660&t=AJ0R7XTWgx3u3lfZ-1]
 
 ## Thành phần
 
