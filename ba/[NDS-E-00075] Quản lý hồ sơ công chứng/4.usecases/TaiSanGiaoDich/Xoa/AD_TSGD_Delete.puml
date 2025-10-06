@@ -1,0 +1,37 @@
+@startuml DeleteAssetActivityDiagram
+!theme plain
+title UC_TSGD_Delete - Xóa tài sản giao dịch
+
+start
+:Người dùng chọn chức năng "Xóa" tài sản
+từ tab "Tài sản" trong form hồ sơ công chứng;
+:Hệ thống hiển thị hộp thoại xác nhận xóa
+với thông tin tài sản;
+
+if (Người dùng xác nhận xóa?) then (Có)
+  :Hệ thống kiểm tra các ràng buộc nghiệp vụ;
+  
+  if (Có ràng buộc vi phạm?) then (Có)
+    if (Tài sản liên quan đến bên liên quan?) then (Có)
+      :Hiển thị thông báo lỗi 
+      "Không thể xóa tài sản này vì đã liên quan đến bên liên quan trong giao dịch";
+      stop
+    elseif (Hồ sơ đã được công chứng?) then (Có)
+      :Hiển thị thông báo lỗi 
+      "Không thể xóa tài sản vì hồ sơ đã được công chứng. Vui lòng tạo phụ lục hồ sơ";
+      stop
+    endif
+  else (Không)
+    :Ghi nhận thông tin xóa vào lịch sử;
+    :Xóa thông tin tài sản khỏi 
+    ENT_TaiSan và bảng chi tiết tương ứng;
+    :Hiển thị thông báo "Xóa tài sản thành công";
+    :Cập nhật lại danh sách tài sản trong tab "Tài sản";
+    stop
+  endif
+elseif (Không)
+  :Hộp thoại đóng, không xóa dữ liệu;
+  stop
+endif
+
+@enduml

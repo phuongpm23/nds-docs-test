@@ -12,7 +12,6 @@
 - Hỗ trợ xuất (Export) danh sách theo điều kiện đã tìm  (chi tiết trong UC_HSCC_Export).
 - Mỗi dòng có action: Xem chi tiết, Sửa, Xóa, Xem lịch sử (tuỳ quyền).  
 - Nếu có lỗi tải dữ liệu, hiển thị thông báo lỗi.
-<!-- - Danh sách hồ sơ công chứng hiển thị theo thứ tự thời gian cập nhật từ mới tới cũ nhất. -->
 - Hệ thống cho phép tìm kiếm hồ sơ công chứng (chi tiết trong UC_HSCC_Search).    
 - Nếu không có hồ sơ công chứng nào trong hệ thống, hiển thị thông báo “Không có dữ liệu hồ sơ công chứng”.
 

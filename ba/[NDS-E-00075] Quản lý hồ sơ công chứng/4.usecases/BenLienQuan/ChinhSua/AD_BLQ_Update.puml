@@ -1,0 +1,48 @@
+@startuml UpdateRelatedPartyActivityDiagram
+!theme plain
+title UC_BLQ_Update - Chỉnh sửa bên liên quan
+
+start
+:Người dùng chọn chức năng "Chỉnh sửa" bên liên quan
+từ tab "Bên tham gia" trong form hồ sơ công chứng;
+:Hệ thống hiển thị form chỉnh sửa với dữ liệu đã có;
+
+if (Loại bên liên quan?) then (Cá nhân)
+  :Hiển thị form thông tin cá nhân;
+  :Người dùng chỉnh sửa thông tin cá nhân;
+elseif (Tổ chức)
+  :Hiển thị form thông tin tổ chức;
+  :Người dùng chỉnh sửa thông tin tổ chức;
+endif
+
+:Người dùng có thể thay đổi vai trò trong giao dịch;
+:Người dùng bấm nút "Lưu";
+
+:Hệ thống kiểm tra tính hợp lệ của dữ liệu;
+
+if (Dữ liệu hợp lệ?) then (Có)
+  :Ghi nhận các thay đổi vào lịch sử;
+  :Cập nhật thông tin vào ENT_NguoiThamGiaGiaoDichCaNhan
+  hoặc ENT_NguoiThamGiaGiaoDichToChuc;
+  :Hiển thị thông báo "Cập nhật thông tin bên liên quan thành công";
+  :Cập nhật danh sách bên liên quan trong tab "Bên tham gia";
+  :Đóng form chỉnh sửa thông tin bên liên quan;
+  stop
+else (Không)
+  if (Chưa điền thông tin bắt buộc?) then (Có)
+    :Hiển thị thông báo yêu cầu điền thông tin bắt buộc;
+  elseif (Sai định dạng thông tin?) then (Có)
+    :Hiển thị thông báo lỗi "Thông tin không hợp lệ";
+  elseif (Thông tin trùng với bên liên quan khác?) then (Có)
+    :Hiển thị thông báo lỗi "Thông tin này đã tồn tại cho bên liên quan khác trong hồ sơ";
+  endif
+  :Người dùng chỉnh sửa lại thông tin;
+  if (Người dùng chọn "Hủy"?) then (Có)
+    :Đóng form, không lưu dữ liệu;
+    stop
+  elseif (Người dùng chọn "Lưu" lại?) then (Có)
+    :Hệ thống kiểm tra lại tính hợp lệ của dữ liệu;
+  endif
+endif
+
+@enduml

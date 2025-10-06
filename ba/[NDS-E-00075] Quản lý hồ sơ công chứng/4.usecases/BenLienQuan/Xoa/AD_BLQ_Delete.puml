@@ -1,0 +1,37 @@
+@startuml DeleteRelatedPartyActivityDiagram
+!theme plain
+title UC_BLQ_Delete - Xóa bên liên quan
+
+start
+:Người dùng chọn chức năng "Xóa" bên liên quan
+từ tab "Bên tham gia" trong form hồ sơ công chứng;
+:Hệ thống hiển thị hộp thoại xác nhận xóa
+với thông tin bên liên quan;
+
+if (Người dùng xác nhận xóa?) then (Có)
+  :Hệ thống kiểm tra các ràng buộc nghiệp vụ;
+  
+  if (Có ràng buộc vi phạm?) then (Có)
+    if (Bên liên quan liên quan đến tài sản?) then (Có)
+      :Hiển thị thông báo lỗi 
+      "Không thể xóa bên liên quan này vì đã liên quan đến tài sản trong giao dịch";
+      stop
+    elseif (Hồ sơ đã được công chứng?) then (Có)
+      :Hiển thị thông báo lỗi 
+      "Không thể xóa bên liên quan vì hồ sơ đã được công chứng. Vui lòng tạo phụ lục hồ sơ";
+      stop
+    endif
+  else (Không)
+    :Ghi nhận thông tin xóa vào lịch sử;
+    :Xóa thông tin bên liên quan khỏi 
+    ENT_NguoiThamGiaGiaoDichCaNhan hoặc ENT_NguoiThamGiaGiaoDichToChuc;
+    :Hiển thị thông báo "Xóa bên liên quan thành công";
+    :Cập nhật lại danh sách bên liên quan trong tab "Bên tham gia";
+    stop
+  endif
+elseif (Không)
+  :Hộp thoại đóng, không xóa dữ liệu;
+  stop
+endif
+
+@enduml

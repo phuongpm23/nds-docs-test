@@ -1,0 +1,47 @@
+@startuml AddRelatedPartyActivityDiagram
+!theme plain
+title UC_BLQ_Create - Thêm mới bên liên quan
+
+start
+:Người dùng chọn chức năng "Thêm mới bên liên quan"
+từ tab "Bên tham gia" trong form hồ sơ công chứng;
+:Hệ thống hiển thị form thêm mới bên liên quan;
+
+if (Loại bên liên quan?) then (Cá nhân)
+  :Hiển thị form thông tin cá nhân;
+  :Người dùng nhập thông tin cá nhân;
+elseif (Tổ chức)
+  :Hiển thị form thông tin tổ chức;
+  :Người dùng nhập thông tin tổ chức;
+endif
+
+:Người dùng có thể chọn "Tra cứu" để kiểm tra thông tin;
+:Người dùng bấm nút "Lưu";
+
+:Hệ thống kiểm tra tính hợp lệ của dữ liệu;
+
+if (Dữ liệu hợp lệ?) then (Có)
+  :Lưu thông tin vào ENT_NguoiThamGiaGiaoDichCaNhan
+  hoặc ENT_NguoiThamGiaGiaoDichToChuc;
+  :Hiển thị thông báo "Thêm mới bên liên quan thành công";
+  :Cập nhật danh sách bên liên quan trong tab "Bên tham gia";
+  :Đóng form thêm mới bên liên quan;
+  stop
+else (Không)
+  if (Chưa điền thông tin bắt buộc?) then (Có)
+    :Hiển thị thông báo yêu cầu điền thông tin bắt buộc;
+  elseif (Sai định dạng thông tin?) then (Có)
+    :Hiển thị thông báo lỗi "Thông tin không hợp lệ";
+  elseif (Bên liên quan đã tồn tại?) then (Có)
+    :Hiển thị thông báo lỗi "Bên liên quan này đã tồn tại trong hồ sơ";
+  endif
+  :Người dùng chỉnh sửa thông tin;
+  if (Người dùng chọn "Hủy"?) then (Có)
+    :Đóng form, không lưu dữ liệu;
+    stop
+  elseif (Người dùng chọn "Lưu" lại?) then (Có)
+    :Hệ thống kiểm tra lại tính hợp lệ của dữ liệu;
+  endif
+endif
+
+@enduml

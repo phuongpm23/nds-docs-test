@@ -37,6 +37,7 @@ entity NguoiThamGiaGiaoDichCaNhan {
   email: string - Email
   loaiBenThamGia: string - Loại bên tham gia (Bên A, Bên B, Bên liên quan)
 
+}
 
 entity NguoiThamGiaGiaoDichToChuc {
   *nguoiThamGiaToChucId: int <<PK>> - ID bản ghi, tự động tăng

@@ -54,16 +54,16 @@ Hiển thị đầy đủ hồ sơ cá nhân,thông tin hành nghề của công
 
 <div style="overflow-x:auto">
 
-| Trường thông tin | Control  | Field       | Max length | Bắt buộc (Y/N) | Cho phép sửa (Y/N) | Mô tả                                                   |
-|:-----------------|:---------|:------------|:-----------|:---------------|:-------------------|:--------------------------------------------------------|
-| Số chứng chỉ     | text     | soChungChi  | -          | -              | -                  | Hiển thị mã số chứng chỉ hành nghề                      |
-| Ngày cấp         | datetime | ngayCap     | -          | -              | -                  | Hiển thị ngày cấp chứng chỉ                             |
-| Nơi cấp          | text     | noiCap      | -          | -              | -                  | Hiển thị nơi cấp chứng chỉ                              |
-| Ngày hiệu lực    | datetime | ngayHieuLuc | -          | -              | -                  | Hiển thị ngày hiệu lực                                  |
-| Ngày hết hạn     | datetime | ngayHetHan  | -          | -              | -                  | Hiển thị ngày hết hạn                                   |
-| Đơn vị cấp       | text     | donViCap    | -          | -              | -                  | Hiển thị cơ quan cấp chứng chỉ                          |
-| Trạng thái       | text     | trangThai   | -          | -              | -                  | Hiển thị trạng thái chứng chỉ                           |
-| File đính kèm    | file     | fileDinhKem | -          | -              | -                  | Link file chứng chỉ, click vào mở tab mới hiển thị file |
+| Trường thông tin | Control  | Field       | Max length | Bắt buộc (Y/N) | Cho phép sửa (Y/N) | Mô tả                                          |
+|:-----------------|:---------|:------------|:-----------|:---------------|:-------------------|:-----------------------------------------------|
+| Số chứng chỉ     | text     | soChungChi  | -          | -              | -                  | Hiển thị mã số chứng chỉ hành nghề             |
+| Ngày cấp         | datetime | ngayCap     | -          | -              | -                  | Hiển thị ngày cấp chứng chỉ                    |
+| Nơi cấp          | text     | noiCap      | -          | -              | -                  | Hiển thị nơi cấp chứng chỉ                     |
+| Ngày hiệu lực    | datetime | ngayHieuLuc | -          | -              | -                  | Hiển thị ngày hiệu lực                         |
+| Ngày hết hạn     | datetime | ngayHetHan  | -          | -              | -                  | Hiển thị ngày hết hạn                          |
+| Đơn vị cấp       | text     | donViCap    | -          | -              | -                  | Hiển thị cơ quan cấp chứng chỉ                 |
+| Trạng thái       | text     | trangThai   | -          | -              | -                  | Hiển thị trạng thái chứng chỉ                  |
+| File đính kèm    | file     | fileDinhKem | -          | -              | -                  | Link file chứng chỉ, click vào mở preview file |
 
 </div>
 

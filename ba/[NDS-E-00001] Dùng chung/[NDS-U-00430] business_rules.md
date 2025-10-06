@@ -8,7 +8,7 @@ Tài liệu này mô tả **các quy chuẩn nghiệp vụ chung** áp dụng ch
 |-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cách hiển thị     | Danh sách dữ liệu được phân trang, mặc định 10 bản ghi/trang                                                                                                                 |
 | Điều chỉnh        | Người dùng có thể thay đổi số bản ghi/trang: 10, 20, 50, 100, các thông tin hiển thị và điều hướng thay đổi theo số bản ghi/trang mà người dùng chọn                         |
-| Điều hướng        | Có biểu tượng chuyển "Trang trước", "Trang sau". Hiển thị số trang hiện tại/Tổng số trang, cho phép điều chỉnh số trang, gõ enter để chuyển tới trang đã điền                |
+| Điều hướng        | Có biểu tượng chuyển "Trang trước", "Trang sau". Hiển thị số trang hiện tại, mỗi số đại diện cho một trang dữ liệu. Người dùng có thể bấm vào để chuyển sang trang tương ứng.                |
 | Thông tin bổ sung | Luôn hiển thị tổng số bản ghi và tổng số trang. Hiển thị theo định dạng ""STT bản ghi đầu tiên của trang" - "STT bản ghi cuối cuối cùng trang" trên "tổng số lượng bản ghi"" |
 
 
@@ -46,7 +46,7 @@ Tài liệu này mô tả **các quy chuẩn nghiệp vụ chung** áp dụng ch
 |--------------------|----------------------------------------------------------------------------------------------------------------|
 | Định dạng cho phép | Tùy từng trường hợp cụ thể sẽ mô tả trong chi tiết                                                             |
 | Dung lượng         | Tối đa 10MB/file, nếu có thay đổi sẽ quy định rõ trong usecase hoặc screen                                                                                               |
-| Xem file           | Đối với file PDF, khi click vào tên file sẽ mở tab mới của trình duyệt để hiển thị file. Đối với file ảnh, hiển thị màn hình preview ảnh |
+| Xem file           | Đối với file PDF và file ảnh, click vào hiển thị màn hình preview |
 
 
 ## BR6. Nhật ký cập nhật (Audit log)
@@ -88,7 +88,7 @@ Tài liệu này mô tả **các quy chuẩn nghiệp vụ chung** áp dụng ch
 | 7   | Tỉnh/Thành phố          | Chọn phường/xã từ danh mục hành chính quốc gia cũ/mới chi tiết trong screen, danh sách hiển thị theo tỉnh thành đã chọn. Nếu chưa chọn tỉnh thành, mặc định không hiện lựa chọn, Max length 250                                                         |
 | 8   | Phường/Xã               | Chọn tỉnh/thành phố từ danh mục hành chính quốc gia cũ/mới chi tiết trong screen, sau khi chọn sẽ cập nhật danh sách phường xã tương ứng với tỉnh, Max length 250 
 | 9   | Email               |     Email luôn có cấu trúc TênNgườiDùng@TênMiền.Đuôi. Max length 255                                               |
-| 10   | Số giấy tờ cá nhân               | Chỉ cho phép chữ số **0-9**, không chưa khoảng trắng, dấu cách, ký tự đặc biệt. Loại CMND: Chỉ cho phép chữ số, bắt buộc có 9 số. Loại Căn cước/CCCD: Bắt buộc 12 số. Hộ Chiếu: Cho phép thêm ký tự từ **A-Z**, tối đa 8 ký tự                                                |
+| 10   | Số giấy tờ cá nhân               | Cho phép điền không quá 12 ký tự, không có ký tự đặc biệt và khoảng trống                                               |
 
 ## 10. Popup
 | Nội dung       | Quy chuẩn nghiệp vụ                                                |

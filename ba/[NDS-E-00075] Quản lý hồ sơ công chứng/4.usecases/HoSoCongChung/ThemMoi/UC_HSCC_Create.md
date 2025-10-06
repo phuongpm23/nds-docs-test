@@ -38,12 +38,15 @@
    **Tab Bên tham gia:**
    - Danh sách bên tham gia cá nhân
    - Danh sách bên tham gia tổ chức
-   - Nút "Thêm mới bên tham gia"
+   - Nút "Thêm mới bên tham gia" (**UC_BLQ_Create**)
+   - Nút "Chỉnh sửa" bên tham gia (**UC_BLQ_Update**)
+   - Nút "Xóa" bên tham gia (**UC_BLQ_Delete**)
    
    **Tab Tài sản:**
-   - Loại tài sản
-   - Thông tin chi tiết về tài sản (tùy theo loại tài sản)
-   - Giá trị tài sản
+   - Danh sách tài sản
+   - Nút "Thêm mới tài sản" (**UC_TSGD_Create**)
+   - Nút "Chỉnh sửa" tài sản (**UC_TSGD_Update**)
+   - Nút "Xóa" tài sản (**UC_TSGD_Delete**)
    
    **Tab Tài liệu đính kèm:**
    - Văn bản công chứng giấy
@@ -58,8 +61,8 @@
 6. Nếu dữ liệu hợp lệ:
    - Hệ thống tạo mã hồ sơ công chứng tự động
    - Lưu thông tin hồ sơ vào **ENT_HoSoCongChung**
-   - Lưu thông tin các bên tham gia vào **ENT_NguoiThamGiaGiaoDichCaNhan** và **ENT_NguoiThamGiaGiaoDichToChuc**
-   - Lưu thông tin tài sản vào **ENT_TaiSan**
+   - Lưu thông tin các bên tham gia vào **ENT_NguoiThamGiaGiaoDichCaNhan** và **ENT_NguoiThamGiaGiaoDichToChuc** (thông qua **UC_BLQ_Create**)
+   - Lưu thông tin tài sản vào **ENT_TaiSan** (thông qua **UC_TSGD_Create**)
    - Lưu thông tin tài liệu đính kèm
    - Hiển thị thông báo "Thêm mới hồ sơ công chứng thành công"
    - Chuyển hướng về danh sách hồ sơ công chứng (**UC_HSCC_List**)
@@ -81,3 +84,4 @@
 - Activity Diagram: [AD_HSCC_Create.puml]
 - Form liên quan: [SCR_HSCC_Create.md]
 - Entity liên quan: ENT_HoSoCongChung, ENT_NguoiThamGiaGiaoDichCaNhan, ENT_NguoiThamGiaGiaoDichToChuc, ENT_TaiSan
+- Usecase liên quan: UC_BLQ_Create, UC_BLQ_Update, UC_BLQ_Delete, UC_TSGD_Create, UC_TSGD_Update, UC_TSGD_Delete

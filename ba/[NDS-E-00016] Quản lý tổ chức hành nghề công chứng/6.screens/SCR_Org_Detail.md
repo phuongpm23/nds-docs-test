@@ -13,17 +13,18 @@ Màn hình hiển thị chi tiết thông tin của một tổ chức hành ngh�
 
 <div style="overflow-x:auto">
 
-| Trường thông tin       | Control | Field              | Max length | Bắt buộc (Y/N) | Giá trị mặc định | Cho phép sửa (Y/N) | Mô tả                                                                                   |
-|:-----------------------|:--------|:-------------------|:-----------|:---------------|:-----------------|:-------------------|:----------------------------------------------------------------------------------------|
-| Tên tổ chức công chứng | text    | tenDonVi | -          | -              |                  | N                  | Tên của tổ chức hành nghề công chứng                                                    |
-| Sở Tư pháp quản lý     | text    | tenDonVi           | -          | -              |                  | N                  | Tên Sở Tư pháp quản lý                                                                  |
-| Địa chỉ                | text    | diaChiChiTiet             | -          | -              |                  | N                  | Địa chỉ trụ sở chính                                                                    |
-| Tỉnh/Thành phố         | text    | diaChiTinhThanh       | -          | -              |                  | N                  | Tỉnh/Thành phố nơi tổ chức công chứng hoạt động                                         |
-| Phường/Xã              | text    | diaChiPhuongXa           | -          | -              |                  | N                  | Phường/Xã thuộc địa chỉ tổ chức                                                         |
-| Số điện thoại          | text    | dienThoai        | -          | -              |                  | N                  | Thông tin số điện thoại liên hệ                                                         |
-| Email                  | text    | email              | -          | -              |                  | N                  | Email liên hệ                                                                           |
-| Trưởng văn phòng              | text    | hoDem + ten            | -          | -              |                  | N                  | Hiển thị tên công chứng viên trưởng VP (tìm từ ENT_CongChungVien theo truongVanPhongId) |
-| Trạng thái hoạt động   | dropdown | trangThai          | -          | -              | -                | N                  | Trạng thái: Đang hoạt động, Chờ thành lập, Giải thể, …                    |
+| Trường thông tin       | Control  | Field           | Max length | Bắt buộc (Y/N) | Giá trị mặc định | Cho phép sửa (Y/N) | Mô tả                                                                                   |
+|:-----------------------|:---------|:----------------|:-----------|:---------------|:-----------------|:-------------------|:----------------------------------------------------------------------------------------|
+| Tên tổ chức công chứng | text     | tenDonVi        | -          | -              |                  | N                  | Tên của tổ chức hành nghề công chứng                                                    |
+| Sở Tư pháp quản lý     | text     | tenDonVi        | -          | -              |                  | N                  | Tên Sở Tư pháp quản lý                                                                  |
+| Địa chỉ                | text     | diaChiChiTiet   | -          | -              |                  | N                  | Địa chỉ trụ sở chính                                                                    |
+| Tỉnh/Thành phố         | text     | diaChiTinhThanh | -          | -              |                  | N                  | Tỉnh/Thành phố nơi tổ chức công chứng hoạt động                                         |
+| Phường/Xã              | text     | diaChiPhuongXa  | -          | -              |                  | N                  | Phường/Xã thuộc địa chỉ tổ chức                                                         |
+| Số điện thoại          | text     | dienThoai       | -          | -              |                  | N                  | Thông tin số điện thoại liên hệ                                                         |
+| Email                  | text     | email           | -          | -              |                  | N                  | Email liên hệ                                                                           |
+| Mã số thuế             | text     | maSoThue        | -          | -              |                  | N                  | Mã số thuế                                                                              |
+| Trưởng văn phòng       | text     | hoDem + ten     | -          | -              |                  | N                  | Hiển thị tên công chứng viên trưởng VP (tìm từ ENT_CongChungVien theo truongVanPhongId) |
+| Trạng thái hoạt động   | dropdown | trangThai       | -          | -              | -                | N                  | Trạng thái: Đang hoạt động, Chờ thành lập, Giải thể, …                                  |
 
 
 </div>
@@ -33,7 +34,7 @@ Màn hình hiển thị chi tiết thông tin của một tổ chức hành ngh�
 
 | Trường thông tin | Control | Field            | Max length | Bắt buộc (Y/N) | Giá trị mặc định | Cho phép sửa (Y/N) | Mô tả                                         |
 |:-----------------|:--------|:-----------------|:-----------|:---------------|:-----------------|:-------------------|:----------------------------------------------|
-| Họ và tên        | text    | hoDem + ten          | -          | -              |                  | N                  | Hiển thị tên công chứng viên                  |
+| Họ và tên        | text    | hoDem + ten      | -          | -              |                  | N                  | Hiển thị tên công chứng viên                  |
 | Số thẻ           | text    | soThe            | -          | -              | -                | N                  | Số thẻ của công chứng viên                    |
 | Chức vụ          | text    | truongVanPhongId | -          | -              | -                | N                  | Hiển thị "Công chứng viên"/"Trưởng văn phòng" |
 | Trạng thái                 | text    | trangThai             | -          | -              | -                 | N                  |  | Trạng thái hoạt động của công chứng viên              |

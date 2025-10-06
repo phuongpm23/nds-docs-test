@@ -13,6 +13,7 @@
     - Tỉnh/Thành phố
     - Phường/Xã 
     - Số điện thoại
+    - Mã số thuế
     - Trưởng văn phòng
     - Trạng thái hoạt động 
     - Danh sách công chứng viên: Họ và tên, số thẻ, chức vụ (Công chứng viên/trưởng văn phòng), trạng thái
@@ -38,6 +39,7 @@
     - Tỉnh/Thành phố
     - Phường/Xã 
     - Số điện thoại
+    - Mã số thuế
     - Trưởng văn phòng: Họ và tên
     - Trạng thái hoạt động 
     - Danh sách công chứng viên: Họ và tên, số thẻ, chức vụ (Công chứng viên/trưởng văn phòng), trạng thái

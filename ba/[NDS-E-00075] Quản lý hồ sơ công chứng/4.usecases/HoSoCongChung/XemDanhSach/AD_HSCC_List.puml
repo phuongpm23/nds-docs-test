@@ -10,16 +10,6 @@ TCHNCC: Xem hồ sơ tại tổ chức của mình
 :Lấy danh sách hồ sơ công chứng theo phạm vi;
 if (Có dữ liệu?) then (Có)
   :Hiển thị danh sách hồ sơ công chứng;
-  note right: Hiển thị thông tin:
-  - Mã hồ sơ
-  - Tên giao dịch
-  - Ngày công chứng
-  - Số công chứng
-  - Giá trị hợp đồng
-  - Tên tổ chức
-  - Tên công chứng viên
-  - Trạng thái hồ sơ
-  :Hỗ trợ phân trang, sắp xếp, tìm kiếm nhanh;
   while (Thao tác trên danh sách?)
     :Chọn thao tác;
     switch (Thao tác?)

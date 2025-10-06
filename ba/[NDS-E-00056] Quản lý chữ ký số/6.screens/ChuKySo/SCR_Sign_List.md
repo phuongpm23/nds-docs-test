@@ -39,6 +39,7 @@ Nơi tập trung để xem và quản lý các chữ ký số.
 | Ô chọn nhà cung cấp       | Input  | Hiển thị nếu có quyền tìm kiếm, Chọn nhà cung cấp từ danh sách để tìm kiếm (**UC_Sign_Search**)                                               |
 | Ô chọn loại chữ ký số     | Input  | Hiển thị nếu có quyền tìm kiếm, Chọn loại chữ ký số (cá nhân/tổ chức) để tìm kiếm (**UC_Sign_Search**)                                        |
 | Ô chọn trạng thái         | Input  | Hiển thị nếu có quyền tìm kiếm, Chọn trạng thái (Chờ duyệt, tạo mới, đã duyệt, từ chối) để tìm kiếm (**UC_Sign_Search**)                      |
+| Biểu tượng reset           | Button   | Bấm vào thực hiện reset kết quả tìm kiếm, hiển thị lại danh sách mặc định |   
 | Tìm kiếm                  | Button | Hiển thị nếu có quyền tìm kiếm, Thực hiện tìm kiếm theo tiêu chí đã nhập và chọn                                                              |
 | Export                    | Button | Xuất danh sách đăng ký chữ ký số theo điều kiện tìm kiếm (**UC_Sign_Export**)                                                                 |
 | Xem chi tiết              | Button | Hiển thị nếu có quyền xem chi tiết, click mở màn hình chi tiết thông tin đăng ký chữ ký số (**UC_Sign_Detail**)                               |

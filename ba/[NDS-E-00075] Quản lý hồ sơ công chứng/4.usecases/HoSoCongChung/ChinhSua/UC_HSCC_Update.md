@@ -38,11 +38,17 @@
    - Công chứng viên thực hiện
    
    **Tab Bên tham gia:**
-   - Danh sách bên tham gia cá nhân (có thể chỉnh sửa, xóa, thêm mới)
-   - Danh sách bên tham gia tổ chức (có thể chỉnh sửa, xóa, thêm mới)
+   - Danh sách bên tham gia cá nhân
+   - Danh sách bên tham gia tổ chức
+   - Nút "Thêm mới bên tham gia" (**UC_BLQ_Create**)
+   - Nút "Chỉnh sửa" bên tham gia (**UC_BLQ_Update**)
+   - Nút "Xóa" bên tham gia (**UC_BLQ_Delete**)
    
    **Tab Tài sản:**
-   - Thông tin chi tiết về tài sản (có thể chỉnh sửa)
+   - Danh sách tài sản
+   - Nút "Thêm mới tài sản" (**UC_TSGD_Create**)
+   - Nút "Chỉnh sửa" tài sản (**UC_TSGD_Update**)
+   - Nút "Xóa" tài sản (**UC_TSGD_Delete**)
    
    **Tab Tài liệu đính kèm:**
    - Danh sách tài liệu đính kèm (có thể xóa, thêm mới)
@@ -55,8 +61,8 @@
 7. Nếu dữ liệu hợp lệ:
    - Hệ thống ghi nhận các thay đổi vào **ENT_LichSuCapNhatHoSo**
    - Cập nhật thông tin hồ sơ vào **ENT_HoSoCongChung**
-   - Cập nhật thông tin các bên tham gia vào **ENT_NguoiThamGiaGiaoDichCaNhan** và **ENT_NguoiThamGiaGiaoDichToChuc**
-   - Cập nhật thông tin tài sản vào **ENT_TaiSan**
+   - Cập nhật thông tin các bên tham gia vào **ENT_NguoiThamGiaGiaoDichCaNhan** và **ENT_NguoiThamGiaGiaoDichToChuc** (thông qua **UC_BLQ_Update**)
+   - Cập nhật thông tin tài sản vào **ENT_TaiSan** (thông qua **UC_TSGD_Update**)
    - Cập nhật thông tin tài liệu đính kèm
    - Hiển thị thông báo "Cập nhật hồ sơ công chứng thành công"
    - Chuyển hướng về màn hình chi tiết hồ sơ (**UC_HSCC_Detail**)
@@ -79,3 +85,4 @@
 - Activity Diagram: [AD_HSCC_Update.puml]
 - Form liên quan: [SCR_HSCC_Update.md]
 - Entity liên quan: ENT_HoSoCongChung, ENT_NguoiThamGiaGiaoDichCaNhan, ENT_NguoiThamGiaGiaoDichToChuc, ENT_TaiSan, ENT_LichSuCapNhatHoSo
+- Usecase liên quan: UC_BLQ_Create, UC_BLQ_Update, UC_BLQ_Delete, UC_TSGD_Create, UC_TSGD_Update, UC_TSGD_Delete

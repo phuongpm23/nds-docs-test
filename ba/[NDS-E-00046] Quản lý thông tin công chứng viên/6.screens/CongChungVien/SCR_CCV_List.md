@@ -5,7 +5,7 @@ Nơi tập trung để xem và quản lý công chứng viên trên hệ thống
 - Người dùng đã đăng nhập và có quyền xem danh sách công chứng viên.
 
 ## Nguyên mẫu
-[]
+[https://www.figma.com/design/G1GnG3ecpubkOPJjxrEiRo/CSDL.CC_V1?node-id=135-15983&t=AJ0R7XTWgx3u3lfZ-1]
 
 ## Thành phần
 
@@ -14,14 +14,15 @@ Nơi tập trung để xem và quản lý công chứng viên trên hệ thống
 
 <div style="overflow-x:auto">
 
-| Trường thông tin     | Control | Field                                            | Max length | Bắt buộc (Y/N) | Giá trị mặc định | Cho phép sửa (Y/N) | Mô tả                                           |
-|:---------------------|:--------|:-------------------------------------------------|:-----------|:---------------|:-----------------|:-------------------|:------------------------------------------------|
-| Họ và tên            | text    | hoDem + ten                                      | -          | Y              | -                | -                  | Họ và tên công chứng viên                       |
-| Số thẻ               | text    | soThe                                            | -          | Y              | -                | -                  | Số hiệu thẻ hành nghề công chứng                |
-| Tổ chức công chứng   | text    | tenDonVi                                         | -          | Y              | -                | -                  | Tên tổ chức công chứng đang hành nghề           |
-| Địa chỉ tổ chức      | text    | diaChiChiTiet + diaChiTinhThanh + diaChiPhuongXa | -          | Y              | -                | -                  | Địa chỉ tổ chức công chứng                      |
-| Trạng thái hoạt động | text    | trangThai                                        | -          | Y              | -                | -                  | Trạng thái hoạt động                            |
-| Chức năng            | icon    | -                                                | -          | -              | -                | -                  | Xem chi tiết, Sửa, Xóa, Xem lịch sử (tùy quyền) |
+| Trường thông tin     | Control | Field                                            | Max length | Bắt buộc (Y/N) | Giá trị mặc định | Cho phép sửa (Y/N) | Mô tả                                                                                                     |
+|:---------------------|:--------|:-------------------------------------------------|:-----------|:---------------|:-----------------|:-------------------|:----------------------------------------------------------------------------------------------------------|
+| Sở Tư pháp           | text    | tenDonVi                                         | -          | -              | -                | -                  | Hiển thị tên Sở Tư pháp                                                                                   |
+| Họ và tên            | text    | hoDem + ten                                      | -          | -              | -                | -                  | Họ và tên công chứng viên                                                                                 |
+| Số thẻ               | text    | soThe                                            | -          | -              | -                | -                  | Số hiệu thẻ hành nghề công chứng                                                                          |
+| Tổ chức công chứng   | text    | tenDonVi                                         | -          | -              | -                | -                  | Tên tổ chức công chứng đang hành nghề                                                                     |
+| Địa chỉ tổ chức      | text    | diaChiChiTiet + diaChiTinhThanh + diaChiPhuongXa | -          | -              | -                | -                  | Địa chỉ tổ chức công chứng                                                                                |
+| Trạng thái hoạt động | text    | trangThai                                        | -          | -              | -                | -                  | "Đang hành nghề" hiển thị trạng thái màu xanh lá. "Đã miễn nhiệm"/"Tạm đình chỉ" màu đỏ. Còn lại màu vàng |
+| Chức năng            | icon    | -                                                | -          | -              | -                | -                  | Xem chi tiết, Sửa, Xóa, Xem lịch sử (tùy quyền)                                                           |
 
 </div>
 
@@ -35,7 +36,8 @@ Nơi tập trung để xem và quản lý công chứng viên trên hệ thống
 | Ô chọn trạng thái             | dropdown | Chỉ hiển thị khi người dùng có quyền tìm kiếm công chứng viên, Chọn trạng thái từ danh sách trạng thái hoạt động của công chứng viên (Giống với SCR_CCV_Create) để tìm kiếm (**UC_CCV_Search**) |
 | Ô chọn Sở Tư pháp            | dropdown | Chỉ hiển thị khi người dùng có quyền tìm kiếm công chứng viên, Chọn Sở Tư pháp từ danh sách Sở Tư pháp để tìm kiếm (**UC_CCV_Search**) |
 | Ô chọn Tổ chức công chứng            | dropdown | Chỉ hiển thị khi người dùng có quyền tìm kiếm công chứng viên, Chọn tổ chức công chứng theo Sở Tư Pháp đã chọn (**UC_CCV_Search**) |
-| Biểu tượng tìm kiếm           | Button   | Bấm vào thực hiện tìm kiếm theo thông tin đã nhập/chọn (UC_CCV_Search)   
+| Biểu tượng tìm kiếm           | Button   | Bấm vào thực hiện tìm kiếm theo thông tin đã nhập/chọn (UC_CCV_Search)   |
+| Biểu tượng reset           | Button   | Bấm vào thực hiện reset kết quả tìm kiếm, hiển thị lại danh sách mặc định |   
 | Nút xuất danh sách            | Button   | Hiển thị nếu có quyền, click sẽ xuất danh sách theo điều kiện đã tìm (UC_CCV_Export)                                             |
 | Nút thêm mới                  | Button   | Hiển thị nếu có quyền, click sẽ mở màn hình thêm công chứng viên (UC_CCV_Create)                                                    |
 | Biểu tượng xem chi tiết       | Button   | Hiển thị nếu có quyền, click sẽ mở màn hình xem chi tiết công chứng viên (UC_CCV_Detail)                                            |
