@@ -18,7 +18,12 @@
 1. Người dùng truy cập thành công màn hình danh sách tổ chức công chứng.
 2. Người dùng tìm kiếm danh sách tổ chức công chứng cần xuất (UC_Org_Export).
 3. Người dùng bấm xuất danh sách.
-4. Nếu người dùng có quyền, hệ thống xuất danh sách tổ chức công chứng theo kết quả đã tìm kiếm. Mẫu template danh sách công chứng viên giống
+4. Nếu người dùng có quyền, hệ thống xuất danh sách tổ chức công chứng theo kết quả đã tìm kiếm. File excel danh sách bao gồm các cột bên dưới
+    - Tên tổ chức công chứng 
+    - Địa chỉ tổ chức công chứng: Đỉa chỉ chi tiết + Phường xã + Tỉnh thành phố
+    - Tên trưởng văn phòng công chứng
+    - Sở Tư pháp
+    - Trạng thái
 5. Kết thúc.
 
 ## Luồng phụ / ngoại lệ

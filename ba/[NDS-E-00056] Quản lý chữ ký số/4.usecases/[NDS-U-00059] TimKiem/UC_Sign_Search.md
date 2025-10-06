@@ -8,7 +8,6 @@
 ## Acceptance criteria
 - Hệ thống hiển thị form tìm kiếm với các tiêu chí
     - Ô điền thông tin tìm kiếm theo "Họ và tên công chứng viên", "Số serial"
-    - Ô điền số serial
     - Chọn trạng thái
     - Chọn nhà cung cấp dịch vụ
     - Chọn loại chữ ký số

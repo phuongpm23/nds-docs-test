@@ -15,8 +15,9 @@
    - File đính kèm
    - Ghi chú
 - Hệ thống kiểm tra dữ liệu hợp lệ (thời gian hiệu lực/hết hạn, file đúng định dạng).
-- Nếu hợp lệ: lưu hồ sơ đăng ký ở trạng thái **"Mới tạo"** hoặc **"Chờ duyệt"** (tùy vào Lưu nháp hay trình duyệt).
+- Nếu hợp lệ: lưu hồ sơ đăng ký ở trạng thái **Mới tạo** hoặc **Chờ duyệt** (tùy vào Lưu nháp hay trình duyệt).
 - Người dùng có thể hủy thao tác chỉnh sửa.
+- Người dùng chỉ có thể chỉnh sửa bản ghi ở trạng thái **Mới tạo**, **Chờ duyệt**.
 
 ## Tác nhân chính
 - Công chứng viên  
@@ -38,11 +39,12 @@
 6. Kết thúc use case.
 
 ## Luồng phụ / Ngoại lệ
-- Người dùng chọn **Đóng**: Hiển thị popup xác nhận hủy thao tác. Nếu xác nhận, form đóng, không lưu dữ liệu, chuyển về màn danh sách. Nếu hủy xác nhận, đóng popup xác nhận
+- Người dùng chọn **Hủy**: Hiển thị popup xác nhận hủy thao tác. Nếu xác nhận, form đóng, không lưu dữ liệu, chuyển về màn danh sách. Nếu hủy xác nhận, đóng popup xác nhận
 - Nhập thiếu thông tin bắt buộc: Hiển thị cảnh báo lỗi.
 - Ngày hết hạn < ngày hiệu lực: Hiển thị lỗi "Ngày hết hạn không hợp lệ".
+- Trạng thái khác "Mới tạo" hoặc "Chờ duyệt": Hiển thị lỗi "Thông tin không thể chỉnh sửa".
 - File đính kèm sai định dạng: Hiển thị lỗi "File không hợp lệ".
-- Lỗi hệ thống: Hiển thị thông báo lỗi, không lưu dữ liệu.
+- Lỗi hệ thống: Hiển thị thông báo lỗi "Hệ thống phát sinh lỗi, vui lòng thử lại", không lưu dữ liệu.
 - Người dùng chọn **Lưu nháp**: 
    - Hệ thống không thực hiện kiểm tra tính đầy đủ của dữ liệu mà chỉ kiểm tra logic, hệ thống lưu thông tin đăng ký chữ ký số với trạng thái là "Mới tạo".
    - Hiển thị thông báo "Lưu thông tin chữ ký số thành công".
@@ -57,4 +59,4 @@
 ## Liên kết
 - Activity Diagram: [AD_Sign_Update.puml]
 - Form liên quan: [SCR_Sign_Update.md]
-- Entity liên quan: ChuKySo, LichSuCapNhat
+- Entity liên quan: **ChuKySo**, **LichSuCapNhat**

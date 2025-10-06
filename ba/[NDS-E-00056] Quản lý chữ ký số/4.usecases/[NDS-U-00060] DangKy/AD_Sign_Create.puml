@@ -4,14 +4,14 @@ title Activity Diagram: Đăng ký thông tin chữ ký số
 start
 :Truy cập chức năng "Đăng ký thông tin chữ ký số";
 :Hiển thị form nhập thông tin;
-:Nhập thông tin thông tin đăng ký chữ ký số;
+:Nhập thông tin thông tin chữ ký số;
   :Chọn thao tác;
   switch (Thao tác?)
     case (Lưu nháp)
-      :Ghi nhận dữ liệu thông tin đăng ký chữ ký số;
+      :Ghi nhận dữ liệu thông tin chữ ký số;
       :Cập nhật trạng thái thành "Mới tạo";
       if (Ghi thành công?) then (Có)
-        :Thông báo "Lưu nháp thông tin đăng ký chữ ký số thành công";
+        :Thông báo "Lưu nháp thông tin chữ ký số thành công";
         :Chuyển hướng về danh sách\n(**SCR_Sign_List**);
         stop
       else (Không)
@@ -22,10 +22,10 @@ start
     case (Trình duyệt)
       :Kiểm tra tính hợp lệ dữ liệu;
       if (Hợp lệ?) then (Đúng)
-        :Ghi nhận dữ liệu thông tin đăng ký chữ ký số;
+        :Ghi nhận dữ liệu thông tin chữ ký số;
         :Cập nhật trạng thái thành "Chờ duyệt";
           if (Ghi thành công?) then (Có)
-            :Thông báo "Đăng ký thông tin đăng ký chữ ký số thành công";
+            :Thông báo "Đăng ký thông tin chữ ký số thành công";
             :Chuyển hướng về danh sách\n(**SCR_Sign_List**);
             stop
           else (Không)
@@ -38,7 +38,7 @@ start
         :Ở lại màn hình\n(**SCR_Sign_create**);
         stop
       endif
-    case (Đóng)
+    case (Hủy)
       :Xác nhận hủy thao tác?;
       if (Đồng ý?) then (Có)
         :Hủy thao tác;

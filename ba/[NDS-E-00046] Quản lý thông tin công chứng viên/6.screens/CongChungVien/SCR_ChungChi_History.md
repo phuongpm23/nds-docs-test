@@ -10,8 +10,19 @@ Popup hiển thị lịch sử cập nhật thông tin chứng chỉ hành ngh�
 
 ## Thành phần
 
-### Bảng lịch sử (ENT_LichSuCapNhatChugnChi)
+### Lịch sử
+#### Thêm mới
+<div style="overflow-x:auto">
+| Trường thông tin | Control  | Field     | Bắt buộc (Y/N) | Mô tả                        |
+|:-----------------|:---------|:----------|:---------------|:-----------------------------|
+| Thời gian        | datetime | updatedAt | -              | Thời điểm thực hiện cập nhật |
+| Người thực hiện  | text     | updatedBy | -              | Người thực hiện thay đổi     |
+| Thao tác         | text     | thaoTac   | -              | Thêm mới                     |
+| Nội dung         | text     | -         | -              | Tạo mới chứng chỉ + ID |
 
+</div>
+
+#### Cập nhật
 <div style="overflow-x:auto">
 
 | Trường thông tin   | Control  | Field                 | Bắt buộc (Y/N) | Mô tả                            |

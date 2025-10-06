@@ -85,18 +85,19 @@ Tài liệu này mô tả **các quy chuẩn nghiệp vụ chung** áp dụng ch
 | 4   | Số điện thoại           | Hệ thống cho phép nhập theo cả dạng `0xxxxxxxxx` hoặc `+84xxxxxxxxx`.Nếu nhập `+84` thì tự động chuyển thành `0`.Định dạng: Đủ 10 chữ số với di động, , không cho phép ký tự đặc biệt (`-`, khoảng trắng,…), với cố định 10-11 chữ số                   |
 | 5   | Input lựa chọn/dropdown | Click vào, hệ thống hiển thị mặc định 5 giá trị nếu có nhiều hơn 5, có thể scroll xuống để hiển thị thêm. Hiển thị ô điền thông tin tìm kiếm, khi người dùng điền, hệ thống lọc giá trị để chọn theo từ đã điền. Áp dụng cho toàn bộ form trên hệ thống |
 | 6   | Quy tắc click nút tab   | Gõ tab, hệ thống tự động chuyển từ field này sang field kế tiếp, từ trái sang phải, từ trên xuống . Nếu tab ở input lựa chọn, chọn ngay giá trị đầu tiên. áp dụng cho toàn bộ form trên hệ thống                                                        |
-| 7   | Tỉnh/Thành phố          | Chọn phường/xã từ danh mục hành chính quốc gia cũ/mới chi tiết trong screen, danh sách hiển thị theo tỉnh thành đã chọn. Nếu chưa chọn tỉnh thành, mặc định không hiện lựa chọn, Max length 250                                                         |
-| 8   | Phường/Xã               | Chọn tỉnh/thành phố từ danh mục hành chính quốc gia cũ/mới chi tiết trong screen, sau khi chọn sẽ cập nhật danh sách phường xã tương ứng với tỉnh, Max length 250 
+| 7   | Tỉnh/Thành phố          | Chọn tỉnh/thành phố từ danh mục hành chính quốc gia cũ/mới. Trường thông tin Tỉnh/Thành phố mới tự động cập nhật theo Tỉnh/thành phố cũ đã chọn                                                                                                         |
+| 8   | Phường/Xã               | Chọn phường/xã từ danh mục hành chính quốc gia cũ/mới, danh sách hiển thị theo tỉnh thành đã chọn
 | 9   | Email               |     Email luôn có cấu trúc TênNgườiDùng@TênMiền.Đuôi. Max length 255                                               |
 | 10   | Số giấy tờ cá nhân               | Cho phép điền không quá 12 ký tự, không có ký tự đặc biệt và khoảng trống                                               |
+| 11   | Placeholder               | Mặc định placeholder luôn là Nhập/Chọn + tên label. Nếu có thay đổi, chi tiết trong screeen                                               |
 
-## 10. Popup
+## BR10. Popup
 | Nội dung       | Quy chuẩn nghiệp vụ                                                |
 |----------------|--------------------------------------------------------------------|
 | Nút "Đóng"     | Luôn hiển thị trong popup, click vào sẽ hủy thao tác và đóng popup |
 | Biểu tượng "x" | Luôn hiển thị trong popup, click vào sẽ hủy thao tác và đóng popup |
 
-## 11. Button
+## BR11. Button
 | Nội dung | Quy chuẩn nghiệp vụ                                                            |
 |----------|--------------------------------------------------------------------------------|
 | Tooltips | Khi hover vào 1 biểu tượng/nút không có label, hệ thống hiện thị tooltip mô tả |

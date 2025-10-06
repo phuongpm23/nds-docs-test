@@ -22,7 +22,7 @@ start
         :Thông báo lỗi;
         :Ở lại màn hình\n(**SCR_Org_create**);
       endif
-    case (Đóng)
+    case (Hủy)
       :Xác nhận hủy thao tác?;
       if (Đồng ý?) then (Có)
         :Hủy thao tác;

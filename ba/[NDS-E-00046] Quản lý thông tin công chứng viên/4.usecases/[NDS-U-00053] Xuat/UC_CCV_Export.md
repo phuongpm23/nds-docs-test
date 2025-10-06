@@ -23,7 +23,7 @@
     - Số thẻ
     - Số CCCD/CMND/Hộ chiếu
     - Tổ chức công chứng
-    - Địa chỉ tổ chức công chứng
+    - Địa chỉ tổ chức công chứng: Địa chỉ chi tiết + Phường/xã + Tỉnh/Thành phố
     - Trạng thái
 5. Kết thúc.
 

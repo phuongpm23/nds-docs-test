@@ -6,7 +6,7 @@
 
 ## Acceptance criteria
 - Hệ thống hiển thị form tìm kiếm với các tiêu chí
-    - Ô điền thông tin tìm kiếm theo "Tên tổ chức công chứng" hoặc "Tên trưởng văn phòng"
+    - Ô điền thông tin tìm kiếm theo "Tên tổ chức công chứng"
     - Ô chọn Sở tư pháp
     - Chọn trạng thái hoạt động 
 - Hiển thị bảng danh sách tổ chức công chứng với các cột tông tin cơ bản (Tên tổ chức công chứng, Địa chỉ tổ chức công chứng, Tên trưởng văn phòng công chứng, Sở Tư pháp (hiển thị nếu người dùng thuộc bộ), Trạng thái) theo tiêu chí đã tìm kiếm.
@@ -31,7 +31,6 @@
 6. Nếu người dùng thuộc cấp Sở, hệ thống truy vấn trên danh sách tổ chức công chứng thuộc Sở Tư pháp gắn với người dùng
 7. Hệ thống truy vấn thông tin tổ chức công chứng
     - Truy vấn tên tổ chức công chứng gần giống với kết quả đã điền.
-    - Nếu không có dữ liệu, thực hiện truy vấn theo tên trưởng văn phòng gần giống với kết quả đã điền
     - Truy vấn chính xác theo trạng thái đã chọn
     - Truy vấn chính xác theo Sở tư pháp đã chọn
 8. Hệ thống hiển thị danh sách tổ chức công chứng theo kết quả đã truy vấn được

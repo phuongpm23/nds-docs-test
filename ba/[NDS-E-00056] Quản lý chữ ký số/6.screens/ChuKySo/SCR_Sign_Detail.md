@@ -24,7 +24,7 @@ Màn hình hiển thị chi tiết chữ ký số, trạng thái phê duyệt v�
 | Ngày hiệu lực    | datetime  | ngayHieuLuc   | -          | -              | N                  | Ngày bắt đầu hiệu lực                                            |
 | Ngày hết hạn     | datetime  | ngayHetHan    | -          | -              | N                  | Ngày hết hạn. Nếu quá hạn, hiển thị thông báo "Hết hạn" bên cạnh |
 | File đính kèm    | file/link | fileDinhKem   | -          | -              | N                  | File đính kèm                                                    |
-| Ghi chú          | text      | ghiChu        | -          | -              | N                  | File chứng thư số đính kèm                                       |
+| Ghi chú          | text      | ghiChu        | -          | -              | N                  | Ghi chú                                                          |
 | Trạng thái       | text      | trangThai     | -          | -              | N                  | Mới tạo / Chờ duyệt / Đã duyệt / Từ chối                         |
 | Người duyệt      | text      | nguoiDuyet    | -          | -              | N                  | Tên người phê duyệt                                              |
 | Thời gian duyệt  | datetime  | thoiGianDuyet | -          | -              | N                  | Thời gian phê duyệt                                              |
@@ -45,6 +45,3 @@ Màn hình hiển thị chi tiết chữ ký số, trạng thái phê duyệt v�
 
 </div>
 
-## Thông báo hệ thống
-- Không có dữ liệu: Hiển thị **"Không tìm thấy thông tin chữ ký số"**.  
-- Lỗi hệ thống: Hiển thị **"Không tải được thông tin, vui lòng thử lại"**.  

@@ -31,7 +31,7 @@ Form cho phép chỉnh sửa thông tin công chứng viên, hiển thị dữ l
 | Phường/Xã thường trú (cũ)       | combobox search | phuongXaCu      | 250        | N              | -                | Y                  | Chọn 1 từ danh mục phường xã cũ. **BR9.8**                        |
 | Địa chỉ thường trú              | text            | diaChi          | 500        | Y              | -                | Y                  |                                                                   |
 | Tỉnh/Thành phố thường trú       | combobox search | tinhThanhPho    | 250        | Y              | -                | Y                  | Chọn 1 từ danh mục tỉnh thành phố mới. **BR9.7**                  |
-| Phường/Xã thường trú            | combobox search | phuongXa        | 250        | Y              | -                | Y                  | Chọn 1 từ danh mục phờng xã mới. **BR9.8**                        |
+| Phường/Xã thường trú            | combobox search | phuongXa        | 250        | Y              | -                | Y                  | Chọn 1 từ danh mục phường xã mới. **BR9.8**                        |
 | Trạng thái                      | combobox search | trangThai       | 50         | Y              | Đang hành nghề   | Y                  | Chọn 1 từ danh sách lấy trong entity                              |
 
 </div>

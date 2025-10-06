@@ -3,7 +3,7 @@
 ## User Story
 - Với vai trò là **Công chứng viên / Nhân viên TCHNCC**, tôi muốn xem danh sách chữ ký số mà tổ chức công chứng của mình đã đăng ký, để theo dõi trạng thái và thực hiện các thao tác cần thiết.
 - Với vai trò là **Chuyên viên STP, Lãnh đạo STP, Lãnh đạo phòng HCBTTP tại STP**, tôi muốn xem danh sách chữ ký số đã đăng ký của các tổ chức công chứng thuộc Sở Tư pháp của mình, để quản lý, theo dõi trạng thái và thực hiện phê duyệt.
-- Với vai trò là **Lãnh đạo Bộ Tư pháp, Lãnh đạo Cục BTTP, Chuyên viên Cục BTTP**, tôi muốn xem toàn bộ danh sách chữ ký đã đăng ký trên hệ thống, để thống kê và theo dõi trạng thái.
+- Với vai trò là **Lãnh đạo Bộ Tư pháp, Lãnh đạo Cục BTTP, Chuyên viên Cục BTTP**, tôi muốn xem toàn bộ danh sách chữ ký số đã đăng ký trên hệ thống, để thống kê và theo dõi trạng thái.
 
 ## Acceptance Criteria
 - Hệ thống hiển thị danh sách hồ sơ đăng ký chữ ký số với các trường: Tên tổ chức công chứng, Số serial, Nhà cung cấp dịch vụ, Trạng thái, Loại chữ ký số, tên công chứng viên.
@@ -58,6 +58,6 @@
 - Nếu thất bại: Không hiển thị dữ liệu, hoặc hiển thị thông báo lỗi.
 
 ## Related
-- AD_Sign_List.puml
-- SCR_Sign_List.md
-- ENT: **ENT_ChuKySo**, **ENT_CongChungVien**, **ENT_ToChucCongChung**
+- Activity Diagram: [AD_Sign_List.puml]
+- Form/Screen: [SCR_Sign_List.md]
+- Entity liên quan: **ENT_ChuKySo**, **ENT_CongChungVien**, **ENT_ToChucCongChung**

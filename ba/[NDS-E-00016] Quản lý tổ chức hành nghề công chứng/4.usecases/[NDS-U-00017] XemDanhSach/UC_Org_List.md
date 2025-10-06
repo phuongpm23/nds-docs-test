@@ -1,8 +1,8 @@
 # Use Case: Xem danh sách tổ chức công chứng
 
 ## User Story
-- Là **Chuyên viên STP, Lãnh đạo STP, Lãnh đạo phòng HCBTTP tại STP**, tôi muốn xem được danh sách toàn bộ Tổ chức công chứng thuộc Sở tư pháp của mình để có thể quản lý và tra cứu thông tin
-- Là **Lãnh đạo Bộ Tư pháp, Lãnh đạo Cục BTTP, Chuyên viên Cục BTTP**, tôi muốn xem được danh sách toàn bộ tổ chức công chứng trên hệ thống để có thể quản lý và tra cứu thông tin
+- Là **Chuyên viên STP, Lãnh đạo STP, Lãnh đạo phòng HCBTTP tại STP**, tôi muốn xem được danh sách toàn bộ Tổ chức công chứng thuộc Sở tư pháp của mình để có thể xem và thực hiện các thao tác quản lý danh sách trên hệ thống
+- Là **Lãnh đạo Bộ Tư pháp, Lãnh đạo Cục BTTP, Chuyên viên Cục BTTP**, tôi muốn xem được danh sách toàn bộ tổ chức công chứng trên hệ thống để có thể xem và thực hiện các thao tác quản lý danh sách trên hệ thống
 
 ## Acceptance criteria
 - Hiển thị bảng danh sách tổ chức công chứng với các cột tông tin cơ bản (Tên tổ chức công chứng, Địa chỉ tổ chức công chứng, Tên trưởng văn phòng công chứng, Sở Tư pháp (hiển thị nếu người dùng thuộc bộ), Trạng thái).

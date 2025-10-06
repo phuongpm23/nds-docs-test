@@ -1,17 +1,28 @@
-# Màn hình: Xem lịch sử cập nhật thông tin đăng ký chữ ký số
+# Màn hình: Xem lịch sử cập nhật thông tin chữ ký số
 Popup hiển thị danh sách lịch sử cập nhật của một hồ sơ đăng ký chữ ký số.
 
 ## Điều kiện tiên quyết
 - Người dùng đã đăng nhập hệ thống.  
-- Người dùng có quyền xem lịch sử cập nhật thông tin đăng ký chữ ký số.  
+- Người dùng có quyền xem lịch sử cập nhật thông tin chữ ký số.  
 
 ## Nguyên mẫu
 [https://www.figma.com/design/STv6BI8XR469xhObHjgCHs/Test-Puml?node-id=32-39612&t=qhcu7sCD1S2A6kb5-1]
 
 ## Thành phần
 
-### Bảng lịch sử cập nhật (ENT_LichSuCapNhat)
+### Lịch sử
+#### Thêm mới
+<div style="overflow-x:auto">
+| Trường thông tin | Control  | Field     | Bắt buộc (Y/N) | Mô tả                                                 |
+|:-----------------|:---------|:----------|:---------------|:------------------------------------------------------|
+| Thời gian        | datetime | updatedAt | -              | Thời điểm thực hiện cập nhật                          |
+| Người thực hiện  | text     | updatedBy | -              | Người thực hiện thay đổi                              |
+| Thao tác         | text     | thaoTac   | -              | Thêm mới                                              |
+| Nội dung         | text     | -         | -              | Trình duyệt/Lưu nháp thông tin đăng ký chữ ký số + ID |
 
+</div>
+
+#### Cập nhật
 <div style="overflow-x:auto">
 
 | Trường thông tin   | Control  | Field                 | Bắt buộc (Y/N) | Mô tả                            |
@@ -26,7 +37,7 @@ Popup hiển thị danh sách lịch sử cập nhật của một hồ sơ đă
 </div>
 
 ### Thông báo hệ thống
-- Không có dữ liệu: hiển thị **"Không tìm thấy lịch sử cập nhật thông tin đăng ký chữ ký số"**.  
+- Không có dữ liệu: hiển thị **"Không tìm thấy lịch sử cập nhật thông tin chữ ký số"**.  
 - Lỗi hệ thống: hiển thị **"Không tải được thông tin, vui lòng thử lại"**.  
 
 ### Chức năng

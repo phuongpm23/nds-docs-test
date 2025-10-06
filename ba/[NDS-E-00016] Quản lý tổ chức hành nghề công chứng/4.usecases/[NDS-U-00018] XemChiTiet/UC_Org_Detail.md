@@ -59,4 +59,4 @@
 ## Liên kết
 - Activity Diagram: [AD_Org_Detail.puml]
 - Form/Screen: [SCR_Org_Detail.md]
-- Entity liên quan:** ENT_ToChucCongChung**
+- Entity liên quan: **ENT_ToChucCongChung**

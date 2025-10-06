@@ -22,7 +22,7 @@ Form cho phép chỉnh sửa thông tin một tổ chức hành nghề công ch�
 | Phường/Xã              | dropdown | diaChiPhuongXa   | 250        | Y              |                  | Y                  | Chọn từ danh mục phường xã mới **BR9.8**,                                                                                                                                                                       |
 | Số điện thoại          | text     | dienThoai        | 10         | N              |                  | Y                  | **BR9.1**,**BR9.4**                                                                                                                                                                                             |
 | Email                  | text     | email            | 255        | N              |                  | Y                  | **BR9.9**                                                                                                                                                                                                       |
-| Mã số thuế             | text     | maSoThue         | 255        | Y              |                  | Y                  |                                                                                                                                                                                                                 |
+| Mã số thuế             | text     | maSoThue         | 205        | N              |                  | Y                  |                                                                                                                                                                                                                 |
 | Trưởng văn phòng       | dropdown | truongVanPhongId | 50         | Y              |                  | Y                  | Click vào cho phép chọn công chứng viên từ danh sách (entity CongChungVien), cho phép điền và tìm kiếm theo số giấy tờ/tên công chứng viên, danh sách hiển thị theo cấu trúc "Số giấy tờ - Tên công chứng viên" |
 | Trạng thái hoạt động   | dropdown | trangThai        | 50         | Y              | Đang hoạt động   | Y                  | Chọn trạng thái hoạt động theo danh sách đã liệt kê trong entity                                                                                                                                                |
 
@@ -31,7 +31,7 @@ Form cho phép chỉnh sửa thông tin một tổ chức hành nghề công ch�
 ### Chức năng
 <div style="overflow-x:auto">
 
-| Tên  | Loại   | Mô tả                                                                                                    |
-|:-----|:-------|:---------------------------------------------------------------------------------------------------------|
-| Lưu  | Button | Lưu dữ liệu nhập vào. Nếu hợp lệ thì cập nhật dữ liệu và đóng màn hình. Chi tiết trong **UC_Org_Update** |
-| Đóng | Button | Hiển thị popup xác nhận hủy thao tác                                                                     |
+| Tên | Loại   | Mô tả                                                                                                    |
+|:----|:-------|:---------------------------------------------------------------------------------------------------------|
+| Lưu | Button | Lưu dữ liệu nhập vào. Nếu hợp lệ thì cập nhật dữ liệu và đóng màn hình. Chi tiết trong **UC_Org_Update** |
+| Hủy | Button | Hiển thị popup xác nhận hủy thao tác                                                                     |

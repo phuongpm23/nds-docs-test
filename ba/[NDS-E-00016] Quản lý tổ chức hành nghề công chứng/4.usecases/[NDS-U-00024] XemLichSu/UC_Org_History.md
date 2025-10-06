@@ -27,7 +27,7 @@
 ## Luồng chính
 1. Người dùng truy cập thành công màn hình danh sách tổ chức công chứng (**SCR_Org_List**)
 2. Người dùng truy cập trang lịch sử cập nhật tổ chức công chứng băng cách click vào biểu tượng xem lịch sử cập nhật 1 tổ chức công chứng trong danh sách
-3. Hệ thống truy vấn lịch sử cập nhật tổ chức công chứng theo ID (**ENT_LichSuCapNhatTCHNCC**).
+3. Hệ thống truy vấn lịch sử cập nhật tổ chức công chứng theo ID (**ENT_LichSuCapNhat**) và sắp xếp lịch sử theo thứ tự từ cũ tới mới nhất.
 4. Hệ thống hiển thị popup lịch sử cập nhật tổ chức công chứng (**SCR_Org_History**) bao gồm các thông tin
     - Thời gian
     - Người thực hiện
@@ -36,7 +36,7 @@
     - Giá trị cũ
     - Giá trị mới
 5. Hệ thống hiển thị các nút chức năng.
-- Biểu tượng quay lại và nút đóng => Bấm vào đóng popup, chuyển về màn hình danh sách tổ chức công chứng (**SCR_Org_List**)
+- Biểu tượng quay lại và nút đóng => Bấm vào đóng popup
 6. Kết thúc Use case
 
 ## Luồng phụ / ngoại lệ

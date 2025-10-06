@@ -10,7 +10,7 @@
         - Trạng thái
         - Sở Tư pháp
         - Tên tổ chức hành nghề công chứng
-- Hiển thị bảng danh sách công chứng viên với các cột thông tin cơ bản (Họ và tên, số thẻ, số chứng chỉ hành nghề, tổ chức công chứng đang hành nghề, trạng thái hoạt động) theo tiêu chí đã tra cứu.
+- Hiển thị bảng danh sách công chứng viên theo tiêu chí đã tra cứu.
 - Nếu số lượng bản ghi vượt quá giới hạn hiển thị, hệ thống phải cung cấp phân trang (10 bản ghi 1 trang).
 - Nếu có lỗi tải dữ liệu, hiển thị thông báo lỗi.
 - Nếu không tìm thấy dữ liệu theo tiêu chí tra cứu, thông báo "Không tìm thấy dữ liệu"
@@ -35,7 +35,7 @@
     - Truy vấn chính xác theo trạng thái đã chọn
     - Truy vấn chính xác theo tỉnh thành của tổ chức công chứng đã chọn
     - Truy vấn chính xác theo tên tổ chức công chứng đã chọn
-6. Hệ thống hiển thị danh sách công chứng viên theo kết quả đã truy vấn được bao gồm các thông tin: (STT, Họ và tên, số thẻ, số chứng chỉ hành nghề, tổ chức công chứng đang hành nghề, trạng thái hoạt động, địa chỉ tổ chức công chứng)
+6. Hệ thống hiển thị danh sách công chứng viên theo kết quả đã truy vấn được bao gồm các thông tin: (Họ và tên, số thẻ, số chứng chỉ hành nghề, tổ chức công chứng đang hành nghề, trạng thái hoạt động, địa chỉ tổ chức công chứng)
 7. Hệ thống hiển thị danh sách công chứng viên theo thứ tự thời gian cập nhật từ mới tới cũ nhất
 8. Người dùng bấm vào xem chi tiết chứng chỉ hành nghề (nếu có quyền tra cứu chứng chỉ), hệ thống hiển thị popup chi tiết chứng chỉ hành nghề với các thông tin: 
     - Số chứng chỉ

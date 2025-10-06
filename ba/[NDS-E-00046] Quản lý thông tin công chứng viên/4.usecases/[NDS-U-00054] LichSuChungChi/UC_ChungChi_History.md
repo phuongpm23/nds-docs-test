@@ -26,7 +26,7 @@
 ## Luồng chính
 1. Người dùng truy cập thành công màn hình chi tiết thông tin công chứng viên (**SCR_CCV_Detail**)
 2. Người dùng truy cập trang lịch sử cập nhật thông tin chứng chỉ hành nghề băng cách click vào biểu tượng xem lịch sử cập nhật chứng chỉ hành nghề
-3. Hệ thống truy vấn thông tin lịch sử cập nhật chứng chỉ hành nghề theo ID chứng chỉ (**ENT_LichSuCapNhat**).
+3. Hệ thống truy vấn thông tin lịch sử cập nhật chứng chỉ hành nghề theo ID chứng chỉ (**ENT_LichSuCapNhat**) và sắp xếp lịch sử theo thứ tự từ cũ tới mới nhất.
 4. Hệ thống hiển thị popup lịch sử cập nhật chứng chỉ hành nghề (**SCR_ChungChi_History**) bao gồm các thông tin
     - Thời gian
     - Người thực hiện

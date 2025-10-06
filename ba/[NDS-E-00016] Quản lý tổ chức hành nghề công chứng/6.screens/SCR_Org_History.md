@@ -10,8 +10,20 @@ Popup hiển thị lịch sử cập nhật thông tin tổ chức công chứng
 
 ## Thành phần
 
-### Bảng lịch sử
+### Lịch sử
 
+#### Thêm mới
+<div style="overflow-x:auto">
+| Trường thông tin | Control  | Field     | Bắt buộc (Y/N) | Mô tả                           |
+|:-----------------|:---------|:----------|:---------------|:--------------------------------|
+| Thời gian        | datetime | updatedAt | -              | Thời điểm thực hiện cập nhật    |
+| Người thực hiện  | text     | updatedBy | -              | Người thực hiện thay đổi        |
+| Thao tác         | text     | thaoTac   | -              | Thêm mới                        |
+| Nội dung         | text     | -         | -              | Tạo mới tổ chức công chứng + ID |
+
+</div>
+
+#### Cập nhật
 <div style="overflow-x:auto">
 
 | Trường thông tin   | Control  | Field                 | Bắt buộc (Y/N) | Mô tả                            |
@@ -25,17 +37,13 @@ Popup hiển thị lịch sử cập nhật thông tin tổ chức công chứng
 
 </div>
 
-### Thông báo hệ thống
-- Nếu không có dữ liệu: Hiển thị **"Không tìm thấy lịch sử cập nhật tổ chức công chứng"**.  
-- Nếu lỗi hệ thống: Hiển thị **"Không tải được thông tin, vui lòng thử lại"**.  
-
 ## Chức năng
 
 <div style="overflow-x:auto">
 
-| Tên             | Loại   | Mô tả                                                                    |
-|:----------------|:-------|:-------------------------------------------------------------------------|
-| Quay lại / Đóng | Button | Đóng popup, trở về màn hình danh sách tổ chức công chứng (**SCR_Org_List**) |
+| Tên             | Loại   | Mô tả      |
+|:----------------|:-------|:-----------|
+| Quay lại / Đóng | Button | Đóng popup |
 
 </div>
 

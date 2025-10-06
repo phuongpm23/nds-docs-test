@@ -9,7 +9,7 @@
     - Chọn Sở Tư pháp
     - Chọn tổ chức công chứng
     - Chọn trạng thái từ danh sách 
-- Hiển thị bảng danh sách công chứng viên với các cột tông tin cơ bản (Họ và tên, số thẻ, tổ chức công chứng đang hành nghề, trạng thái hoạt động) theo tiêu chí đã tìm kiếm.
+- Hiển thị bảng danh sách công chứng viên theo tiêu chí đã tìm kiếm.
 - Nếu số lượng bản ghi vượt quá giới hạn hiển thị, hệ thống phải cung cấp phân trang (10 bản ghi 1 trang).
 - Nếu có lỗi tải dữ liệu, hiển thị thông báo lỗi.
 - Nếu không tìm thấy dữ liệu theo tiêu chí tìm kiếm, thông báo "Không tìm thấy dữ liệu công chứng viên"

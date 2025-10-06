@@ -29,8 +29,8 @@
 6. Kết thúc use case.
 
 ## Luồng phụ / Ngoại lệ
-- Người dùng chọn **Đóng**: Hiển thị popup xác nhận hủy thao tác. Nếu xác nhận, form đóng, không lưu dữ liệu, chuyển về màn danh sách. Nếu hủy xác nhận, đóng popup xác nhận.
-- Nếu mã số thuế đã tồn tại: Hiển thị thông báo lỗi "Mã số thuế đã tồn tại, vui lòng thử lại"
+- Người dùng chọn **Hủy**: Hiển thị popup xác nhận hủy thao tác. Nếu xác nhận, form đóng, không lưu dữ liệu, chuyển về màn danh sách. Nếu hủy xác nhận, đóng popup xác nhận.
+- Nếu mã số thuế đã tồn tại: Hiển thị thông báo lỗi "Mã số thuế đã tồn tại, vui lòng kiểm tra lại"
 - Lỗi hệ thống: Hiển thị thông báo lỗi "Hệ thống phát sinh lỗi, vui lòng thử lại", không lưu dữ liệu.
 - Lỗi dữ liệu hoặc lưu thất bại: Hiển thị thông báo lỗi "Thêm mới tổ chức công chứng thất bại, vui lòng kiểm tra lại dữ liệu"
 
