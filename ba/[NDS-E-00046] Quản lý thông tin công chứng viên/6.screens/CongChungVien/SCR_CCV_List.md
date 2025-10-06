@@ -33,9 +33,9 @@ Nơi tập trung để xem và quản lý công chứng viên trên hệ thống
 | Tên                           | Loại     | Mô tả                                                                                                                            |
 |:------------------------------|:---------|:---------------------------------------------------------------------------------------------------------------------------------|
 | Ô tìm kiếm                    | Input    | Chỉ hiển thị khi người dùng có quyền tìm kiếm công chứng viên, nhập tên công chứng viên hoặc số thẻ để tìm kiếm                  |                                                        |
-| Ô chọn trạng thái             | dropdown | Chỉ hiển thị khi người dùng có quyền tìm kiếm công chứng viên, Chọn trạng thái từ danh sách trạng thái hoạt động của công chứng viên (Giống với SCR_CCV_Create) để tìm kiếm (**UC_CCV_Search**) |
-| Ô chọn Sở Tư pháp            | dropdown | Chỉ hiển thị khi người dùng có quyền tìm kiếm công chứng viên, Không hiển thị với người dùng cấp Sở. Chọn Sở Tư pháp từ danh sách Sở Tư pháp để tìm kiếm (**UC_CCV_Search**) |
-| Ô chọn Tổ chức công chứng            | dropdown | Chỉ hiển thị khi người dùng có quyền tìm kiếm công chứng viên. Chọn tổ chức công chứng theo Sở Tư Pháp đã chọn/hiện tại (**UC_CCV_Search**) |
+| Ô chọn trạng thái             | combobox search	 | Chỉ hiển thị khi người dùng có quyền tìm kiếm công chứng viên, Chọn 1 trạng thái từ danh sách trạng thái hoạt động của công chứng viên (Giống với SCR_CCV_Create) để tìm kiếm (**UC_CCV_Search**) |
+| Ô chọn Sở Tư pháp            | combobox search	 | Chỉ hiển thị khi người dùng có quyền tìm kiếm công chứng viên, Không hiển thị với người dùng cấp Sở. Chọn 1 Sở Tư pháp từ danh sách Sở Tư pháp để tìm kiếm (**UC_CCV_Search**) |
+| Ô chọn Tổ chức công chứng            | combobox search	 | Chỉ hiển thị khi người dùng có quyền tìm kiếm công chứng viên. Chọn 1 tổ chức công chứng theo Sở Tư Pháp đã chọn/hiện tại (**UC_CCV_Search**) |
 | Biểu tượng tìm kiếm           | Button   | Bấm vào thực hiện tìm kiếm theo thông tin đã nhập/chọn (UC_CCV_Search)   |
 | Biểu tượng reset           | Button   | Bấm vào thực hiện reset kết quả tìm kiếm, hiển thị lại danh sách mặc định |   
 | Nút xuất danh sách            | Button   | Hiển thị nếu có quyền, click sẽ xuất danh sách theo điều kiện đã tìm (UC_CCV_Export)                                             |

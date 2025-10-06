@@ -14,12 +14,12 @@ Form cho phép người dùng nhập tiêu chí tra cứu và hiển thị danh 
 
 <div style="overflow-x:auto">
 
-| Trường thông tin             | Control  | Field             | Max length | Bắt buộc (Y/N) | Mô tả                                                                                                                         |
-|:-----------------------------|:---------|:------------------|:-----------|:---------------|:------------------------------------------------------------------------------------------------------------------------------|
-| Ô điền thông tin tra cứu     | text     | hoVaTen           | -          | -              | Hiển thị khi có quyền tra cứu công chứng viên, placeholder: "Điền tên công chứng viên, số thẻ CCV hoặc số chứng chỉ hành nghề |
-| Trạng thái                   | dropdown | trangThai         | -          | -              | Hiển thị khi có quyền tra cứu công chứng viên,Lọc theo trạng thái hành nghề trong entity                     |
-| Sở Tư Pháp                   | dropdown | soTuPhap          | -          | -              | Hiển thị khi có quyền tra cứu công chứng viên, Lấy từ danh sách Sở Tư pháp                                                    |
-| Tổ chức hành nghề công chứng | dropdown | toChucCongChungID | -          | -              | Hiển thị khi có quyền tra cứu công chứng viên, Danh sách hiển thị theo Sở Tư pháp đã chọn                                     |
+| Trường thông tin             | Control         | Field             | Max length | Bắt buộc (Y/N) | Mô tả                                                                                                                         |
+|:-----------------------------|:----------------|:------------------|:-----------|:---------------|:------------------------------------------------------------------------------------------------------------------------------|
+| Ô điền thông tin tra cứu     | text            | hoVaTen           | -          | -              | Hiển thị khi có quyền tra cứu công chứng viên, placeholder: "Điền tên công chứng viên, số thẻ CCV hoặc số chứng chỉ hành nghề |
+| Trạng thái                   | combobox search | trangThai         | -          | -              | Hiển thị khi có quyền tra cứu công chứng viên,Chọn 1 theo trạng thái hành nghề trong entity                                   |
+| Sở Tư Pháp                   | combobox search | soTuPhap          | -          | -              | Hiển thị khi có quyền tra cứu công chứng viên, Chọn 1 từ danh sách Sở Tư pháp                                                 |
+| Tổ chức hành nghề công chứng | combobox search | toChucCongChungID | -          | -              | Hiển thị khi có quyền tra cứu công chứng viên, Danh sách hiển thị theo Sở Tư pháp đã chọn, chọn 1 từ danh sách tổ chức        |
 
 </div>
 
