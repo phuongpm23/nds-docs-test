@@ -65,16 +65,14 @@ Tài liệu này mô tả **các quy chuẩn nghiệp vụ chung** áp dụng ch
 
 
 ## BR8. Menu/Danh mục chức năng hệ thống
-| Nội dung                     | Quy chuẩn nghiệp vụ                                                               |
-|------------------------------|-----------------------------------------------------------------------------------|
-| Trang chủ                    | Hiển thị khi người dùng có quyền, click vào mở trang trang chủ                    |
-| Quản lý hồ sơ công chứng     | Hiển thị khi người dùng có quyền, click vào mở trang danh sách hồ sơ công chứng   |
-| Quản lý công chứng viên      | Hiển thị khi người dùng có quyền, click vào mở trang danh sách công chứng viên    |
-| Quản lý tổ chức công chứng   | Hiển thị khi người dùng có quyền, click vào mở trang danh sách tổ chức công chứng |
-| Quản lý chữ ký số            | Hiển thị khi người dùng có quyền, click vào mở trang danh sách chữ ký số          |
-| Tra cứu                      | Hiển thị khi người dùng có quyền, click vào đổ xuống danh mục tra cứu             |
-| Tra cứu - Công chứng viên    | Hiển thị khi người dùng có quyền, click vào mở trang tra cứu công chứng viên      |
-| Tra cứu - Tổ chức công chứng | Hiển thị khi người dùng có quyền, click vào mở trang tra cứu tổ chức công chứng   |
+| Nội dung                   | Quy chuẩn nghiệp vụ                                                               |
+|----------------------------|-----------------------------------------------------------------------------------|
+| Trang chủ                  | Hiển thị khi người dùng có quyền, click vào mở trang trang chủ                    |
+| Quản lý hồ sơ công chứng   | Hiển thị khi người dùng có quyền, click vào mở trang danh sách hồ sơ công chứng   |
+| Quản lý công chứng viên    | Hiển thị khi người dùng có quyền, click vào mở trang danh sách công chứng viên    |
+| Quản lý tổ chức công chứng | Hiển thị khi người dùng có quyền, click vào mở trang danh sách tổ chức công chứng |
+| Quản lý chữ ký số          | Hiển thị khi người dùng có quyền, click vào mở trang danh sách chữ ký số          |
+| Tra cứu                    | Hiển thị khi người dùng có quyền, click vào mở màn hình tra cứu                   |
 
 ## BR9. Nhập thông tin
 | STT | Nội dung                | Quy chuẩn nghiệp vụ                                                                                                                                                                                                                                     |

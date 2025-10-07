@@ -13,12 +13,12 @@ Popup hiển thị lịch sử cập nhật thông tin công chứng viên.
 ### Lịch sử
 #### Thêm mới
 <div style="overflow-x:auto">
-| Trường thông tin | Control  | Field     | Bắt buộc (Y/N) | Mô tả                        |
-|:-----------------|:---------|:----------|:---------------|:-----------------------------|
-| Thời gian        | datetime | updatedAt | -              | Thời điểm thực hiện cập nhật |
-| Người thực hiện  | text     | updatedBy | -              | Người thực hiện thay đổi     |
-| Thao tác         | text     | thaoTac   | -              | Thêm mới                     |
-| Nội dung         | text     | -         | -              | Tạo mới công chứng viên + ID |
+| Trường thông tin | Control  | Field     | Bắt buộc (Y/N) | Mô tả                               |
+|:-----------------|:---------|:----------|:---------------|:------------------------------------|
+| Thời gian        | datetime | updatedAt | -              | Thời điểm thực hiện cập nhật        |
+| Người thực hiện  | text     | updatedBy | -              | Người thực hiện thay đổi            |
+| Thao tác         | text     | thaoTac   | -              | Thêm mới                            |
+| Nội dung         | text     | -         | -              | Thêm mới công chứng viên thành công |
 
 </div>
 

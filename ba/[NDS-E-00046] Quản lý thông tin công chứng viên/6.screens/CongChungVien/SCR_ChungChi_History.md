@@ -18,7 +18,7 @@ Popup hiển thị lịch sử cập nhật thông tin chứng chỉ hành ngh�
 | Thời gian        | datetime | updatedAt | -              | Thời điểm thực hiện cập nhật |
 | Người thực hiện  | text     | updatedBy | -              | Người thực hiện thay đổi     |
 | Thao tác         | text     | thaoTac   | -              | Thêm mới                     |
-| Nội dung         | text     | -         | -              | Tạo mới chứng chỉ + ID |
+| Nội dung         | text     | -         | -              | Thêm mới chứng chỉ thành công |
 
 </div>
 
