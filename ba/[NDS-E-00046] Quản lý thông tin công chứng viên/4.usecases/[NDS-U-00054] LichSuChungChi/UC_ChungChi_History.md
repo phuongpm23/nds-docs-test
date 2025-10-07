@@ -49,4 +49,4 @@
 ## Liên kết
 - Activity Diagram: [AD_ChungChi_History.puml]
 - Form/Screen: [SCR_ChungChi_History.md]
-- Entity liên quan: ENT_LichSuCapNhat
+- Entity liên quan: **ENT_LichSuCapNhat**, **ENT_ChungChi**

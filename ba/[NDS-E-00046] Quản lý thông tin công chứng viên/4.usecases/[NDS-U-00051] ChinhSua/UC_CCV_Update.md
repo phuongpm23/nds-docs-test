@@ -1,7 +1,7 @@
 # Use Case: UC_CCV_Update (Chỉnh sửa công chứng viên)
 
 ## User Story
-- Với vai trò là **Chuyên viên STP**, tôi muốn có thể Chỉnh sửa công chứng viên vào hệ thống, để đảm bảo dữ liệu công chứng viên luôn đầy đủ và chính xác.
+- Với vai trò là **Chuyên viên STP**, tôi muốn có thể Chỉnh sửa công chứng viên, để đảm bảo dữ liệu công chứng viên luôn đầy đủ và chính xác.
 
 ## Acceptance Criteria
 - Hệ thống hiển thị form Chỉnh sửa công chứng viên và điền sẵn thông tin đã lưu.
@@ -44,4 +44,4 @@
 ## Liên kết
 - Activity Diagram: [AD_CCV_Update.puml]
 - Form liên quan: [SCR_CCV_Update.md]
-- Entity liên quan: **ENT_CongChungVien**
+- Entity liên quan: **ENT_CongChungVien**, **ENT_ToChucCongChung**

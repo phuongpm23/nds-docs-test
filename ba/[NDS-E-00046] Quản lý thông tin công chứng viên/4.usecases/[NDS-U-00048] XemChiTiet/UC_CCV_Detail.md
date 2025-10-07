@@ -40,7 +40,7 @@
 
 ## Luồng chính
 1. Người dùng truy cập thành công màn hình danh sách công chứng viên
-2. Người dùng truy cập trang chi tiết thông tin công chứng viên băng cách click vào "Họ và tên" công chứng viên hoặc biểu tưởng xem chi tiết
+2. Người dùng truy cập trang chi tiết thông tin công chứng viên bằng cách click vào "Họ và tên" công chứng viên hoặc biểu tượng xem chi tiết
 2. Hệ thống truy vấn thông tin chi tiết công chứng viên theo ID (**ENT_CongChungVien**).
 3. Nếu người dùng có quyền xem chứng chỉ hành nghề, hệ thống truy vấn danh sách chứng chỉ hành nghề công chứng viên theo congChungVienId (**ENT_ChungChiHanhNghe**)
 4. Hệ thống hiển thị màn hình chi tiết công chứng viên (**SCR_CCV_Detail**) bao gồm các thông tin
@@ -90,4 +90,4 @@
 ## Liên kết
 - Activity Diagram: [AD_CCV_Detail.puml]
 - Form/Screen: [SCR_CCV_Detail.md]
-- Entity liên quan: **ENT_CongChungVien**, **ENT_ToChucCongChung**, E**NT_ChungChiHanhNghe**
+- Entity liên quan: **ENT_CongChungVien**, **ENT_ToChucCongChung**, **ENT_ChungChiHanhNghe**

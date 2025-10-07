@@ -49,4 +49,4 @@
 ## Liên kết
 - Activity Diagram: [AD_CCV_History.puml]
 - Form/Screen: [SCR_CCV_History.md]
-- Entity liên quan: **ENT_CongChungVien**
+- Entity liên quan: **ENT_CongChungVien**, **ENT_LichSuCapNhat**

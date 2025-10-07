@@ -60,4 +60,4 @@
 ## Liên kết
 - Activity Diagram: [AD_CCV_Lookup.puml]
 - Form/Screen: [SCR_CCV_Lookup.md]
-- Entity liên quan: ENT_CongChungVien, ENT_ToChucCongChung
+- Entity liên quan: **ENT_CongChungVien**, **ENT_ToChucCongChung**
