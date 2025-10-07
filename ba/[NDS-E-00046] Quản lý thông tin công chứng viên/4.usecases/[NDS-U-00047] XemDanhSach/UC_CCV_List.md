@@ -5,7 +5,7 @@
 - Là **Lãnh đạo Bộ Tư pháp, Lãnh đạo Cục BTTP, Chuyên viên Cục BTTP**, tôi muốn xem được danh sách toàn bộ công chứng viên trên hệ thống để có thể quản lý và tra cứu thông tin
 
 ## Acceptance criteria
-- Hiển thị bảng danh sách công chứng viên với các cột tông tin cơ bản (Họ và tên, số thẻ, tên tổ chức công chứng, trạng thái hoạt động, ).
+- Hiển thị bảng danh sách công chứng viên với các cột thông tin cơ bản (Họ và tên, số thẻ, tên tổ chức công chứng, trạng thái hoạt động, ).
 - Nếu số lượng bản ghi vượt quá giới hạn hiển thị, hệ thống phải cung cấp phân trang (10 bản ghi 1 trang).
 - Hỗ trợ xuất (Export) danh sách theo điều kiện đã tìm  (chi tiết trong UC_CCV_Export).
 - Mỗi dòng có action: Xem chi tiết, Sửa, Xóa, Xem lịch sử (tuỳ quyền).  

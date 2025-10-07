@@ -1,4 +1,4 @@
-@startuml AD_CCVManager_Create
+@startuml AD_CCV_Create
 !pragma layout smetana
 title Activity Diagram: Thêm mới công chứng viên
 start

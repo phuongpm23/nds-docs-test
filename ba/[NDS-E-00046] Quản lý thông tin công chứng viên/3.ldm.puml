@@ -7,62 +7,6 @@ entity ChungChiHanhNghe
 entity LichSuCapNhat
 entity NguoiDung
 
-entity NguoiDung
-{
-    *nguoiDungId: int <<PK>> - ID bản ghi
-    vaiTro: object - Thông tin vai trò của người dùng
-    anhDaiDien: string - Ảnh người dùng
-    donViId: int <<FK>> - ID đơn vị
-    hoDem: string - Họ và tên đệm
-    ten: string- Tên
-    ngaySinh: date - Ngày sinh
-    quocTich: string - Quốc tịch
-    danToc: string - Dân tộc
-    dienThoaiCoDinh: string - Số điện thoại cố định
-    dienThoaiDiDong: string - Số điện thoại di động
-    gioiTinh: int - Nam là 1, Nữ là 2
-    email: string - Email
-    chucVuId: int <<FK>> - ID chức vụ
-    diaChi: string - Địa chỉ - Địa chỉ đường, số nhà từ 1/7
-    tinhThanhPho: int - Mã tỉnh thành phố từ 1/7
-    phuongXa: int - Mã phường xã từ 1/7
-    diaChiCu: string - Địa chỉ đường, số nhà trước 1/7
-    tinhThanhPhoCu: int - Mã tỉnh thành phố trước 1/7
-    phuongXaCu: int - Mã phường xã cũ trước 1/7
-    trangThai: string - Trạng thái Hoạt động, Ngừng hoạt động
-    username: string - Thông tin tài khoản đăng nhập hệ thống
-    matKhau: string - Thông tin mật khẩu của đăng nhập hệ thống
-}
-
-entity CongChungVien {
-    *congChungVienId: int <<PK>> - Id công chứng viên
-    soGiayTo: string - Số CMND/Căn cước/CCCD 
-    ngayCap: date - Ngày cấp
-    noiCap: string - Nơi cấp
-    trangThai: string - Đăng ký tập sự, Đang tập sự, 
-     Tạm ngừng tập sự, Chấm dứt tập sự, Hoàn thành tập sự, 
-     Chờ tiếp nhận bổ nhiệm, Chờ bổ nhiệm, Đã bổ nhiệm, 
-     Đang hành nghề, Tạm đình chỉ hành nghề, Đã bổ nhiệm lại, 
-     Đã miễn nhiệm, Chờ bổ sung, Đã bổ sung, Từ chối bổ nhiệm, 
-     Đã thay đổi nơi tập sự, Chờ tiếp nhận miễn nhiệm, 
-     Chờ tiếp nhận bổ nhiệm lại, Từ chối miễn nhiệm, Chờ bổ nhiệm lại, 
-     Từ chối bổ nhiệm lại, Chờ miễn nhiệm, Thu hồi thẻ, Chờ cấp thẻ, 
-     Từ chối cấp thẻ, Đạt kết quả tập sự
-    soThe: string - Số thẻ công chứng viên
-}
-
-entity ChungChiHanhNghe {
-  *chungChiId: int <<PK>> - ID bản ghi
-  congChungVienId: int <<Fk>> - ID công chứng viên
-  soChungChi: string - Số chứng chỉ
-  ngayCap: date - Ngày cấp
-  ngayHieuLuc: date - Ngày hiệu lực
-  ngayHetHan: date - Ngày hết hạn
-  donViCap: string - Đơn vị cấp
-  trangThai: string - Trạng thái chứng chỉ
-  fileDinhKemId: string - ID File đính kèm
-}
-
 entity LichSuCapNhat {
   *lichSuCapNhatId: int <<PK>> - Id bản ghi lịch sử cập nhật, tự động tăng
   loaiThaoTac: string - Thêm mới/Cập nhật/Xóa

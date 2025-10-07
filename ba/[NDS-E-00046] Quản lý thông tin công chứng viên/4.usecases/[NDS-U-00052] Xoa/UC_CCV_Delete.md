@@ -28,7 +28,7 @@
 4. Người dùng nhấn nút "Xác nhận".  
 5. Hệ thống kiểm tra:  
    - Nếu công chứng viên còn hồ sơ công chứng đang hiệu lực → Hệ thống đóng popup → Hiển thị cảnh báo lỗi "Không thể xóa công chứng viên đang có hồ sơ công chứng còn hiệu lực"  và không thực hiện xóa.  
-   - Nếu không có ràng buộc → Xóa dữ liệu công chứng viên trong **ENT_CongChungVien**.  
+   - Nếu không có ràng buộc → Xóa dữ liệu công chứng viên trong **ENT_CongChungVien**, Xóa dữ liệu chữ ký số cá nhân của công chứng viên trong **ENT_ChuKySo**.  
 6. Hệ thống đóng popup, hiển thị thông báo kết quả "Xóa thành công thông tin công chứng viên" .  
 7. Use case kết thúc. 
 
@@ -43,4 +43,4 @@
 ## Liên kết
 - Activity Diagram: [AD_CCV_Delete.puml]
 - Form/Screen: [SCR_CCV_List.md], [SCR_CCV_Delete.md]
-- Entity liên quan: ENT_CongChungVien
+- Entity liên quan: **ENT_CongChungVien**, **ENT_ChuKySo**, **ENT_HoSoCongChung**

@@ -44,4 +44,4 @@
 ## Liên kết
 - Activity Diagram: [AD_CCV_Create.puml]
 - Form liên quan: [SCR_CCV_Create.md]
-- Entity liên quan: ENT_CongChungVien
+- Entity liên quan: **ENT_CongChungVien**, **ENT_ToChucCongChung**

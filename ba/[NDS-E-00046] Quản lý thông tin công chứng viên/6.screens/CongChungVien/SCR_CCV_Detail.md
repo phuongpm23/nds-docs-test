@@ -24,7 +24,7 @@ Hiển thị đầy đủ hồ sơ cá nhân,thông tin hành nghề của công
 | Quốc tịch                       | text     | quocTich        | -          | -              | -                  | Quốc tịch                                                |
 | Dân tộc                         | text     | danToc          | -          | -              | -                  | Dân tộc                                                  |
 | Email                           | text     | email           | -          | -              | -                  | Email                                                    |
-| Số giấy tờ (CMND/CCCD/Hộ chiếu) | text     | soGiayTo        | -          | Y              | -                  | Thông tin giấy tờ định danh                              |
+| Số giấy tờ (CMND/CCCD/Hộ chiếu) | text     | soGiayTo        | -          | -              | -                  | Thông tin giấy tờ định danh                              |
 | Ngày cấp                        | datetime | ngayCap         | -          | -              | -                  | Ngày cấp giấy tờ định danh                               |
 | Nơi cấp                         | text     | noiCap          | -          | -              | -                  | Nơi cấp giấy tờ định danh                                |
 | Địa chỉ thường trú (cũ)         | text     | diaChiCu        | -          | -              | -                  | Địa chỉ thường trú                                       |

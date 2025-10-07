@@ -472,7 +472,7 @@ entity ChungChiHanhNghe {
     ngayHieuLuc: date - Ngày hiệu lực
     ngayHetHan: date - Ngày hết hạn
     donViCap: string - Đơn vị cấp
-    trangThai: string - Trạng thái chứng chỉ
+    trangThai: string - Đang có hiệu lực, Bị thu hồi, Đã hủy, Đang xử lý
     fileDinhKem: string - File đính kèm
 }
 
@@ -559,8 +559,8 @@ TaiSanKhac --|> TaiSan
 HoSoCongChung_TheChap --|> HoSoCongChungGiay
 HoSoCongChung_TheChap --|> HoSoCongChungDienTu
 
-HoSoCongChungGiay --|> HoSoCongChung_UyQuyen 
-HoSoCongChungDienTu --|> HoSoCongChung_UyQuyen
+HoSoCongChungGiay --|> HoSoCongChung
+HoSoCongChungDienTu --|> HoSoCongChung
 
 CongChungVien --|> NguoiDung
 ToChucCongChung --|> DonVi
